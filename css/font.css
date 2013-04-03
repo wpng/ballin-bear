@@ -1,4 +1,5 @@
-@font-face {
+@font-face
+{
     font-family: 'caviar_dreamsbold';
     src: url('../font/caviardreams_bold-webfont.eot');
     src: url('../font/caviardreams_bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -10,10 +11,8 @@
 
 }
 
-
-
-
-@font-face {
+@font-face
+{
     font-family: 'caviar_dreamsregular';
     src: url('../font/caviardreams-webfont.eot');
     src: url('../font/caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
@@ -25,10 +24,8 @@
 
 }
 
-
-
-
-@font-face {
+@font-face
+{
     font-family: 'irregularisregular';
     src: url('../font/irregularis-webfont.eot');
     src: url('../font/irregularis-webfont.eot?#iefix') format('embedded-opentype'),

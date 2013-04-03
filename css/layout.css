@@ -16,7 +16,7 @@ body
     background: #f7f7f7;
     color: #343434;
     font-family: Arial, sans-serif;
-    font-size: 100%;
+    font-size: 62.5%;
     font-weight: 100;
     height: 100%;
     font-smooth: always;
@@ -53,6 +53,7 @@ h6
 #wrapper
 {
     height: 100%;
+    position: relative;
 }
 
 .page
@@ -69,27 +70,34 @@ h6
 {
     background: #343434;
     border-right: 2px #00addf solid;
+    color: #fff;
     float: left;
-    top: 72px;
-    bottom: 30px;
     height: 100%;
+    padding: 50px 0 0 0;
     min-width: 300px;
-    overflow-y: scroll;
 }
+
+#dashboard.closed
+{
+    min-width: 37px;
+    width: 37px;
+}
+
+/* toggle */
 
 #dashboard-toggle
 {
     background: #00addf;
-    color: #fff;
     cursor: pointer;
     font-family: 'caviar_dreamsregular', Arial, sans-serif;
-    font-size: 1.6em;
+    font-size: 3.8em;
     height: 39px;
-    line-height: 1.6em;
+    line-height: 1.8em;
     margin: 5px 0 0 0;
     padding: 0 2px 0 0;
     position: absolute;
     text-align: right;
+    top: 5px;
     width: 318px;
 }
 
@@ -102,18 +110,51 @@ h6
     top: 0;
 }
 
-#dashboard.closed
-{
-    min-width: 37px;
-    width: 37px;
-}
-
 #dashboard.closed #dashboard-toggle
 {
     width: 37px;
 }
 
+#dashboard.open .toggle-name
+{
+    display: inline;
+}
+
 #dashboard.closed .toggle-name
 {
     display: none;
+}
+
+/* MENU */
+
+#dashboard ul h4
+{
+    font-size: 2.5em;
+}
+
+#dashboard ul h5
+{
+    font-size: 2.2em;
+}
+
+#dashboard ul h6
+{
+    font-size: 1.9em;
+}
+
+#dashboard .menu
+{
+    font-family: Arial, sans-serif;
+}
+
+#dashboard .menu:hover,
+#dashboard .menu.open:first-child
+{
+    color: #00addf;
+    cursor: pointer;
+}
+
+#dashboard .menu.open ul:first-child
+{
+    display: block;
 }
