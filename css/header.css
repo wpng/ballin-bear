@@ -1,0 +1,112 @@
+#header
+{
+    background: #343434;
+    height: 70px;
+}
+
+#logo
+{
+    float: left;
+    margin: 12px 0 0 55px;
+}
+
+#search-container
+{
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#search
+{
+    display: block;
+    margin: 22px auto 0 auto;
+    width: 520px;
+}
+
+#search input[type=text]
+{
+    border: none;
+    height: 26px;
+    line-height: 2.2em;
+    padding: 0 10px;
+    width: 458px;
+}
+
+#search button
+{
+    background: #f17120;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    height: 26px;
+    vertical-align: top;
+    width: 32px;
+}
+
+#session
+{
+    color: #fff;
+    float: right;
+    font-family: Arial;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 27px 30px 0 0;
+    text-transform: uppercase;
+}
+
+#session .dropdown
+{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+#session .dropdown:hover,
+#session .dropdown.open
+{
+    color: #00addf;
+}
+
+.dropdown-menu
+{
+    display: none;
+}
+
+#session .dropdown.open .dropdown-menu
+{
+    cursor: auto;
+    display: block;
+}
+
+.dropdown-menu
+{
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    right: -120px;
+    min-width: 290px;
+    min-height: 50px;
+    padding: 10px;
+    position: absolute;
+    top: 25px;
+}
+
+.dropdown-menu input[type=text]
+{
+    background: #ecebec;
+    border: none;
+    line-height: 2em;
+    padding: 0 10px;
+    width: 272px;
+}
+
+.dropdown-menu .dropdown-arrow
+{
+    position: absolute;
+    text-align: center;
+    top: -11px;
+    width: 100%;
+}

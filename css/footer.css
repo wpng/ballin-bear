@@ -1,0 +1,49 @@
+
+#footer
+{
+    border-top: 2px #00addf solid;
+    text-align: center;
+}
+
+#footer nav.complementary
+{
+    display: inline-block;
+    font-size: 0.75em;
+    line-height: 2em;
+    margin: 40px 90px;
+    text-align: left;
+    vertical-align: top;
+    width: 170px;
+}
+
+#footer nav.complementary h4
+{
+    font-size: 2em;
+    line-height: 2em;
+}
+
+#footer nav.complementary a
+{
+    color: #343434;
+    margin: 0 4px 0 0;
+    text-decoration: none;
+}
+
+#footer nav.complementary a:hover
+{
+    color: #00addf;
+}
+
+#footer .fb-like
+{
+    margin: 10px 0 0 0;
+}
+
+#copyright
+{
+    background: #343434;
+    border-top: 2px #00addf solid;
+    color: #f7f7f7;
+    font-size: 75%;
+    line-height: 3.6em;
+}
