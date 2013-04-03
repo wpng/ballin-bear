@@ -10,6 +10,8 @@
     padding: 0 7%;
 }
 
+/* module */
+
 .module
 {
     background: #fff;
@@ -34,8 +36,43 @@
 
 .module-content
 {
-    padding: 0 0 0 1.6em;
+    padding: 0 1.6em;
 }
+
+/* global info product */
+
+#global-info-product
+{
+    overflow: hidden;
+    position: relative;
+}
+
+#global-info-product #user-actions
+{
+    border-left: 2px solid #f1f1f1;
+    float: right;
+    line-height: 5.6em;
+    margin: 0 0 -5000px 0;
+    padding: 0 0 5000px 0;
+    text-align: center;
+    width: 7%;
+}
+
+#global-info-product #affinity-info
+{
+    border-left: 2px solid #f1f1f1;
+    float: right;
+    margin: 0 0 -5000px 0;
+    padding: 0 0 5000px 0;
+    width: 15%;
+}
+
+#global-info-product .module-content
+{
+    float: left;
+}
+
+/* advice & did you know */
 
 #advice .module-content,
 #did-you-know .module-content
