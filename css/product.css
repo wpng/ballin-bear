@@ -1,0 +1,16 @@
+/*
+    Colors :
+
+    border module : #f1f1f1
+*/
+
+#page-product
+{
+    padding: 0 0 0 7%;
+}
+
+.module
+{
+    border: 1px solid #f1f1f1;
+    min-height: 272px;
+}

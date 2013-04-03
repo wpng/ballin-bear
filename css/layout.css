@@ -23,18 +23,21 @@ body
     -webkit-font-smoothing: antialiased;
 }
 
-.clearfix {
+.clearfix
+{
   *zoom: 1;
 }
 
 .clearfix:before,
-.clearfix:after {
+.clearfix:after
+{
   display: table;
   line-height: 0;
   content: "";
 }
 
-.clearfix:after {
+.clearfix:after
+{
   clear: both;
 }
 
@@ -52,7 +55,7 @@ h6
 
 #wrapper
 {
-    height: 100%;
+    overflow: hidden;
     position: relative;
 }
 
@@ -73,8 +76,9 @@ h6
     color: #fff;
     float: left;
     height: 100%;
-    padding: 50px 0 0 0;
+    margin: 0 0 -5000px 0;
     min-width: 300px;
+    padding: 50px 0 5000px 0;
 }
 
 #dashboard.closed
@@ -129,32 +133,51 @@ h6
 
 #dashboard ul h4
 {
+    font-family: Arial, sans-serif;
     font-size: 2.5em;
+    line-height: 2em;
 }
 
 #dashboard ul h5
 {
-    font-size: 2.2em;
-}
-
-#dashboard ul h6
-{
-    font-size: 1.9em;
-}
-
-#dashboard .menu
-{
     font-family: Arial, sans-serif;
+    font-size: 2.2em;
+    line-height: 2em;
+}
+
+#dashboard ul h6,
+#dashboard a
+{
+    color: #cac9c9;
+    font-family: Arial, sans-serif;
+    font-size: 1.9em;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+#dashboard ul
+{
+    padding: 0 0 0 2.8em;
+    /*display: none;*/
 }
 
 #dashboard .menu:hover,
-#dashboard .menu.open:first-child
+#dashboard a:hover,
+#dashboard .dropdown.open .menu:first-child
 {
     color: #00addf;
     cursor: pointer;
 }
 
-#dashboard .menu.open ul:first-child
+#dashboard .dropdown.open ul:first-child
 {
     display: block;
+}
+
+/* breadcrumbs */
+
+#breadcrumbs
+{
+    font-size: 1.9em;
+    line-height: 2.9em;
 }
