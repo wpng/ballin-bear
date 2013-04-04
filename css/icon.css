@@ -175,3 +175,29 @@
 {
     background-position: -159px -265px;
 }
+
+/* helpers */
+
+.icon-advice
+{
+    background-position: -25px -206px;
+    height: 20px;
+    margin: 1px 4px 0 0;
+    width: 21px;
+}
+
+.icon-did-you-know
+{
+    background-position: -49px -206px;
+    height: 19px;
+    margin: 1px 6px 0 0;
+    width: 23px;
+}
+
+.icon-dart
+{
+    background-position: -195px -52px;
+    height: 7px;
+    margin: 0.3em 0.4em 0 0;
+    width: 19px;
+}

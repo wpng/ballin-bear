@@ -3,6 +3,8 @@
 
     module border grey : #f1f1f1
     title blue : #00ade0
+    red price : #f62c2c
+    orange link : #f68b2c
 */
 
 #page-product
@@ -19,10 +21,21 @@
     float: left;
     margin: 0 0 1em 0;
     min-height: 272px;
+    position: relative;
     width: 66%;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;
+}
+
+.module-punch
+{
+    background: url("../img/sprite.png") no-repeat -143px -206px;
+    height: 19px;
+    left: -2px;
+    position: absolute;
+    top: 10px;
+    width: 13px;
 }
 
 .module h1,
@@ -39,11 +52,18 @@
     padding: 0 1.6em;
 }
 
+.module .price
+{
+    color: #f62c2c;
+    display: block;
+    font-size: 3.1em;
+    font-weight: bold;
+}
+
 /* global info product */
 
 #global-info-product
 {
-    overflow: hidden;
     position: relative;
 }
 
@@ -52,20 +72,20 @@
     border-left: 2px solid #f1f1f1;
     float: right;
     line-height: 5.6em;
-    margin: 0 0 -5000px 0;
-    padding: 0 0 5000px 0;
     text-align: center;
     width: 7%;
 }
 
-#global-info-product #affinity-info
+#affinity-info
 {
     border-left: 2px solid #f1f1f1;
     float: right;
-    margin: 0 0 -5000px 0;
-    padding: 0 0 5000px 0;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 4%;
     text-align: center;
-    width: 15%;
+    width: 22%;
 }
 
 #global-info-product .module-content
@@ -78,7 +98,7 @@
 #advice .module-content,
 #did-you-know .module-content
 {
-    padding: 0 2.9em 0 3.8em;
+    padding: 0 2.9em 2em 3.8em;
 }
 
 #advice,
@@ -88,9 +108,32 @@
     width: 33%;
 }
 
+#advice h3,
+#did-you-know h3
+{
+    font-size: 2.8em;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 2.5em;
+}
+
 .module blockquote
 {
     font-size: 1.9em;
     line-height: 2em;
+    position: relative;
     text-align: justify;
+}
+
+#advice img
+{
+    width: 100%;
+}
+
+#advice a
+{
+    color: #f68b2c;
+    font-size: 1.9em;
+    text-decoration: none;
+    float: right;
 }
