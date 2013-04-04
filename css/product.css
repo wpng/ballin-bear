@@ -60,6 +60,47 @@
     font-weight: bold;
 }
 
+.module .available
+{
+    color: #24a601;
+}
+
+.module .unavailable
+{
+    color: #f62c2c;
+}
+
+/* products */
+
+.module .products
+{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.module .products td
+{
+    vertical-align: middle;
+}
+
+.module .products img
+{
+    display: inline;
+    max-width: 10em;
+}
+
+.module .products h3
+{
+    color: #00ade0;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.module .products .price
+{
+    text-align: right;
+}
+
 /* global info product */
 
 #global-info-product
