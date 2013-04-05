@@ -9,6 +9,9 @@ border grey : #e5e5e5
 input grey : #ecebec
 
  */
+html{
+    font-size: 100%;
+}
 
 html,
 body
@@ -16,7 +19,7 @@ body
     background: #2e2e2e;
     color: #343434;
     font-family: Arial, sans-serif;
-    font-size: 62.5%;
+    font-size: 0.62em;
     font-weight: 100;
     height: 100%;
     font-smooth: always;
