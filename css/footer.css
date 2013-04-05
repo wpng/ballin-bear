@@ -25,6 +25,7 @@
 #footer nav.complementary a
 {
     color: #343434;
+    display: inline-block;
     font-size: 1.9em;
     margin: 0 4px 0 0;
     text-decoration: none;
