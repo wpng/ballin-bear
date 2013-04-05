@@ -54,6 +54,28 @@ h6
     font-family: 'caviar_dreamsregular', Arial, sans-serif;
 }
 
+table
+{
+    border-spacing: 0;
+    font-size: 1.9em;
+    width: 100%;
+}
+
+b
+{
+    font-weight: bold;
+}
+
+i
+{
+    font-style: italic;
+}
+
+u
+{
+    text-decoration: underline;
+}
+
 /* content */
 
 #wrapper

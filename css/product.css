@@ -47,6 +47,7 @@
     line-height: 2em;
 }
 
+
 .module-content
 {
     padding: 0 1.6em;
@@ -75,23 +76,33 @@
 .module .products
 {
     width: 100%;
-    border-spacing: 0;
 }
 
-.module .products td
+.module .products .product
 {
-    vertical-align: middle;
+    border: 1px solid #f1f1f1;
+    margin: 0.3em 0 0 0;
+    padding: 0.4em 0;
+    width: 100%;
+}
+
+.module .products div
+{
+    display: inline-block;
+    vertical-align: top;
 }
 
 .module .products img
 {
     display: inline;
-    max-width: 10em;
+    margin: 0 0 0 1%;
+    width: 15%;
 }
 
 .module .products h3
 {
     color: #00ade0;
+    font-family: 'caviar_dreamsbold', Arial, sans-serif;
     font-size: 2.4em;
     font-weight: bold;
 }
@@ -99,9 +110,40 @@
 .module .products .price
 {
     text-align: right;
+    width: 19%;
 }
 
-/* global info product */
+.module .products .product-info
+{
+    width: 29%;
+    padding: 0 1%;
+}
+
+.module .products .product-info p
+{
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+.module .products .product-seller
+{
+    width: 27%;
+}
+
+.module .products .product-seller img
+{
+    display: inline-block;
+    width: auto;
+    max-width: 5.8em;
+}
+
+.module .products .product-seller ul
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* global info */
 
 #global-info-product
 {
@@ -132,6 +174,73 @@
 #global-info-product .module-content
 {
     float: left;
+    width: 58%;
+}
+
+/* geoloc */
+
+#address
+{
+    font-size: 1.8em;
+    line-height: 1.4em;
+    float: left;
+    min-height: 6em;
+    width: 45%;
+}
+
+#geoloc
+{
+    font-size: 1.8em;
+    line-height: 1.4em;
+    float: right;
+    min-height: 6em;
+    position: relative;
+    width: 55%;
+}
+
+#geoloc textarea
+{
+    background: #f1f1f1;
+    border: none;
+    font-size: 0.9em;
+    padding: 2% 3%;
+    width: 70%;
+    vertical-align: middle;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+#geoloc button
+{
+    background: none;
+    border: none;
+    color: #f68b2c;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+    vertical-align: middle;
+    width: 23%;
+}
+
+/* features */
+
+#features-products .module-content
+{
+    padding: 0 1.6em 1.3em 1.6em;
+}
+
+#features-products .feature-name
+{
+    color: #a97d57;
+    padding: 0 2% 0 0;
+    width: 35%;
+}
+
+#features-products td
+{
+    line-height: 1.4em;
+    padding: 0 0 0.4em 0;
 }
 
 /* advice & did you know */
