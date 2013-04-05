@@ -184,3 +184,8 @@ h6
     font-size: 1.9em;
     line-height: 2.9em;
 }
+
+/* user actions */
+.user-action {
+    display: inline-block;
+}
