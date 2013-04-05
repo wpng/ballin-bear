@@ -6,6 +6,7 @@
 
 #logo
 {
+    display: inline-block;
     float: left;
     margin: 12px 0 0 55px;
 }
