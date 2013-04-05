@@ -201,3 +201,45 @@
     margin: 0.3em 0.4em 0 0;
     width: 19px;
 }
+
+/* dashboard */
+
+.icon-camera
+{
+    background-position: -78px -52px;
+    height: 14px;
+    margin: 1px 4px 0 0;
+    width: 20px;
+}
+
+.icon-camera-small
+{
+    background-position: -103px -52px;
+    height: 10px;
+    margin: 3px 4px 0 0;
+    width: 14px;
+}
+
+.icon-profiles
+{
+    background-position: -122px -52px;
+    height: 11px;
+    margin: 2px 4px 0 0;
+    width: 14px;
+}
+
+.icon-camcorder
+{
+    background-position: -141px -52px;
+    height: 10px;
+    margin: 3px 4px 0 0;
+    width: 13px;
+}
+
+.icon-tv
+{
+    background-position: -78px -52px;
+    height: 14px;
+    margin: 1px 4px 0 0;
+    width: 20px;
+}
