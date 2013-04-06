@@ -1,0 +1,148 @@
+#account-params
+{
+    margin: 0 auto;
+    width: 70em;
+}
+
+#account-params .module
+{
+    display: block;
+    float: none;
+    width: auto;
+}
+
+#account-params h1
+{
+    color: #00ade0;
+    font-family: 'caviar_dreamsbold', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+#account-params h2
+{
+    font-family: 'caviar_dreamsbold', Arial, sans-serif;
+    font-size: 2.2em;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+
+#account-params label
+{
+    display: inline-block;
+    font-size: 2.2em;
+    text-align: right;
+    width: 35%;
+}
+
+#account-params input[type=text],
+#account-params .select
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    height: 1.7em;
+    font-size: 2.5em;
+    margin: 0.15em 0.5em;
+    padding: 0 1em;
+    width: 40%;
+}
+
+#account-params select
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 1em;
+}
+
+#account-params div
+{
+    border-bottom: 1px solid #f1f1f1;
+    padding: 0 1em 1.5em 1em;
+}
+
+#account-params #link-account p
+{
+    font-size: 1.9em;
+    line-height: 2.5em;
+    margin: 0 0 0 2%;
+    float: right;
+    width: 64%
+}
+
+#account-params #link-account a
+{
+    color: #f68b2c;
+    text-decoration: none;
+}
+
+#account-params #link-account .user-action
+{
+    float: right;
+}
+
+#account-params #delete-account
+{
+    padding: 0 1em;
+}
+
+#account-params #delete-account h2
+{
+    display: inline;
+}
+
+#account-params #delete-account .user-action
+{
+    color: #8b8b8b;
+    float: right;
+    font-size: 1.9em;
+    line-height: 3.3em;
+    text-decoration: none;
+}
+
+#account-params #edit-account
+{
+    border: none;
+    padding: 1em 19% 1.5em 18%;
+}
+
+#account-params #edit-account .save
+{
+    float: right;
+}
+
+#edit-account input[type=submit]
+{
+    font-size: 3em;
+}
+
+@media (max-width: 950px)
+{
+    #dashboard
+    {
+        min-width: 37px !important;
+        width: 37px;
+    }
+    
+    #dashboard #dashboard-toggle
+    {
+        width: auto !important;
+    }
+    
+    #dashboard .toggle-name
+    {
+        display: none !important;
+    }
+    
+    #account-params #edit-account
+    {
+        border: none;
+        padding: 1em 5% 1.5em 5%;
+    }
+}
+
+@media (max-width: 700px)
+{
+    #account-params
+    {
+        width: 98%;
+    }
+}

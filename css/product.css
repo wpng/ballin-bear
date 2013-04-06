@@ -12,137 +12,6 @@
     padding: 0 7%;
 }
 
-/* module */
-
-.module
-{
-    background: #fff;
-    border: 1px solid #f1f1f1;
-    float: left;
-    margin: 0 0 1em 0;
-    min-height: 272px;
-    position: relative;
-    width: 66%;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-}
-
-.module-punch
-{
-    background: url("../img/sprite.png") no-repeat -143px -206px;
-    height: 19px;
-    left: -2px;
-    position: absolute;
-    top: 10px;
-    width: 13px;
-}
-
-.module h1,
-.module h2
-{
-    color: #00ade0;
-    font-size: 2.8em;
-    font-weight: 600;
-    line-height: 2em;
-}
-
-
-.module-content
-{
-    padding: 0 1.6em;
-}
-
-.module .price
-{
-    color: #f62c2c;
-    display: block;
-    font-size: 3.1em;
-    font-weight: bold;
-}
-
-.module .available
-{
-    color: #24a601;
-}
-
-.module .unavailable
-{
-    color: #f62c2c;
-}
-
-/* products */
-
-.module .products
-{
-    width: 100%;
-}
-
-.module .products .product
-{
-    border: 1px solid #f1f1f1;
-    margin: 0.3em 0 0 0;
-    padding: 0.4em 0;
-    width: 100%;
-}
-
-.module .products div
-{
-    display: inline-block;
-    vertical-align: top;
-}
-
-.module .products img
-{
-    display: inline;
-    margin: 0 0 0 1%;
-    width: 15%;
-}
-
-.module .products h3
-{
-    color: #00ade0;
-    font-family: 'caviar_dreamsbold', Arial, sans-serif;
-    font-size: 2.4em;
-    font-weight: bold;
-}
-
-.module .products .price
-{
-    text-align: right;
-    width: 19%;
-}
-
-.module .products .product-info
-{
-    width: 29%;
-    padding: 0 1%;
-}
-
-.module .products .product-info p
-{
-    font-size: 1.9em;
-    font-weight: bold;
-}
-
-.module .products .product-seller
-{
-    width: 27%;
-}
-
-.module .products .product-seller img
-{
-    display: inline-block;
-    width: auto;
-    max-width: 5.8em;
-}
-
-.module .products .product-seller ul
-{
-    display: inline-block;
-    vertical-align: top;
-}
-
 /* global info */
 
 #global-info-product
@@ -249,12 +118,6 @@
 
 #geoloc button
 {
-    background: none;
-    border: none;
-    color: #f68b2c;
-    font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 1.9em;
-    text-align: center;
     vertical-align: middle;
     width: 23%;
 }
@@ -301,14 +164,6 @@
     font-family: 'irregularisregular', Arial, sans-serif;
     font-weight: bold;
     line-height: 2.5em;
-}
-
-.module blockquote
-{
-    font-size: 1.9em;
-    line-height: 2em;
-    position: relative;
-    text-align: justify;
 }
 
 #advice img

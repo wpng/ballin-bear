@@ -61,6 +61,14 @@
     width: 8px;
 }
 
+.select .icon-arrow-down
+{
+    background-position: -152px -299px;
+    height: 5px;
+    margin: 0;
+    width: 11px;
+}
+
 .dropdown:hover .icon-arrow-down,
 .dropdown.open .icon-arrow-down
 {
@@ -112,6 +120,36 @@
 .icon-googleplus:hover
 {
     background-position: -107px -143px;
+}
+
+#login-facebook
+{
+    background: url("../img/sprite.png") no-repeat -2px -682px;
+    display: inline-block;
+    height: 18px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 86px;
+}
+
+#login-twitter
+{
+    background: url("../img/sprite.png") no-repeat -92px -678px;
+    display: inline-block;
+    height: 22px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 86px;
+}
+
+#login-google
+{
+    background: url("../img/sprite.png") no-repeat -187px -680px;
+    display: inline-block;
+    height: 26px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 86px;
 }
 
 /* user-actions */

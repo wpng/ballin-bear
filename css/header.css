@@ -1,3 +1,59 @@
+/* common */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus
+{
+    outline: none;
+}
+
+input[type=text],
+.select
+{
+    background: #ecebec;
+    border: 1px solid #ecebec;
+    display: inline-block;
+    line-height: 2em;
+    position: relative;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.select select
+{
+   background: transparent;
+   border: 0;
+   width: 100%;
+   -webkit-appearance: none;
+}
+
+.select-arrow
+{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+input:focus
+{
+    border: 1px solid #00ade0;
+}
+
+input[type=submit],
+button
+{
+    background: none;
+    border: none;
+    color: #f68b2c;
+    cursor: pointer;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    text-align: center;
+}
+
+/* global */
+
 #header
 {
     background: transparent;
@@ -24,9 +80,7 @@
 
 #search input[type=text]
 {
-    border: none;
     height: 2.2em;
-    line-height: 2em;
     padding-left: 3%;
     width: 85%;
     -webkit-border-radius: 10px 0 0 10px;
@@ -40,7 +94,8 @@
     border: none;
     cursor: pointer;
     margin-left: -4px;
-    height: 2.2em;
+    padding-left: 1em;
+    height: 2.4em;
     vertical-align: top;
     -webkit-border-radius: 0 10px 10px 0;
        -moz-border-radius: 0 10px 10px 0;
@@ -141,8 +196,6 @@
 
 .dropdown-menu input[type=text]
 {
-    background: #ecebec;
-    border: none;
     line-height: 2em;
     padding: 0 10px;
     width: 272px;

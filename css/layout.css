@@ -90,7 +90,7 @@ u
     border-top: 1px #00addf solid;
     border-left: 1px #00addf solid;
     float: none;
-    min-height: 100px;
+    min-height: 50em;
     overflow: hidden;
 }
 
