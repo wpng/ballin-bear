@@ -211,3 +211,25 @@ u
 .user-action {
     display: inline-block;
 }
+
+/* loader */
+
+.loader-container
+{
+    background: #ecebec;
+    border: 2px solid #ecebec;
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+    width: 30em;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.loader
+{
+    background: url("../img/loader.jpg") repeat-x 0 0;
+    height: 12px;
+    width: 60%;
+}

@@ -146,44 +146,52 @@
         
         <section id="page-account" class="page" role="main">
             <nav id="breadcrumbs">
-                Home     Mon Compte
+                Home     Mon Compte     Profil
             </nav>
-            <div id="page-account-global">
-                <div class="module">
-                    <a href="account-profile.html" title="" class="picture-user">
-                        <img src="https://graph.facebook.com/828809796/picture?type=large" title="Samantha Kist" >
-                    </a>
-                    <h2>MON PROFIL</h2>
-                    <p>Ces informations figurent sur votre profil public, en résultats de recherches, et plus encore. Grâce à ces informations, Wepi pourra établir votre profil de besoin et vous conseillez sur ce qui vous correspond le mieux.</p>
-                </div>
-                <div class="module">
-                    <a href="#" title="">
-                        <i class="icon-round-news"></i>
-                    </a>
-                    <h2>ACTUALITÉS</h2>
-                    <p>Suivez l’actualité de tout vos ping favoris.</p>
-                </div>
-                <div class="module">
-                    <a href="#" title="">
-                        <i class="icon-round-wishlist"></i>
-                    </a>
-                    <h2>Ma wishlist</h2>
-                    <p>Retrouvez tout vos produits préférés.</p>
-                </div>
-                <div class="module">
-                    <a href="#" title="">
-                        <i class="icon-round-needs"></i>
-                    </a>
-                    <h2>MES PROFILS DE BESOIN</h2>
-                    <p>Consultez à tout moment vos résultats de quizz dans cette rubrique. Vous pourrez ,également, y changer vos réponses si vous le souhaitez.</p>
-                </div>
-                <div class="module">
-                    <a href="account-params.html" title="">
-                        <i class="icon-round-params"></i>
-                    </a>
-                    <h2>PARAMÈTRE DU COMPTE</h2>
-                    <p>Changez les paramètres de base à votre compte, votre nom, adresse électronique, la langue, votre mot de passe, ...</p>
-                </div>
+            <div id="profile-account" class="page-account-inner">
+                <h1>Mon profil</h1>
+                <form method="POST" action="" class="module">
+                    <div id="global-info-account" class="row clearfix">
+                        <div id="picture-profile">
+                            <div class="picture-user">
+                                <img src="https://graph.facebook.com/828809796/picture?type=large" title="Samantha Kist" >
+                            </div>
+                            <a href="" title="Modifier ma photo de profil" class="user-action">Modifier ma photo de profil</a>
+                        </div>
+                        <div id="details-profile" class="clearfix">
+                            <ul>
+                                <li>Prénom: <b>Samantha</b></li>
+                                <li>Nom: <b>Kist</b></li>
+                                <li>E-mail: <b>Samantha.Steenacker@gmail.com</b></li>
+                                <li>Sexe: <b>Femme</b></li>
+                                <li>Age: <b>23ans</b></li>
+                            </ul>
+                            <p id="completion-profile">Profil complet à 72%</p>
+                            <div class="loader-container">
+                                <div class="loader"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="interests-account" class="row">
+                        <h2>CENTRE D’INTÉRÊTS</h2>
+                    </div>
+                    <div id="familly-account" class="row">
+                        <h2>SITUATION FAMILIALE</h2>
+                        <label for="relationship">Situation amoureuse:</label>
+                        <div class="select">
+                            <select id="relationship">
+                                <option>Français (France)</option>
+                            </select>
+                            <span class="select-arrow">
+                                <i class="icon-arrow-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="edit-account" class="row">
+                        <input type="submit" class="cancel" name="cancel" value="ANNULER">
+                        <input type="submit" class="save" name="submit" value="ENREGISTRER LES MODIFICATIONS">
+                    </div>
+                </form>
             </div>
         </section>
     </div>

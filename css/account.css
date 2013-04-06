@@ -1,13 +1,13 @@
 /* global */
 
-#page-account-inner
+#page-account-global
 {
     margin: 2em 6%;
     position: relative;
     text-align: center;
 }
 
-#page-account-inner .module
+#page-account-global .module
 {
     display: inline-block;
     float: none;
@@ -18,7 +18,7 @@
     vertical-align: top;
 }
 
-#page-account-inner .module h2
+#page-account-global .module h2
 {
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
     font-weight: bold;
@@ -26,45 +26,67 @@
     text-transform: uppercase;
 }
 
-#page-account-inner .module p
+#page-account-global .module p
 {
     font-size: 1.9em;
     text-align: justify;
 }
 
-#page-account-inner .picture-user
+#page-account .picture-user
 {
     display: inline-block;
     overflow: hidden;
+    padding: 0;
     border: 2px solid #343434;
     -webkit-border-radius: 100px;
        -moz-border-radius: 100px;
             border-radius: 100px;
 }
 
-#page-account-inner .picture-user img
+#page-account .picture-user img
 {
     height: 16em;
     width: 16em;
 }
 
+#global-info-account .picture-user
+{
+    height: 12em;
+    width: 12em;
+}
+
+#global-info-account ul
+{
+    display: inline-block;
+    font-size: 1.9em;
+    line-height: 1.7em;
+    padding-top: 1em;
+    vertical-align: top;
+}
+
+#global-info-account b
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 1.3em;
+}
+
 /* params */
 
-#account-params
+.page-account-inner
 {
     margin: 0 auto;
     text-align: left;
     width: 70em;
 }
 
-#account-params .module
+.page-account-inner .module
 {
     display: block;
     float: none;
     width: auto;
 }
 
-#account-params h1
+.page-account-inner h1
 {
     color: #00ade0;
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
@@ -73,7 +95,7 @@
     line-height: 1.6em;
 }
 
-#account-params h2
+.page-account-inner h2
 {
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
     font-size: 2.2em;
@@ -81,7 +103,7 @@
     text-transform: uppercase;
 }
 
-#account-params label
+.page-account-inner label
 {
     display: inline-block;
     font-size: 2.2em;
@@ -89,8 +111,8 @@
     width: 35%;
 }
 
-#account-params input[type=text],
-#account-params .select
+.page-account-inner input[type=text],
+.page-account-inner .select
 {
     font-family: 'irregularisregular', Arial, sans-serif;
     height: 1.7em;
@@ -100,19 +122,19 @@
     width: 40%;
 }
 
-#account-params select
+.page-account-inner select
 {
     font-family: 'irregularisregular', Arial, sans-serif;
     font-size: 1em;
 }
 
-#account-params div
+.page-account-inner .row
 {
     border-bottom: 1px solid #f1f1f1;
     padding: 0 1em 1.5em 1em;
 }
 
-#account-params #link-account p
+.page-account-inner #link-account p
 {
     font-size: 1.9em;
     line-height: 2.5em;
@@ -121,28 +143,28 @@
     width: 64%
 }
 
-#account-params #link-account a
+.page-account-inner #link-account a
 {
     color: #f68b2c;
     text-decoration: none;
 }
 
-#account-params #link-account .user-action
+.page-account-inner #link-account .user-action
 {
     float: right;
 }
 
-#account-params #delete-account
+.page-account-inner #delete-account
 {
     padding: 0 1em;
 }
 
-#account-params #delete-account h2
+.page-account-inner #delete-account h2
 {
     display: inline;
 }
 
-#account-params #delete-account .user-action
+.page-account-inner #delete-account .user-action
 {
     color: #8b8b8b;
     float: right;
@@ -151,20 +173,80 @@
     text-decoration: none;
 }
 
-#account-params #edit-account
+.page-account-inner #edit-account
 {
     border: none;
     padding: 1em 19% 1.5em 18%;
 }
 
-#account-params #edit-account .save
+#profile-account #edit-account
+{
+    padding: 1em 5% 1.5em 5%;
+}
+
+.page-account-inner #edit-account .save
 {
     float: right;
 }
 
-#edit-account input[type=submit]
+input[type=submit]
 {
     font-size: 3em;
+}
+
+/* profile */
+
+#profile-account .loader-container
+{
+    float: right
+}
+
+#profile-account #global-info-account
+{
+    padding-top: 2em;
+}
+
+#profile-account #global-info-account #picture-profile
+{
+    display: inline-block;
+    text-align: center;
+    width: 28%;
+}
+
+#profile-account #global-info-account .user-action
+{
+    color: #515050;
+    display: block;
+    font-size: 1.6em;
+    line-height: 3em;
+    text-decoration: none;
+}
+
+#familly-account label
+{
+    width: auto;
+}
+
+#completion-profile
+{
+    float: right;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-align: right;
+    min-width: 25em;
+}
+
+#details-profile
+{
+    width: 70%;
+    float: right;
+    vertical-align: top;
+}
+
+#details-profile .loader-container
+{
+    width: 100%;
 }
 
 /* responsive */
@@ -187,16 +269,15 @@
         display: none !important;
     }
     
-    #account-params #edit-account
+    .page-account-inner #edit-account
     {
-        border: none;
         padding: 1em 5% 1.5em 5%;
     }
 }
 
 @media (max-width: 700px)
 {
-    #account-params
+    .page-account-inner
     {
         width: 98%;
     }
