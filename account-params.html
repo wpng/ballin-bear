@@ -146,10 +146,63 @@
         
         <section id="page-account" class="page" role="main">
             <nav id="breadcrumbs">
-                Home     Mon Compte
+                Home     Mon Compte     Paramètre du compte
             </nav>
-            <div class="module">
-                
+            <div id="account-params">
+                <h1>Paramètre du compte</h1>
+                <form method="POST" action="" class="module">
+                    <div id="global-info-account">
+                        <h2>Informations généraux</h2>
+                        <label for="first_name">Prénom:</label><input id="first_name" name="first_name" type="text" value="Samantha">
+                        <label for="last_name">Nom:</label><input id="last_name" name="last_name" type="text" value="Steenacker">
+                        <label for="mail">E-mai:</label><input id="mail" name="mail" type="text" value="Samanthakist@laBlonde.com">
+                        <label for="gender">Sexe:</label><input id="gender" name="gender" type="text" value="Femme">
+                        <label for="age">Age:</label><input id="age" name="age" type="text" value="23ans">
+                    </div>
+                    <div id="lang-account">
+                        <h2>Langue</h2>
+                        <label for="lang">Sélectionner votre langue:</label>
+                        <div class="select">
+                            <select id="lang">
+                                <option>Français (France)</option>
+                            </select>
+                            <span class="select-arrow">
+                                <i class="icon-arrow-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="password-account">
+                        <h2>Mot de passe</h2>
+                        <label for="password">Actuel:</label><input id="password" name="password" type="text" value="">
+                        <label for="password_new">Nouveau:</label><input id="password_new" name="password_new" type="text" value="">
+                        <label for="password_confirmation">Saisir à nouveau:</label><input id="password_confirmation" name="password_confirmation" type="text" value="">
+                    </div>
+                    <div id="link-account">
+                        <h2>Lier mes comptes</h2>
+                        <ul>
+                            <li class="clearfix">
+                                <p>Lier mon compte à Facebook</p>
+                                <a id="login-facebook" class="user-action" href="#" title="Lier mon compte à Facebook"></a>
+                            </li>
+                            <li class="clearfix">
+                                <p>Lié à Twitter (en tant que <a href="#" title="Compte Twitter de Samantha Steenacker" target="_blank">SamanthaKist</a>)</p>
+                                <a id="login-twitter" class="user-action" href="#" title="Lier mon compte à Twitter"></a>
+                            </li>
+                            <li class="clearfix">
+                                <p>Lier mon compte à Google+</p>
+                                <a id="login-google" class="user-action" href="#" title="Lier mon compte à Google+"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="delete-account">
+                        <h2>Supprimer mon compte</h2>
+                        <a class="user-action" href="#" title="Supprimer">Supprimer</a>
+                    </div>
+                    <div id="edit-account">
+                        <input type="submit" class="cancel" name="cancel" value="ANNULER">
+                        <input type="submit" class="save" name="submit" value="ENREGISTRER LES MODIFICATIONS">
+                    </div>
+                </form>
             </div>
         </section>
     </div>
