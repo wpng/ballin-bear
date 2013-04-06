@@ -6,6 +6,8 @@ var App =
             Dropdown.init();
         
         Dashboard.init();
+        
+        Slider.init();
     }
 };
 
@@ -27,5 +29,19 @@ var Dashboard =
         }
     }
 };
+
+var Slider =
+{
+    init: function()
+    {
+        $( '.product-thumbnails img' ).on( 'click', Slider.switchPicture );
+    },
+    switchPicture: function()
+    {
+        var src = $( this ).attr('src');
+        
+        $( '.product-picture' ).attr( 'src', src );
+    }
+}
 
 $( document ).ready( App.init );

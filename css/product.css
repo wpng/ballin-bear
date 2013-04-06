@@ -177,6 +177,42 @@
     width: 58%;
 }
 
+#global-info-product .product-categories
+{
+    color: #797979;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+#global-info-product .product-pictures
+{
+    float: left;
+    position: relative;
+    width: 70%;
+    text-align: center;
+}
+
+#global-info-product .product-picture
+{
+    display: inline-block;
+    padding: 1em 0;
+    width: 85%;
+}
+
+#global-info-product .product-thumbnails li
+{
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.4em 1%;
+    width: 28%;
+}
+
+#global-info-product .product-thumbnails img
+{
+    width: 80%;
+}
+
 /* geoloc */
 
 #address
