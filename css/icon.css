@@ -281,3 +281,33 @@
     margin: 1px 4px 0 0;
     width: 20px;
 }
+
+/* account */
+
+.icon-round-news
+{
+    background-position: -155px -525px;
+    height: 144px;
+    width: 146px;
+}
+
+.icon-round-wishlist
+{
+    background-position: -3px -376px;
+    height: 144px;
+    width: 147px;
+}
+
+.icon-round-needs
+{
+    background-position: -2px -525px;
+    height: 144px;
+    width: 147px;
+}
+
+.icon-round-params
+{
+    background-position: -155px -376px;
+    height: 144px;
+    width: 146px;
+}

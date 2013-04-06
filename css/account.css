@@ -1,6 +1,59 @@
+/* global */
+
+#page-account-inner
+{
+    margin: 2em 6%;
+    position: relative;
+    text-align: center;
+}
+
+#page-account-inner .module
+{
+    display: inline-block;
+    float: none;
+    padding: 2em 2%;
+    margin: 0 3% 3em 0;
+    min-width: 28em;
+    width: 25.5%;
+    vertical-align: top;
+}
+
+#page-account-inner .module h2
+{
+    font-family: 'caviar_dreamsbold', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+
+#page-account-inner .module p
+{
+    font-size: 1.9em;
+    text-align: justify;
+}
+
+#page-account-inner .picture-user
+{
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid #343434;
+    -webkit-border-radius: 100px;
+       -moz-border-radius: 100px;
+            border-radius: 100px;
+}
+
+#page-account-inner .picture-user img
+{
+    height: 16em;
+    width: 16em;
+}
+
+/* params */
+
 #account-params
 {
     margin: 0 auto;
+    text-align: left;
     width: 70em;
 }
 
@@ -113,6 +166,8 @@
 {
     font-size: 3em;
 }
+
+/* responsive */
 
 @media (max-width: 950px)
 {
