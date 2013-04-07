@@ -9,6 +9,8 @@ var App =
         
         Slider.init();
         
+        /*********** TODO clean ***********/
+        
         // SVG
         var archtype = Raphael("holder", 88, 88);
         
@@ -45,6 +47,8 @@ var App =
         var paper = Raphael("holder", 88, 88);
         var c = paper.circle(44, 44, 40);
         c.attr( { stroke: "#fdcca1", "stroke-width": 8 } );
+        
+        /*********** end clean ***********/
     } 
 };
 

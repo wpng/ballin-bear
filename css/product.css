@@ -96,6 +96,16 @@
     width: 80%;
 }
 
+#offer-products.module .products .product-info
+{
+    width: 31%;
+}
+
+#offer-products.module .products .product-seller
+{
+    width: 30%;
+}
+
 /* geoloc */
 
 #address
@@ -132,6 +142,7 @@
 
 #geoloc button
 {
+    font-size: 1.9em;
     vertical-align: middle;
     width: 23%;
 }
@@ -191,4 +202,93 @@
     font-size: 1.9em;
     text-decoration: none;
     float: right;
+}
+
+@media (max-width: 1300px)
+{
+    #dashboard
+    {
+        min-width: 37px !important;
+        width: 37px;
+    }
+    
+    #dashboard #dashboard-toggle
+    {
+        width: auto !important;
+    }
+    
+    #dashboard .toggle-name
+    {
+        display: none !important;
+    }
+}
+
+@media (max-width: 930px)
+{
+    #page-product .module
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px)
+{
+    #offers-product,
+    #global-info-product #pictures-product
+    {
+        display: block;
+        float: none;
+        width: auto;
+    }
+}
+
+@media (max-width: 530px)
+{
+    #global-info-product #pictures-product
+    {
+        float: none;
+        width: auto;
+    }
+        
+    #global-info-product .module-content
+    {
+        float: none;
+        width: auto;
+    }
+    
+    #global-info-product #user-actions
+    {
+        float: none;
+        border-left: none;
+        border-top: 1px solid #f1f1f1;
+        margin: 1.5em 0 0 0;
+        width: auto;
+    }
+    
+    #global-info-product #user-actions li
+    {
+        display: inline;
+    }
+    
+    #global-info-product #user-actions a
+    {
+        float: none;
+        margin: 0 1.5em 1.5em 1.5em;
+        display: inline-block;
+    }
+    
+    #affinity-info
+    {
+        float: none;
+        border-left: none;
+        border-top: 1px solid #f1f1f1;
+        width: auto;
+    }
+    
+    #address,
+    #geoloc
+    {
+        float: none;
+        width: auto;
+    }
 }

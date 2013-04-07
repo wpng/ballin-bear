@@ -69,6 +69,7 @@
 
 .module .products
 {
+    margin: 0 0 1.5em 0;
     width: 100%;
 }
 
@@ -80,16 +81,22 @@
     width: 100%;
 }
 
+.module .products .product:nth-child(2n)
+{
+    background: #ededef;
+}
+
 .module .products div
 {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .module .products img
 {
     display: inline;
     margin: 0 0 0 1%;
+    vertical-align: middle;
     width: 15%;
 }
 
@@ -103,6 +110,7 @@
 
 .module .products .price
 {
+    height: auto;
     text-align: right;
     width: 19%;
 }
@@ -127,6 +135,7 @@
 .module .products .product-seller img
 {
     display: inline-block;
+    vertical-align: middle;
     width: auto;
     max-width: 5.8em;
 }
@@ -134,5 +143,5 @@
 .module .products .product-seller ul
 {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
