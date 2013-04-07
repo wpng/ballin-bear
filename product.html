@@ -14,6 +14,7 @@
 	<script src="js/html5.js"></script>
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+	<script src="js/raphael-min.js"></script>
 	<script src="js/dropdown.js"></script>
 	<script src="js/bootstrap.js"></script>
 </head>
@@ -168,8 +169,8 @@
                 <div class="module-punch"></div>
                 <div class="module-content">
                     <h1>Sony DSC-S3000</h1>
-                    <div class="product-pictures">
-                        <p class="product-categories">Compris dans : Compact, Reflex, Bridge, Superman, Wonderwoman.</p>
+                    <div id="pictures-product">
+                        <p id="categories-product">Compris dans : Compact, Reflex, Bridge, Superman, Wonderwoman.</p>
                         <img src="img/dynamic/product-slider-big.png" class="product-picture" alt="Sony DSC-S3000">
                         <ul class="product-thumbnails">
                             <li>
@@ -183,7 +184,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="product-offers">
+                    <div id="offers-product">
+                        <p>
+                            <b>Appareil photo numérique compact - Sony</b>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
+                        </p>
                         <p>3 offres à partir de</p>
                         <span class="price">99 999.80 €</span>
                     </div>
@@ -217,6 +222,10 @@
                 </ul>
                 <div id="affinity-info">
                     <p>Affinité de l’animal de compagnie</p>
+                    <div id="holder" class="affinity-boat" data-num="80">
+                        <div id="affinity-score">80%</div>
+                    </div>
+                    <p>Vous aussi, calculez votre affinité</p>
                 </div>
             </div>
             <div id="advice" class="module">

@@ -35,7 +35,7 @@
     font-family: 'irregularisregular', Arial, sans-serif;
     font-size: 2.2em;
     font-weight: bold;
-    padding: 4%;
+    padding: 2em 2%;
     text-align: center;
     width: 22%;
 }
@@ -43,22 +43,30 @@
 #global-info-product .module-content
 {
     float: left;
-    width: 58%;
+    padding: 0 0em 0 1.6em;
+    width: 63%;
 }
 
-#global-info-product .product-categories
+#global-info-product #categories-product
 {
     color: #797979;
     font-size: 1.6em;
+    padding: 0 0.4em;
     text-align: left;
 }
 
-#global-info-product .product-pictures
+#global-info-product #pictures-product
 {
     float: left;
     position: relative;
-    width: 70%;
+    width: 27em;
     text-align: center;
+}
+
+#global-info-product #offers-product b
+{
+    display: block;
+    margin: 0 0 1em 0;
 }
 
 #global-info-product .product-picture
@@ -66,6 +74,12 @@
     display: inline-block;
     padding: 1em 0;
     width: 85%;
+}
+
+#global-info-product #offers-product p
+{
+    font-size: 1.9em;
+    margin: 1em 0 0 0;
 }
 
 #global-info-product .product-thumbnails li
