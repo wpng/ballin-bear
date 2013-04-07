@@ -61,6 +61,14 @@
     width: 8px;
 }
 
+.icon-arrow-right
+{
+    background-position: -152px -299px;
+    height: 5px;
+    margin: 5px 0 0 2px;
+    width: 11px;
+}
+
 .select .icon-arrow-down
 {
     background-position: -152px -299px;
@@ -82,6 +90,36 @@
     margin: 0;
     height: 39px;
     width: 19px;
+}
+
+/* checkbox */
+
+.icon-checkbox
+{
+    background-position: -93px -2px;
+    height: 10px;
+    margin: 1px 3px 0 0;
+    width: 10px;
+}
+
+input[type="radio"] + .checkbox:hover .icon-checkbox
+{
+    background-position: -93px -31px;
+}
+
+input[type="radio"]:checked + .checkbox .icon-checkbox
+{
+    background-position: -93px -16px;
+}
+
+input[type="checkbox"] + .checkbox:hover .icon-checkbox
+{
+    background-position: -84px -705px;
+}
+
+input[type="checkbox"]:checked + .checkbox .icon-checkbox
+{
+    background-position: -70px -705px;
 }
 
 /* social */
@@ -310,4 +348,30 @@
     background-position: -155px -376px;
     height: 144px;
     width: 146px;
+}
+
+/* profile */
+
+.icon-sports
+{
+    background-position: -2px -705px;
+    height: 13px;
+    margin: 0 2px 0 0;
+    width: 14px;
+}
+
+.icon-activities
+{
+    background-position: -47px -705px;
+    height: 13px;
+    margin: 0 3px 0 0;
+    width: 18px;
+}
+
+.icon-culture
+{
+    background-position: -22px -705px;
+    height: 13px;
+    margin: 0 2px 0 0;
+    width: 20px;
 }

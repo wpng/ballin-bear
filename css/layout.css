@@ -233,3 +233,84 @@ u
     height: 12px;
     width: 60%;
 }
+
+/* form */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus
+{
+    outline: none;
+}
+
+input[type=text],
+.select
+{
+    background: #ecebec;
+    border: 1px solid #ecebec;
+    display: inline-block;
+    line-height: 2em;
+    position: relative;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.select select
+{
+   background: transparent;
+   border: 0;
+   width: 100%;
+   -webkit-appearance: none;
+}
+
+.select-arrow
+{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+input:focus
+{
+    border: 1px solid #00ade0;
+}
+
+input[type=submit],
+button
+{
+    background: none;
+    border: none;
+    color: #f68b2c;
+    cursor: pointer;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    text-align: center;
+}
+
+/* radio */
+
+.checkbox
+{
+    color: #a7a7a7;
+    cursor: pointer;
+}
+
+.checkbox:hover,
+input[type="radio"]:checked + .checkbox,
+input[type="checkbox"]:checked + .checkbox
+{
+    color: #2a2a2a;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{
+    display: none;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label
+{
+    line-height: 25px;
+}

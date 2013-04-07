@@ -201,6 +201,13 @@ input[type=submit]
     float: right
 }
 
+#profile-account .checkbox
+{
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0.5em 0 0 0;
+}
+
 #profile-account #global-info-account
 {
     padding-top: 2em;
@@ -220,11 +227,6 @@ input[type=submit]
     font-size: 1.6em;
     line-height: 3em;
     text-decoration: none;
-}
-
-#familly-account label
-{
-    width: auto;
 }
 
 #completion-profile
@@ -247,6 +249,44 @@ input[type=submit]
 #details-profile .loader-container
 {
     width: 100%;
+}
+
+#interests-account .checkbox
+{
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 118px;
+}
+
+#interests-account .checkbox:hover,
+#interests-account input[type="checkbox"]:checked + .checkbox
+{
+    color: #f68b2c;
+}
+
+#interests-account h3
+{
+    color: #343434;
+    font-family: Arial, sans-serif;
+    font-size: 1.9em;
+    line-height: 2em;
+    margin: 1.2em 0 0 0;
+}
+
+#childrens-account
+{
+    margin: 1em 0 0 0;
+}
+
+#familly-account label
+{
+    width: auto;
+}
+
+#familly-account .checkbox
+{
+    margin: 0 1em 0 0.5em;
 }
 
 /* responsive */
@@ -280,5 +320,18 @@ input[type=submit]
     .page-account-inner
     {
         width: 98%;
+    }
+}
+
+@media (max-width: 525px)
+{
+    #global-info-account b
+    {
+        display: block;
+    }
+    
+    #details-profile
+    {
+        width: 64%;
     }
 }
