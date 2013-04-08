@@ -205,6 +205,11 @@ hr
     width: 2.6em;
 }
 
+#dashboard.closed .icon-arrow-right
+{
+    display: none;
+}
+
 #dashboard.closed ul
 {
     padding: 0;

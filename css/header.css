@@ -273,5 +273,12 @@
     #search-container
     {
         margin: 22px 0;
+        text-align: center;
+        width: 80%;
+    }
+    
+    #search input[type=text]
+    {
+        width: 70%;
     }
 }
