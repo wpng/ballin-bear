@@ -93,7 +93,7 @@
     margin: 0 15px;
 }
 
-#session .dropdown:hover h4,
+#session .dropdown h4:hover,
 #session .dropdown.open h4
 {
     color: #00addf;
@@ -152,6 +152,7 @@
 
 #lang .dropdown-menu
 {
+    color: #343434;
     right: -15px;
     min-width: inherit;
 }
@@ -224,4 +225,30 @@
     -webkit-border-radius: 5px 5px 0 0;
        -moz-border-radius: 5px 5px 0 0;
             border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 630px)
+{
+    #header
+    {
+        text-align: center;
+    }
+    
+    #session
+    {
+        display: block;
+        margin: 27px 10px 18px 0;
+        width: 100%;
+    }
+    
+    #logo
+    {
+        float: none;
+        margin: 10px 0 0 0;
+    }
+    
+    #search-container
+    {
+        margin: 22px 0;
+    }
 }

@@ -34,12 +34,12 @@
 {
     background-position: -36px -2px;
     height: 20px;
-    margin-top: -3px;
+    margin: -3px 3px 0 0;
     width: 20px;
 }
 
-.dropdown:hover .icon-fr,
-.dropdown.open .icon-fr
+.dropdown h4:hover .icon-fr,
+.dropdown.open h4 .icon-fr
 {
     background-position: -36px -27px;
 }
@@ -77,8 +77,13 @@
     width: 11px;
 }
 
-.dropdown:hover .icon-arrow-down,
-.dropdown.open .icon-arrow-down
+.dropdown .icon-arrow-down
+{
+    margin: 5px 0 0 2px;
+}
+
+.dropdown h4:hover .icon-arrow-down,
+.dropdown.open h4 .icon-arrow-down
 {
     background-position: -108px -12px;
 }
