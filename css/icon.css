@@ -69,6 +69,48 @@
     width: 11px;
 }
 
+#dashboard h4 .icon-arrow-right
+{
+    background-position: -159px -52px;
+    height: 6px;
+    margin: 7px 0 0 4px;
+    width: 10px;
+}
+
+#dashboard h5 .icon-arrow-right
+{
+    background-position: -174px -52px;
+    height: 6px;
+    margin: 7px 0 0 4px;
+    width: 10px;
+}
+
+#dashboard h6 .icon-arrow-right
+{
+    background-position: -174px -52px;
+    height: 6px;
+    margin: 5px 0 0 4px;
+    width: 10px;
+}
+
+#dashboard .dropdown.open > h4 .icon-arrow-right,
+#dashboard h4:hover .icon-arrow-right
+{
+    background-position: -159px -71px;
+}
+
+#dashboard .dropdown.open > h5 .icon-arrow-right,
+#dashboard h5:hover .icon-arrow-right
+{
+    background-position: -174px -71px;
+}
+
+#dashboard .dropdown.open > h6 .icon-arrow-right,
+#dashboard h6:hover .icon-arrow-right
+{
+    background-position: -174px -71px;
+}
+
 .select .icon-arrow-down
 {
     background-position: -152px -299px;
