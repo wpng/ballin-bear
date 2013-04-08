@@ -38,6 +38,7 @@
 
 #footer .fb-like
 {
+    display:    block;
     margin: 10px 0 0 0;
 }
 
