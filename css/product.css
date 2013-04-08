@@ -79,8 +79,13 @@
 #global-info-product #offers-product p
 {
     font-size: 1.9em;
-    margin: 1em 0 0 0;
 }
+
+#global-info-product #offers-product p:nth-child(n+2)
+{
+	margin: 1em 0 0 0;
+}
+
 
 #global-info-product .product-thumbnails li
 {
