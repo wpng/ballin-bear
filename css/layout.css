@@ -268,8 +268,8 @@ input[type=text],
 .select-arrow
 {
     position: absolute;
-    right: 10px;
-    top: 6px;
+    right: 17px;
+    top: 9px;
 }
 
 input:focus
