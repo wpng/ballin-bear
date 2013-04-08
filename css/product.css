@@ -209,7 +209,7 @@
     float: right;
 }
 
-@media (max-width: 1300px)
+@media (max-width: 1024px)
 {
     #dashboard
     {
@@ -249,6 +249,7 @@
 
 @media (max-width: 530px)
 {
+
     #global-info-product #pictures-product
     {
         float: none;
