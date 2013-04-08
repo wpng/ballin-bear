@@ -57,16 +57,25 @@ var Dashboard =
     init: function()
     {
         $( '#dashboard-toggle' ).on( 'click', Dashboard.stateChange );
+        
+        var deviceWidth = $(window).width();
+        
+        if ( deviceWidth <= 1024 )
+        {
+            $( '#dashboard' ).removeClass('open').addClass('closed');
+        }
     },
     stateChange: function( event )
     {
         if ( $( '#dashboard' ).hasClass('open') )
         {
-            $( '#dashboard' ).switchClass( "open", "closed", 300 );
+            $( '#dashboard' ).removeClass('open').addClass('closed');
+            //$( '#dashboard' ).switchClass( "open", "closed", 300 );
         }
         else
         {
-            $( '#dashboard' ).switchClass( "closed", "open", 300 );
+            $( '#dashboard' ).removeClass('closed').addClass('open');
+            //$( '#dashboard' ).switchClass( "closed", "open", 300 );
         }
     }
 };
