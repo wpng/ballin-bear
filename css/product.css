@@ -213,13 +213,7 @@
 {
     #dashboard
     {
-        min-width: 37px !important;
         width: 37px;
-    }
-    
-    #dashboard #dashboard-toggle
-    {
-        width: auto !important;
     }
     
     #dashboard .toggle-name
