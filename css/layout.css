@@ -338,39 +338,3 @@ input[type="checkbox"] + label
     line-height: 3.4em;
     text-align: center;
 }
-
-/* home */
-
-#graphics-home
-{
-    margin: 0 auto;
-    text-align: center;
-    width: 720px;
-}
-
-#graphics-home h1
-{
-    font-family: 'caviar_dreamsregular', Arial, sans-serif;
-    font-size: 5em;
-}
-
-#graphics-home p
-{
-    font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 3em;
-}
-
-#main-start-quizz
-{
-    background: #00b7ed;
-    color: #fff;
-    display: inline-block;
-    font-size: 3em;
-    line-height: 3em;
-    padding: 0 0.4em;
-    text-transform: uppercase;
-    text-decoration: none;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-}

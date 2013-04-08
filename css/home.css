@@ -1,0 +1,118 @@
+/* home */
+
+#graphics-home
+{
+    background: url("../img/circle-home.png") no-repeat top center;
+    margin: 170px auto 0 auto;
+    min-height: 420px;
+    padding: 160px 0  0 0;
+    position: relative;
+    text-align: center;
+    width: 446px;
+}
+
+#graphics-home h1
+{
+    font-family: 'caviar_dreamsregular', Arial, sans-serif;
+    font-size: 5em;
+    margin: 0 auto;
+    width: 380px;
+}
+
+#graphics-home p
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#graphics-home .graphics-home
+{
+    width: 130px;
+    position: absolute;
+}
+
+#main-start-quizz
+{
+    background: #00b7ed;
+    color: #fff;
+    display: inline-block;
+    font-size: 3em;
+    line-height: 3em;
+    margin: 20px 0 0 0;
+    padding: 0 0.4em;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+
+#graphics-home #dont-know-graphics
+{
+    left: 158px;
+    width: 130px;
+    top: -160px;
+}
+
+#graphics-home #answer-graphics
+{
+    top: -50px;
+    width: 170px;
+    right: -78px;
+}
+
+#graphics-home #affinity-bot-graphics
+{
+    top: 150px;
+    width: 180px;
+    right: -160px;
+}
+
+#graphics-home #geoloc-graphics
+{
+    top: 415px;
+    width: 180px;
+    right: -20px;
+}
+
+#graphics-home #buy-graphics
+{
+    right: 170px;
+    width: 130px;
+    top: 450px;
+}
+
+#graphics-home #range-graphics
+{
+    left: -70px;
+    width: 130px;
+    top: 350px;
+}
+
+#graphics-home #partners-graphics
+{
+    left: -165px;
+    width: 170px;
+    top: 110px;
+}
+
+@media (max-width: 780px)
+{   
+    #graphics-home 
+    {
+        background: none;
+        padding: 0;
+        width: auto;
+    }
+    
+    #graphics-home h1
+    {
+        width: auto;
+    }
+    
+    #graphics-home .graphics-home
+    {
+        display: none;
+    }
+}

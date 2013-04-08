@@ -375,3 +375,67 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     margin: 0 2px 0 0;
     width: 20px;
 }
+
+/* home */
+
+#page-home [class^="icon-"],
+#page-home [class*=" icon-"]
+{
+    background: url("../img/sprite-home.png") no-repeat 0 0;
+}
+
+#page-home .icon-dont-know-graphics
+{
+    background-position: -28px -17px;
+    height: 121px;
+    margin: 0 0 5px 30px;
+    width: 125px;
+}
+
+#page-home .icon-answer-graphics
+{
+    background-position: -167px -17px;
+    height: 82px;
+    margin: 0 0 5px 20px;
+    width: 82px;
+}
+
+#page-home .icon-affinity-bot-graphics
+{
+    background-position: -261px -17px;
+    height: 124px;
+    margin: 0 0 5px 0;
+    width: 93px;
+}
+
+#page-home .icon-geoloc-graphics
+{
+    background-position: -383px -17px;
+    height: 80px;
+    margin: 0 0 5px 0;
+    width: 101px;
+}
+
+#page-home .icon-buy-graphics
+{
+    background-position: -675px -17px;
+    height: 78px;
+    margin: 0 0 5px 0;
+    width: 94px;
+}
+
+#page-home .icon-range-graphics
+{
+    background-position: -791px -17px;
+    height: 92px;
+    margin: 0 0 5px 0;
+    width: 120px;
+}
+
+#page-home .icon-partners-graphics
+{
+    background-position: -523px -17px;
+    height: 80px;
+    margin: 0 0 5px 0;
+    width: 126px;
+}
