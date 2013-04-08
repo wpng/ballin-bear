@@ -1,13 +1,19 @@
 var App =
 {
+    isMobile: false,
     init: function()
     {
+        if ( $(window).width() <= 1024 )
+            App.isMobile = true;
+        
         if ( typeof Dropdown != 'undefined' )
             Dropdown.init();
         
         Dashboard.init();
         
         Slider.init();
+        
+        Form.title();
         
         /*********** TODO clean ***********/
         
@@ -37,16 +43,16 @@ var App =
         };
 
         // animate
-        var my_arc = archtype.path().attr( { "fill": "none", "stroke": "#f68b2c", "stroke-width": 8, arc: [44, 44, 0, 100, 40] } );
+        var my_arc = archtype.path().attr( {"fill": "none", "stroke": "#f68b2c", "stroke-width": 8, arc: [44, 44, 0, 100, 40]} );
         
-        var anim = Raphael.animation(  { arc: [44, 44, 80, 100, 40] }, 1000, "linear" );
+        var anim = Raphael.animation(  {arc: [44, 44, 80, 100, 40]}, 1000, "linear" );
         
         my_arc.animate( anim.delay( 500 ) ); 
         
         // bg
         var paper = Raphael("holder", 88, 88);
         var c = paper.circle(44, 44, 40);
-        c.attr( { stroke: "#fdcca1", "stroke-width": 8 } );
+        c.attr( {stroke: "#fdcca1", "stroke-width": 8} );
         
         /*********** end clean ***********/
     } 
@@ -58,12 +64,8 @@ var Dashboard =
     {
         $( '#dashboard-toggle' ).on( 'click', Dashboard.stateChange );
         
-        var deviceWidth = $(window).width();
-        
-        if ( deviceWidth <= 1024 )
-        {
+        if ( App.isMobile )
             $( '#dashboard' ).removeClass('open').addClass('closed');
-        }
     },
     stateChange: function( event )
     {
@@ -91,6 +93,35 @@ var Slider =
         var src = $( this ).attr('src');
         
         $( '.product-picture' ).attr( 'src', src );
+    }
+}
+
+var Form =
+{
+    title: function()
+    {
+        $('textarea[title], :input[title]').each(function()
+        {
+            var $this = $(this);
+            if($this.val() === '')
+            {
+                $this.val($this.attr('title'));
+            }
+            $this.focus(function()
+            {
+                if($this.val() === $this.attr('title'))
+                {
+                    $this.val('');
+                }
+            });
+            $this.blur(function()
+            {
+                if($this.val() === '')
+                {
+                    $this.val($this.attr('title'));
+                }
+            });
+        });
     }
 }
 

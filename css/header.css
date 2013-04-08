@@ -110,6 +110,30 @@
     display: block;
 }
 
+#session #last_name
+{
+    float: left;
+    width: 41%;
+}
+
+#session #first_name
+{
+    float: right;
+    width: 41%;
+}
+
+#session input[type=text]
+{
+    margin: 0 0 0.5em 0;
+}
+
+#session input[type=submit]
+{
+    float: right;
+    font-size: 1.8em;
+    margin: 0.3em 0 0 0;
+}
+
 .dropdown-menu
 {
     background: #fff;
@@ -117,7 +141,7 @@
     right: -120px;
     min-width: 290px;
     min-height: 50px;
-    padding: 10px;
+    padding: 0.8em 0.8em 0 0.8em;
     position: absolute;
     top: 25px;
     z-index: 9;
@@ -140,7 +164,8 @@
     padding: 0;
 }
 
-.dropdown-menu input[type=text]
+.dropdown-menu input[type=text],
+.dropdown-menu input[type=password]
 {
     line-height: 2em;
     padding: 0 10px;
