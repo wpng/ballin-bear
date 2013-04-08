@@ -19,7 +19,7 @@
 #footer nav.complementary h4
 {
     font-size: 3.9em;
-    line-height: 2em;
+    line-height: 1em;
 }
 
 #footer nav.complementary a
@@ -40,6 +40,16 @@
 {
     display:    block;
     margin: 10px 0 0 0;
+}
+
+#footer ul
+{
+    padding: 0 0 0 14px;
+}
+
+#footer li
+{
+    list-style-image: url("../img/icon-list.png");
 }
 
 #copyright
