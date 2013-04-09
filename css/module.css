@@ -54,6 +54,13 @@
     font-weight: bold;
 }
 
+.module .ping
+{
+    color: #f68b2c;
+    font-size: 3.1em;
+    font-weight: bold;
+}
+
 .module .available
 {
     color: #24a601;
@@ -152,6 +159,7 @@
 {
     border-left: 2px solid #f1f1f1;
     float: right;
+    font-family: 'irregularisregular', Arial, sans-serif;
     font-size: 2.2em;
     font-weight: bold;
     padding: 2.5em 2%;

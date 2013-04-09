@@ -25,6 +25,32 @@
     margin: 0 0 1em 0;
 }
 
+#global-info-product .product-from
+{
+    float: left;
+    margin: 2em 0 0 0;
+}
+
+#global-info-product .product-from p,
+#global-info-product .product-ping p
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+#global-info-product .product-from p span
+{
+    color: #009fce;
+}
+
+#global-info-product .product-ping
+{
+    float: right;
+    margin: 2em 0 0 0;
+    text-align: right;
+}
+
 /* featured products */
 
 #featured-products .module-content
@@ -87,6 +113,7 @@
     float: none;
     border-left: none;
     border-top: 1px solid #f1f1f1;
+    line-height: 3.6em;
     margin: 1.5em 0 0 0;
     width: auto;
 }
