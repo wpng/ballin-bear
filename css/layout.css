@@ -116,6 +116,17 @@ hr
     position: relative;
 }
 
+.user-profile .user-picture
+{
+    float: left;
+    margin-right: 5px;
+}
+
+#dashboard .user-profile > ul
+{
+    padding: 0 0 0 5.5em
+}
+
 /* toggle */
 
 #dashboard-toggle
@@ -363,21 +374,21 @@ input[type="checkbox"] + label
 
 /* affinity boat */
 
-.affinity-boat
+.affinity-bot
 {
     position: relative;
     margin: 0 auto;
     width: 88px;
 }
 
-.affinity-boat svg
+.affinity-bot svg
 {
     position: absolute !important;
     top: 10px;
     left: 0;
 }
 
-#affinity-score
+.affinity-score
 {
     font-size: 2.6em;
     padding: 0 0 0 0.1em;

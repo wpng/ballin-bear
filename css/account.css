@@ -13,6 +13,7 @@
     float: none;
     padding: 2em 2%;
     margin: 0 3% 3em 0;
+    min-height: 30em;
     min-width: 28em;
     width: 25.5%;
     vertical-align: top;
@@ -292,23 +293,7 @@ input[type=submit]
 /* responsive */
 
 @media (max-width: 950px)
-{
-    #dashboard
-    {
-        min-width: 37px !important;
-        width: 37px;
-    }
-    
-    #dashboard #dashboard-toggle
-    {
-        width: auto !important;
-    }
-    
-    #dashboard .toggle-name
-    {
-        display: none !important;
-    }
-    
+{   
     .page-account-inner #edit-account
     {
         padding: 1em 5% 1.5em 5%;

@@ -19,27 +19,6 @@
     position: relative;
 }
 
-#global-info-product #user-actions
-{
-    border-left: 2px solid #f1f1f1;
-    float: right;
-    line-height: 5.6em;
-    text-align: center;
-    width: 7%;
-}
-
-#affinity-info
-{
-    border-left: 2px solid #f1f1f1;
-    float: right;
-    font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2.2em;
-    font-weight: bold;
-    padding: 2.5em 2%;
-    text-align: center;
-    width: 22%;
-}
-
 #global-info-product .module-content
 {
     float: left;
@@ -85,7 +64,6 @@
 {
 	margin: 1em 0 0 0;
 }
-
 
 #global-info-product .product-thumbnails li
 {
@@ -172,43 +150,6 @@
     padding: 0 0 0.4em 0;
 }
 
-/* advice & did you know */
-
-#advice .module-content,
-#did-you-know .module-content
-{
-    padding: 0 2.9em 2em 3.8em;
-}
-
-#advice,
-#did-you-know
-{
-    float: right;
-    width: 33%;
-}
-
-#advice h3,
-#did-you-know h3
-{
-    font-size: 2.8em;
-    font-family: 'irregularisregular', Arial, sans-serif;
-    font-weight: bold;
-    line-height: 2.5em;
-}
-
-#advice img
-{
-    width: 100%;
-}
-
-#advice a
-{
-    color: #f68b2c;
-    font-size: 1.9em;
-    text-decoration: none;
-    float: right;
-}
-
 @media (max-width: 1024px)
 {
     #dashboard
@@ -262,7 +203,7 @@
         width: auto;
     }
     
-    #global-info-product #user-actions
+    #global-info-product .user-actions
     {
         float: none;
         border-left: none;
@@ -271,12 +212,12 @@
         width: auto;
     }
     
-    #global-info-product #user-actions li
+    #global-info-product .user-actions li
     {
         display: inline;
     }
     
-    #global-info-product #user-actions a
+    #global-info-product .user-actions a
     {
         float: none;
         margin: 0 1.5em 1.5em 1.5em;

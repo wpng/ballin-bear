@@ -1,23 +1,22 @@
 <!doctype html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<meta content="True" name="HandheldFriendly">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-	<title>Wepingo</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/icon.css">
-	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/module.css">
-	<link rel="stylesheet" href="css/product.css">
-	<script src="js/html5.js"></script>
-	<script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/jquery-ui-1.10.2.custom.min.js"></script>
-	<script src="js/raphael-min.js"></script>
-	<script src="js/dropdown.js"></script>
+    <meta charset="utf-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>Wepingo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="js/html5.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/dropdown.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/svg.js"></script>
 </head>
@@ -95,14 +94,18 @@
                 <h4 class="toggle-name">Univers</h4> <i class="icon-toggle"></i> <span class="toggle-arrow"><i class="icon-arrow-toggle"></i></span>
             </div>
             <ul>
-                <li class="dropdown">
-                    <h4 class="menu"><i class="icon-camera"></i>Photos, caméscope</h4>
+                <li class="dropdown" data-level="1">
+                    <h4 class="menu"><i class="icon-camera"></i><span>Mon compte</span><i class="icon-arrow-right"></i></h4>
+                </li>
+                <li class="dropdown" data-level="1">
+                    <hr>
+                    <h4 class="menu"><i class="icon-camera"></i><span>Photos, caméscope</span><i class="icon-arrow-right"></i></h4>
                     <ul>
-                        <li class="dropdown">
-                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos</h5>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
                             <ul>
-                                <li class="dropdown">
-                                    <h6 class="menu">Les compacts</h6>
+                                <li class="dropdown" data-level="3">
+                                    <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
                                     <ul>
                                         <li>
                                             <a href="" title="Les nomades">Les nomades</a>
@@ -117,8 +120,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <h5 class="menu"><i class="icon-profiles"></i>Profils d’utilisations</h5>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-profiles"></i>Profils d’utilisations<i class="icon-arrow-right"></i></h5>
                             <ul>
                                 <li>
                                     <a href="" title="Je suis père de famille">Je suis père de famille</a>
@@ -131,19 +134,20 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <h5 class="menu"><i class="icon-camcorder"></i>Caméscope</h5>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camcorder"></i>Caméscope<i class="icon-arrow-right"></i></h5>
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <h4 class="menu"><i class="icon-tv"></i>Tv, Vidéo, Home Cinéma</h4>
+                <li class="dropdown" data-level="1">
+                    <hr>
+                    <h4 class="menu"><i class="icon-tv"></i><span>Tv, Vidéo, Home Cinéma</span><i class="icon-arrow-right"></i></h4>
                     <ul>
-                        <li class="dropdown">
-                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos</h5>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
                             <ul>
-                                <li class="dropdown">
-                                    <h6 class="menu">Les compacts</h6>
+                                <li class="dropdown" data-level="3">
+                                    <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
                                     <ul>
                                         <li>
                                             <a href="" title="Les nomades">Les nomades</a>
@@ -196,7 +200,7 @@
                         <span class="price">99 999.80 €</span>
                     </div>
                 </div>
-                <ul id="user-actions">
+                <ul class="user-actions">
                     <li>
                         <a href="#" title="" class="user-action">
                             <i class="icon-ping"></i>
@@ -225,8 +229,8 @@
                 </ul>
                 <div id="affinity-info">
                     <p>Affinité de l’animal de compagnie</p>
-                    <div id="holder" class="affinity-boat" data-num="80">
-                        <div id="affinity-score">80%</div>
+                    <div id="holder" class="affinity-bot" data-num="80">
+                        <div class="affinity-score">80%</div>
                     </div>
                     <p>Vous aussi, calculez votre affinité</p>
                 </div>

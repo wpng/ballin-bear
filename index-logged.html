@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/home.css">
 	<script src="js/html5.js"></script>
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery-ui-1.10.2.custom.min.js"></script>
@@ -34,7 +35,7 @@
         </a>
         <nav id="session">
             <div id="user" class="dropdown">
-                <img src="https://graph.facebook.com/828809796/picture" title="Samantha Kist" height="40"> <h4>Samantha Kist<i class="icon-arrow-down"></i></h4>
+                <img class="user-picture" src="https://graph.facebook.com/828809796/picture" title="Samantha Kist" height="40"> <h4>Samantha Kist<i class="icon-arrow-down"></i></h4>
                 <div class="dropdown-menu">
                     <span class="dropdown-arrow">
                         <i class="icon-arrow-up"></i>
@@ -69,19 +70,51 @@
     
     <!-- wrapper -->
     <div id="wrapper" class="clearfix">
+        
+        <!-- sidebar -->
         <nav id="dashboard" class="open" role="navigation">
             <div id="dashboard-toggle">
                 <h4 class="toggle-name">Univers</h4> <i class="icon-toggle"></i> <span class="toggle-arrow"><i class="icon-arrow-toggle"></i></span>
             </div>
             <ul>
-                <li class="dropdown">
-                    <h4 class="menu">Photos, caméscope</h4>
+                <li class="user-profile dropdown clearfix" data-level="1">
+                    <img class="user-picture" src="https://graph.facebook.com/828809796/picture" title="Samantha Kist" height="40">
+                    <h4 class="menu"><span>Samantha Kist</span><i class="icon-arrow-right"></i></h4>
                     <ul>
-                        <li class="dropdown">
-                            <h5 class="menu">Appareils Photos</h5>
+                        <li>
+                            <h5 class="menu">Mon profil</h5>
+                        </li>
+                        <li>
+                            <h5 class="menu">Mes actualités</h5>
+                        </li>
+                        <li>
+                            <h5 class="menu">Ma wishlist</h5>
+                        </li>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu">Mes profils de besoin<i class="icon-arrow-right"></i></h5>
                             <ul>
-                                <li class="dropdown">
-                                    <h6 class="menu">Les compacts</h6>
+                                <li>
+                                    <a href="" title="Les nomades">Les nomades</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Les performants">Les performants</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Les ultra-légers">Les ultra-légers</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown" data-level="1">
+                    <hr>
+                    <h4 class="menu"><i class="icon-camera"></i><span>Photos, caméscope</span><i class="icon-arrow-right"></i></h4>
+                    <ul>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
+                            <ul>
+                                <li class="dropdown" data-level="3">
+                                    <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
                                     <ul>
                                         <li>
                                             <a href="" title="Les nomades">Les nomades</a>
@@ -96,8 +129,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <h5 class="menu">Profils d’utilisations</h5>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-profiles"></i>Profils d’utilisations<i class="icon-arrow-right"></i></h5>
                             <ul>
                                 <li>
                                     <a href="" title="Je suis père de famille">Je suis père de famille</a>
@@ -110,16 +143,20 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camcorder"></i>Caméscope<i class="icon-arrow-right"></i></h5>
+                        </li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <h4 class="menu">Tv, Vidéo, Home Cinéma</h4>
+                <li class="dropdown" data-level="1">
+                    <hr>
+                    <h4 class="menu"><i class="icon-tv"></i><span>Tv, Vidéo, Home Cinéma</span><i class="icon-arrow-right"></i></h4>
                     <ul>
-                        <li class="dropdown">
-                            <h5 class="menu">Appareils Photos</h5>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
                             <ul>
-                                <li class="dropdown">
-                                    <h6 class="menu">Les compacts</h6>
+                                <li class="dropdown" data-level="3">
+                                    <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
                                     <ul>
                                         <li>
                                             <a href="" title="Les nomades">Les nomades</a>
@@ -138,13 +175,41 @@
                 </li>
             </ul>
         </nav>
+        
+        <!-- home -->
         <section id="page-home" class="page" role="main">
-            <p style="font-size:2em;margin-bottom:1em;padding:1em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed dui et diam commodo scelerisque. Mauris quis eros quam, eget varius odio. Suspendisse quis enim ut sem pharetra faucibus et a tellus. Quisque fringilla tincidunt erat ac aliquet. Donec dignissim suscipit mi, eget vehicula arcu faucibus at. Praesent quis est nulla. Phasellus fringilla, tellus vehicula venenatis luctus, mauris sem eleifend felis, ut sagittis nunc tortor accumsan dui. Nullam porta nunc vitae mi aliquam tincidunt non vitae eros. Praesent blandit dolor eget tortor luctus gravida. Maecenas ut consequat sapien. In vestibulum urna id libero sollicitudin eleifend. Nunc vitae mattis urna. Nullam dapibus quam nec purus convallis non ultricies augue dapibus. Sed sodales leo feugiat mauris semper molestie. Sed ut sollicitudin nibh.</p>
-            <p style="font-size:2em;margin-bottom:1em;padding:1em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed dui et diam commodo scelerisque. Mauris quis eros quam, eget varius odio. Suspendisse quis enim ut sem pharetra faucibus et a tellus. Quisque fringilla tincidunt erat ac aliquet. Donec dignissim suscipit mi, eget vehicula arcu faucibus at. Praesent quis est nulla. Phasellus fringilla, tellus vehicula venenatis luctus, mauris sem eleifend felis, ut sagittis nunc tortor accumsan dui. Nullam porta nunc vitae mi aliquam tincidunt non vitae eros. Praesent blandit dolor eget tortor luctus gravida. Maecenas ut consequat sapien. In vestibulum urna id libero sollicitudin eleifend. Nunc vitae mattis urna. Nullam dapibus quam nec purus convallis non ultricies augue dapibus. Sed sodales leo feugiat mauris semper molestie. Sed ut sollicitudin nibh.</p>
-            <p style="font-size:2em;margin-bottom:1em;padding:1em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed dui et diam commodo scelerisque. Mauris quis eros quam, eget varius odio. Suspendisse quis enim ut sem pharetra faucibus et a tellus. Quisque fringilla tincidunt erat ac aliquet. Donec dignissim suscipit mi, eget vehicula arcu faucibus at. Praesent quis est nulla. Phasellus fringilla, tellus vehicula venenatis luctus, mauris sem eleifend felis, ut sagittis nunc tortor accumsan dui. Nullam porta nunc vitae mi aliquam tincidunt non vitae eros. Praesent blandit dolor eget tortor luctus gravida. Maecenas ut consequat sapien. In vestibulum urna id libero sollicitudin eleifend. Nunc vitae mattis urna. Nullam dapibus quam nec purus convallis non ultricies augue dapibus. Sed sodales leo feugiat mauris semper molestie. Sed ut sollicitudin nibh.</p>
-            <p style="font-size:2em;margin-bottom:1em;padding:1em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed dui et diam commodo scelerisque. Mauris quis eros quam, eget varius odio. Suspendisse quis enim ut sem pharetra faucibus et a tellus. Quisque fringilla tincidunt erat ac aliquet. Donec dignissim suscipit mi, eget vehicula arcu faucibus at. Praesent quis est nulla. Phasellus fringilla, tellus vehicula venenatis luctus, mauris sem eleifend felis, ut sagittis nunc tortor accumsan dui. Nullam porta nunc vitae mi aliquam tincidunt non vitae eros. Praesent blandit dolor eget tortor luctus gravida. Maecenas ut consequat sapien. In vestibulum urna id libero sollicitudin eleifend. Nunc vitae mattis urna. Nullam dapibus quam nec purus convallis non ultricies augue dapibus. Sed sodales leo feugiat mauris semper molestie. Sed ut sollicitudin nibh.</p>
-            <p style="font-size:2em;margin-bottom:1em;padding:1em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed dui et diam commodo scelerisque. Mauris quis eros quam, eget varius odio. Suspendisse quis enim ut sem pharetra faucibus et a tellus. Quisque fringilla tincidunt erat ac aliquet. Donec dignissim suscipit mi, eget vehicula arcu faucibus at. Praesent quis est nulla. Phasellus fringilla, tellus vehicula venenatis luctus, mauris sem eleifend felis, ut sagittis nunc tortor accumsan dui. Nullam porta nunc vitae mi aliquam tincidunt non vitae eros. Praesent blandit dolor eget tortor luctus gravida. Maecenas ut consequat sapien. In vestibulum urna id libero sollicitudin eleifend. Nunc vitae mattis urna. Nullam dapibus quam nec purus convallis non ultricies augue dapibus. Sed sodales leo feugiat mauris semper molestie. Sed ut sollicitudin nibh.</p>
-            <p style="font-size:2em;margin-bottom:1em;padding:1em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed dui et diam commodo scelerisque. Mauris quis eros quam, eget varius odio. Suspendisse quis enim ut sem pharetra faucibus et a tellus. Quisque fringilla tincidunt erat ac aliquet. Donec dignissim suscipit mi, eget vehicula arcu faucibus at. Praesent quis est nulla. Phasellus fringilla, tellus vehicula venenatis luctus, mauris sem eleifend felis, ut sagittis nunc tortor accumsan dui. Nullam porta nunc vitae mi aliquam tincidunt non vitae eros. Praesent blandit dolor eget tortor luctus gravida. Maecenas ut consequat sapien. In vestibulum urna id libero sollicitudin eleifend. Nunc vitae mattis urna. Nullam dapibus quam nec purus convallis non ultricies augue dapibus. Sed sodales leo feugiat mauris semper molestie. Sed ut sollicitudin nibh.</p>
+            <div id="graphics-home">
+                <h1>Trouvez le produit qui vous correspond !</h1>
+                <a href="" title="Commencez l'expérience" id="main-start-quizz">Commencez l'expérience</a>
+                <div id="dont-know-graphics" class="graphics-home">
+                    <i class="icon-dont-know-graphics"></i>
+                    <p>Vous ne savez pas quoi acheter</p>
+                </div>
+                <div id="answer-graphics" class="graphics-home">
+                    <i class="icon-answer-graphics"></i>
+                    <p>En répondant a un court questionnaire</p>
+                </div>
+                <div id="affinity-bot-graphics" class="graphics-home">
+                    <i class="icon-affinity-bot-graphics"></i>
+                    <p>L'affinity-Bot, calcule votre affinité produit.</p>
+                </div>
+                <div id="geoloc-graphics" class="graphics-home">
+                    <i class="icon-geoloc-graphics"></i>
+                    <p>Ou géolocalisez-vous et réservez votre produit dans la boutique la plus proche</p>
+                </div>
+                <div id="buy-graphics" class="graphics-home">
+                    <i class="icon-buy-graphics"></i>
+                    <p>Achetez en ligne via notre site web</p>
+                </div>
+                <div id="range-graphics" class="graphics-home">
+                    <i class="icon-range-graphics"></i>
+                    <p>Vous êtes plusieurs a vouloir une gamme</p>
+                </div>
+                <div id="partners-graphics" class="graphics-home">
+                    <i class="icon-partners-graphics"></i>
+                    <p>Grâce à cela, nous mettons en concurrence nos partenaires</p>
+                </div>
+            </div>
         </section>
     </div>
     

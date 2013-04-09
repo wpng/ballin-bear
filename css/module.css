@@ -144,3 +144,65 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+/* affinity info */
+
+#affinity-info
+{
+    border-left: 2px solid #f1f1f1;
+    float: right;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 2.5em 2%;
+    text-align: center;
+    width: 22%;
+}
+
+/* user actions */
+
+.user-actions
+{
+    border-left: 2px solid #f1f1f1;
+    float: right;
+    line-height: 5.6em;
+    text-align: center;
+    width: 7%;
+}
+
+/* advice & did you know */
+
+#advice .module-content,
+#did-you-know .module-content
+{
+    padding: 0 2.9em 2em 3.8em;
+}
+
+#advice,
+#did-you-know
+{
+    float: right;
+    width: 33%;
+}
+
+#advice h3,
+#did-you-know h3
+{
+    font-size: 2.8em;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 2.5em;
+}
+
+#advice img
+{
+    width: 100%;
+}
+
+#advice a
+{
+    color: #f68b2c;
+    font-size: 1.9em;
+    text-decoration: none;
+    float: right;
+}

@@ -68,7 +68,7 @@
     display: inline;
 }
 
-#session #user img
+.user-picture
 {
     border: 1px solid #909090;
     min-height: 40px;
