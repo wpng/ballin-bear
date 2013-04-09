@@ -4,6 +4,8 @@
     padding: 0 7%;
 }
 
+/* global info product */
+
 #global-info-product .module-content
 {
     float: left;
@@ -21,4 +23,97 @@
 {
     display: block;
     margin: 0 0 1em 0;
+}
+
+/* featured products */
+
+#featured-products .module-content
+{
+    padding: 0;
+}
+
+#featured-products .user-picture
+{
+    min-height: 27px;
+    min-width: 27px;
+    margin: 0.4em 0.4em 0 1em;
+}
+
+#featured-products .user-name
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 3.2em;
+    vertical-align: top;
+}
+
+#featured-products h2
+{
+    display: inline-block;
+    padding: 0 0 0 0.8em;
+    vertical-align: top;
+}
+
+#featured-products .product
+{
+    border-right: 1px solid #f1f1f1;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    width: 33%;
+}
+
+#featured-products .product img
+{
+    margin: 1em 0;
+}
+
+#featured-products .product p
+{
+    font-size: 2em;
+    padding: 1em;
+}
+
+#featured-products .product b
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 2em;
+    display: block;
+}
+
+#featured-products .user-actions
+{
+    float: none;
+    border-left: none;
+    border-top: 1px solid #f1f1f1;
+    margin: 1.5em 0 0 0;
+    width: auto;
+}
+
+#featured-products .user-actions li
+{
+    display: inline;
+}
+
+#featured-products .user-actions a
+{
+    float: none;
+    margin: 0 1.5em 1.5em 1.5em;
+    display: inline-block;
+}
+
+#featured-products .affinity-bot
+{
+    width: 44px;
+}
+
+#featured-products .affinity-score
+{
+    line-height: 3em;
+}
+
+#featured-products .affinity-bot svg
+{
+    top: 0 !important;
 }

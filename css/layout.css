@@ -376,6 +376,7 @@ input[type="checkbox"] + label
 
 .affinity-bot
 {
+    font-family: 'irregularisregular', Arial, sans-serif;
     position: relative;
     margin: 0 auto;
     width: 88px;
@@ -384,8 +385,8 @@ input[type="checkbox"] + label
 .affinity-bot svg
 {
     position: absolute !important;
-    top: 10px;
-    left: 0;
+    top: 10px !important;
+    left: 0 !important;
 }
 
 .affinity-score
