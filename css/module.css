@@ -180,12 +180,14 @@
 
 /* advice & did you know */
 
+#go .module-content,
 #advice .module-content,
 #did-you-know .module-content
 {
     padding: 0 2.9em 2em 3.8em;
 }
 
+#go,
 #advice,
 #did-you-know
 {
@@ -193,6 +195,7 @@
     width: 33%;
 }
 
+#go h3,
 #advice h3,
 #did-you-know h3
 {
@@ -207,6 +210,7 @@
     width: 100%;
 }
 
+#go a,
 #advice a
 {
     color: #f68b2c;

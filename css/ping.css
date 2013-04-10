@@ -121,12 +121,13 @@
 #featured-products .user-actions li
 {
     display: inline;
+    vertical-align: middle;
 }
 
 #featured-products .user-actions a
 {
     float: none;
-    margin: 0 1.5em 1.5em 1.5em;
+    margin: 0 1.3em 1.5em 1.3em;
     display: inline-block;
 }
 

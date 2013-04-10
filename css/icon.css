@@ -251,6 +251,20 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -41px -265px;
 }
 
+.icon-pinger
+{
+    background-position: -3px -232px;
+    height: 20px;
+    margin: 1px;
+    width: 36px;
+}
+
+.icon-pinger:hover
+{
+    background-position: -3px -232px;
+}
+
+
 .icon-share
 {
     background-position: -69px -232px;
