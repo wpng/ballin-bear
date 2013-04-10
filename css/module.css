@@ -350,13 +350,27 @@
 
 #go-date
 {
-    font-family: 'irregularisregular', Arial, sans-serif;
     margin: 1em 0 0 0;
 }
 
-#go #go-date
+#go #go-date .go-offer
 {
-    font-size: 3em;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 2.6em;
+    font-weight: bold;
+}
+
+#go #go-date .date
+{
+    font-family: 'caviar_dreamsregular', Arial, sans-serif;
+    font-size: 5em;
+    margin: 0.4em 0 0 0;
+    text-align: left;
+}
+
+#go #go-date.step2 .date
+{
+    margin: 0;
 }
 
 #go-date strong
@@ -364,4 +378,27 @@
     color: #f68b2c;
     display: block;
     font-size: 2em;
+}
+
+#go #go-price img
+{
+    margin: 1em 0 0 0;
+}
+
+#go #go-price p
+{
+    text-align: center;
+}
+
+#go #go-price .price-promo
+{
+    margin: 1em 0 0 0;
+    color: #838282;
+    font-size: 3em;
+}
+
+#go #go-price .price
+{
+    font-size: 4em;
+    margin: 0 0 1em 0;
 }
