@@ -4,6 +4,7 @@ var Dropdown =
     {
         $( '#session .dropdown' ).on( 'click', Dropdown.show );
         $( '#dashboard .dropdown' ).on( 'click', Dropdown.dashboard );
+        $( '#filtered-products .geoloc-action' ).on( 'click', Dropdown.geolocProducts );
     },
     show: function( event )
     {
@@ -40,5 +41,13 @@ var Dropdown =
         }
         
         $( this ).addClass( 'open' );
+    },
+    geolocProducts: function( event )
+    {
+        event.stopPropagation();
+        
+        $( '#filtered-products .dropdown' ).removeClass( 'open' );
+        
+        $( this ).parents( '.dropdown:first' ).addClass( 'open' );
     }
 };

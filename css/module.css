@@ -88,12 +88,13 @@
 }
 
 .module .products .product:nth-child(2n),
-.module .products .dropdown:nth-child(2n) .product
+.module .geoloc-products .product:nth-child(2n)
 {
     background: #ededef;
 }
 
-.module .products div
+.module .products div,
+#filtered-products .geoloc-products .product div
 {
     display: inline-block;
     vertical-align: middle;
@@ -153,7 +154,8 @@
     width: 19%;
 }
 
-.module .products .product-info
+.module .products .product-info,
+#filtered-products .geoloc-products .product-info
 {
     width: 29%;
     padding: 0 1%;
@@ -182,6 +184,16 @@
 {
     display: inline-block;
     vertical-align: middle;
+}
+
+.dropdown .geoloc-products
+{
+    display: none;
+}
+
+.dropdown.open .geoloc-products
+{
+    display: block;
 }
 
 /* affinity info */

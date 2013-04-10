@@ -227,3 +227,19 @@
     margin: 0;
     display: inline-block;
 }
+
+/* responsive */
+
+@media (max-width: 820px)
+{
+    #page-ping .module
+    {
+        width: 100%;
+    }
+    
+    #advice,
+    #did-you-know
+    {
+        width: 100%;
+    }
+}

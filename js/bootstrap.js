@@ -14,7 +14,13 @@ var App =
         Slider.init();
         
         Form.title();
-    } 
+        
+        $( '.user-action, .call-to-action' ).bind( 'click', App.userAction );
+    },
+    userAction: function( event )
+    {
+        event.preventDefault();
+    }
 };
 
 var Dashboard =

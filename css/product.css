@@ -150,25 +150,6 @@
     padding: 0 0 0.4em 0;
 }
 
-@media (max-width: 1024px)
-{
-    #dashboard
-    {
-        min-width: 37px !important;
-        width: 37px;
-    }
-    
-    #dashboard #dashboard-toggle
-    {
-        width: auto !important;
-    }
-    
-    #dashboard .toggle-name
-    {
-        display: none !important;
-    }
-}
-
 @media (max-width: 930px)
 {
     #page-product .module

@@ -348,6 +348,7 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -267px -265px;
 }
 
+#filtered-products .geoloc-products .icon-pin,
 .icon-pin
 {
     background-position: -159px -232px;
@@ -355,6 +356,7 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     width: 19px;
 }
 
+#filtered-products .geoloc-products .icon-pin:hover
 .icon-pin:hover
 {
     background-position: -159px -265px;

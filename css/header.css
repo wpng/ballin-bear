@@ -20,7 +20,7 @@
     font-size: 0em;
     letter-spacing: -1em;
     margin: 22px 0 0 10%;
-    min-width: 300px;
+    position: relative;
     width: 35%
 }
 
@@ -248,6 +248,29 @@
     -webkit-border-radius: 5px 5px 0 0;
        -moz-border-radius: 5px 5px 0 0;
             border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 1100px)
+{
+    #search-container
+    {
+        margin: 22px 0 22px 5%;
+        width: 30%;
+    }
+}
+
+@media (max-width: 950px)
+{
+    #search-container
+    {
+        margin: 22px 0 22px 2%;
+        width: 20%;
+    }
+    
+    #search input[type=text]
+    {
+        width: 70%;
+    }
 }
 
 @media (max-width: 630px)
