@@ -63,6 +63,19 @@
     text-transform: uppercase;
 }
 
+#ping-light-featured h3
+{
+    color: #343434;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+#ping-light-featured .products
+{
+    margin: 0;
+}
+
 /* ping light */
 
 .ping-light
