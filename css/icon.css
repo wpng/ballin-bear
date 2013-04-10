@@ -251,6 +251,18 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -41px -265px;
 }
 
+#filtered-products .product .icon-ping
+{
+    background-position: -207px -232px;
+    height: 14px;
+    width: 14px;
+}
+
+#filtered-products .product .icon-ping:hover
+{
+    background-position: -207px -265px;
+}
+
 .icon-pinger
 {
     background-position: -3px -232px;
@@ -264,7 +276,6 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -3px -232px;
 }
 
-
 .icon-share
 {
     background-position: -69px -232px;
@@ -275,6 +286,18 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 .icon-share:hover
 {
     background-position: -69px -265px;
+}
+
+#filtered-products .product .icon-share
+{
+    background-position: -226px -232px;
+    height: 16px;
+    width: 16px;
+}
+
+#filtered-products .product .icon-share:hover
+{
+    background-position: -226px -265px;
 }
 
 .icon-wishlist
@@ -289,6 +312,18 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -98px -265px;
 }
 
+#filtered-products .product .icon-wishlist
+{
+    background-position: -247px -232px;
+    height: 15px;
+    width: 15px;
+}
+
+#filtered-products .product .icon-wishlist:hover
+{
+    background-position: -247px -265px;
+}
+
 .icon-like
 {
     background-position: -128px -232px;
@@ -301,6 +336,18 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -128px -265px;
 }
 
+#filtered-products .product .icon-like
+{
+    background-position: -267px -232px;
+    height: 15px;
+    width: 17px;
+}
+
+#filtered-products .product .icon-like:hover
+{
+    background-position: -267px -265px;
+}
+
 .icon-pin
 {
     background-position: -159px -232px;
@@ -311,6 +358,19 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 .icon-pin:hover
 {
     background-position: -159px -265px;
+}
+
+#filtered-products .product .icon-pin
+{
+    background-position: -289px -232px;
+    height: 14px;
+    margin: 2px 0 0 0;
+    width: 13px;
+}
+
+#filtered-products .product .icon-pin:hover
+{
+    background-position: -289px -265px;
 }
 
 /* helpers */
