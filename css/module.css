@@ -111,7 +111,38 @@
 .module .products .product-geoloc
 {
     text-align: center;
+    position: relative;
     cursor: pointer;
+}
+
+#filtered-products .geoloc-products .product-geoloc .product-geoloc-map
+{
+    background: #343434;
+    bottom: 6em;
+    display: none;
+    height: 20em;
+    left: -13.7em;
+    position: absolute;
+    width: 30em;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+#filtered-products .product-geoloc .product-geoloc-map .map-arrow
+{
+    bottom: -14px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+#filtered-products .geoloc-products .product-geoloc.dropdown.open .product-geoloc-map
+{
+    display: block;
 }
 
 .module .products .user-actions

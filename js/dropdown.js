@@ -6,6 +6,8 @@ var Dropdown =
         $( '#dashboard .dropdown' ).on( 'click', Dropdown.dashboard );
         $( '#filtered-products .geoloc-action' ).bind( 'click', Dropdown.geolocProducts );
         $( '#filtered-products .offer-action' ).bind( 'click', Dropdown.offerProducts );
+        
+        $( '.geoloc-products .dropdown' ).bind( 'click', Dropdown.geolocMap );
     },
     show: function( event )
     {
@@ -58,5 +60,13 @@ var Dropdown =
         $( '#filtered-products .dropdown' ).removeClass( 'open geoloc' );
         
         $( this ).parents( '.dropdown:first' ).addClass( 'open offer' );
+    },
+    geolocMap: function( event )
+    {
+        event.preventDefault();
+        
+        $( '.geoloc-products .dropdown' ).removeClass( 'open' );
+        
+        $( this ).addClass( 'open' );
     }
 };

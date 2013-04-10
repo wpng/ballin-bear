@@ -139,6 +139,14 @@
     width: 19px;
 }
 
+.icon-arrow-map
+{
+    background-position: -183px -233px;
+    margin: 0;
+    height: 15px;
+    width: 18px;
+}
+
 /* checkbox */
 
 .icon-checkbox
@@ -374,12 +382,13 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -159px -265px;
 }
 
-#filtered-products .geoloc-products .icon-pin:hover
+#filtered-products .geoloc-products .icon-pin:hover,
+#filtered-products .product-geoloc.dropdown.open .icon-pin
 {
     background-position: -304px -232px;
 }
 
-#filtered-products  .product-geoloc .icon-pin
+#filtered-products .product-geoloc .icon-pin
 {
     margin: 1px 0 0.5em 0;
 }
