@@ -113,22 +113,29 @@
     float: none;
     border-left: none;
     border-top: 1px solid #f1f1f1;
-    line-height: 3.6em;
+    line-height: 2em;
     margin: 1.5em 0 0 0;
     width: auto;
 }
 
 #featured-products .user-actions li
 {
-    display: inline;
-    vertical-align: middle;
+    display: inline-block;
+    max-width: 36px;
+    margin: 1em 1.3em 1em 1.3em;
+    vertical-align: top;
 }
 
 #featured-products .user-actions a
 {
     float: none;
-    margin: 0 1.3em 1.5em 1.3em;
+    margin: 0;
     display: inline-block;
+}
+
+#featured-products .user-actions span
+{
+    
 }
 
 #featured-products .affinity-bot
