@@ -81,6 +81,11 @@
     vertical-align: top;
 }
 
+#featured-products ul
+{
+    text-align: center;
+}
+
 #featured-products .product
 {
     border-right: 1px solid #f1f1f1;
@@ -88,6 +93,17 @@
     float: none;
     text-align: center;
     width: 33%;
+}
+
+#featured-products .product:nth-child(3n)
+{
+    border-right: none;
+    margin-left: -4px;
+}
+
+#featured-products .product:nth-child(2n)
+{
+    margin-left: -4px;
 }
 
 #featured-products .product img
@@ -226,6 +242,23 @@
     float: none;
     margin: 0;
     display: inline-block;
+}
+
+#filtered-products .offer-products .product-info
+{
+    width: 31%;
+    vertical-align: middle;
+}
+
+#filtered-products .offer-products .product-seller
+{
+    width: 30%;
+    vertical-align: middle;
+}
+
+#filtered-products .offer-products .price
+{
+    vertical-align: middle;
 }
 
 /* responsive */

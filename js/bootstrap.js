@@ -15,7 +15,7 @@ var App =
         
         Form.title();
         
-        $( '.user-action, .call-to-action' ).bind( 'click', App.userAction );
+        $( '.user-action' ).bind( 'click', App.userAction );
     },
     userAction: function( event )
     {

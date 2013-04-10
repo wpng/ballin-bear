@@ -4,7 +4,8 @@ var Dropdown =
     {
         $( '#session .dropdown' ).on( 'click', Dropdown.show );
         $( '#dashboard .dropdown' ).on( 'click', Dropdown.dashboard );
-        $( '#filtered-products .geoloc-action' ).on( 'click', Dropdown.geolocProducts );
+        $( '#filtered-products .geoloc-action' ).bind( 'click', Dropdown.geolocProducts );
+        $( '#filtered-products .offer-action' ).bind( 'click', Dropdown.offerProducts );
     },
     show: function( event )
     {
@@ -44,10 +45,18 @@ var Dropdown =
     },
     geolocProducts: function( event )
     {
-        event.stopPropagation();
+        event.preventDefault();
         
-        $( '#filtered-products .dropdown' ).removeClass( 'open' );
+        $( '#filtered-products .dropdown' ).removeClass( 'open offer' );
         
-        $( this ).parents( '.dropdown:first' ).addClass( 'open' );
+        $( this ).parents( '.dropdown:first' ).addClass( 'open geoloc' );
+    },
+    offerProducts: function( event )
+    {
+        event.preventDefault();
+        
+        $( '#filtered-products .dropdown' ).removeClass( 'open geoloc' );
+        
+        $( this ).parents( '.dropdown:first' ).addClass( 'open offer' );
     }
 };

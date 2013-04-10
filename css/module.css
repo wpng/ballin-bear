@@ -108,6 +108,12 @@
     width: 15%;
 }
 
+.module .products .product-geoloc
+{
+    text-align: center;
+    cursor: pointer;
+}
+
 .module .products .user-actions
 {
     display: inline-block;
@@ -186,12 +192,14 @@
     vertical-align: middle;
 }
 
-.dropdown .geoloc-products
+.dropdown .geoloc-products,
+.dropdown .offer-products
 {
     display: none;
 }
 
-.dropdown.open .geoloc-products
+.dropdown.open.geoloc .geoloc-products,
+.dropdown.open.offer .offer-products
 {
     display: block;
 }
