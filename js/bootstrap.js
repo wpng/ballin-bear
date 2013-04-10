@@ -37,6 +37,7 @@ var Dashboard =
         if ( $( '#dashboard' ).hasClass('open') )
         {
             $( '#dashboard' ).removeClass('open').addClass('closed');
+            $( '#dashboard .dropdown' ).removeClass( 'open' );
             //$( '#dashboard' ).switchClass( "open", "closed", 300 );
         }
         else

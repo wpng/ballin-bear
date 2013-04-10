@@ -88,7 +88,7 @@
 }
 
 .module .products .product:nth-child(2n),
-.module .geoloc-products .product:nth-child(2n)
+.module li .geoloc-products .product:nth-child(2n)
 {
     background: #ededef;
 }
@@ -247,9 +247,18 @@
     font-family: 'irregularisregular', Arial, sans-serif;
     font-size: 2.2em;
     font-weight: bold;
-    padding: 2.5em 2%;
+    right: 4em;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    padding: 0 2%;
     text-align: center;
     width: 22%;
+}
+
+#affinity-info > p
+{
+    margin: 2.5em 0 0 0;
 }
 
 /* user actions */
@@ -261,6 +270,15 @@
     line-height: 5.6em;
     text-align: center;
     width: 7%;
+}
+
+#global-info-product .user-actions
+{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 6em;
 }
 
 /* advice & did you know */
@@ -295,11 +313,55 @@
     width: 100%;
 }
 
-#go a,
 #advice a
 {
     color: #f68b2c;
     font-size: 1.9em;
     text-decoration: none;
     float: right;
+}
+
+#go
+{
+    text-align: center;
+}
+
+#go h3
+{
+    text-align: left;
+}
+
+#go p
+{
+    font-size: 2em;
+    text-align: left;
+}
+
+#go .call-to-action
+{
+    font-size: 2em;
+    margin: 1em 0 0 0;
+}
+
+#go h2
+{
+    text-align: left;
+}
+
+#go-date
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    margin: 1em 0 0 0;
+}
+
+#go #go-date
+{
+    font-size: 3em;
+}
+
+#go-date strong
+{
+    color: #f68b2c;
+    display: block;
+    font-size: 2em;
 }
