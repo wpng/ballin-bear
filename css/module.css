@@ -115,7 +115,8 @@
     cursor: pointer;
 }
 
-#filtered-products .geoloc-products .product-geoloc .product-geoloc-map
+#filtered-products .geoloc-products .product-geoloc .product-geoloc-map,
+#geoloc-products .product-geoloc .product-geoloc-map
 {
     background: #343434;
     bottom: 6em;
@@ -132,7 +133,8 @@
             box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
 }
 
-#filtered-products .product-geoloc .product-geoloc-map .map-arrow
+#filtered-products .product-geoloc .product-geoloc-map .map-arrow,
+#geoloc-products .product-geoloc .product-geoloc-map .map-arrow
 {
     bottom: -14px;
     position: absolute;
@@ -140,7 +142,8 @@
     width: 100%;
 }
 
-#filtered-products .geoloc-products .product-geoloc.dropdown.open .product-geoloc-map
+#filtered-products .geoloc-products .product-geoloc.dropdown.open .product-geoloc-map,
+#geoloc-products .product-geoloc.dropdown.open .product-geoloc-map
 {
     display: block;
 }

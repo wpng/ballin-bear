@@ -370,6 +370,7 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 }
 
 #filtered-products .geoloc-products .icon-pin,
+#geoloc-products .geoloc-products .icon-pin,
 .icon-pin
 {
     background-position: -159px -232px;
@@ -383,12 +384,15 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 }
 
 #filtered-products .geoloc-products .icon-pin:hover,
-#filtered-products .product-geoloc.dropdown.open .icon-pin
+#geoloc-products .icon-pin:hover,
+#filtered-products .product-geoloc.dropdown.open .icon-pin,
+#geoloc-products .product-geoloc.dropdown.open .icon-pin
 {
     background-position: -304px -232px;
 }
 
-#filtered-products .product-geoloc .icon-pin
+#filtered-products .product-geoloc .icon-pin,
+#geoloc-products .product-geoloc .icon-pin
 {
     margin: 1px 0 0.5em 0;
 }
