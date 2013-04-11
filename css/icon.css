@@ -595,3 +595,29 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     vertical-align: bottom;
     width: 14px;
 }
+
+/* quizz */
+
+.icon-cup
+{
+    background-position: -42px -299px;
+    height: 18px;
+    margin: 0 3px 0 0;
+    width: 20px;
+}
+
+.icon-result
+{
+    background: url("../img/sprite-quizz.png") no-repeat -18px -18px;
+    height: 262px;
+    margin: 0;
+    width: 254px;
+}
+
+.icon-summary
+{
+    background: url("../img/sprite-quizz.png") no-repeat -302px -57px;
+    height: 187px;
+    margin: 0;
+    width: 283px;
+}

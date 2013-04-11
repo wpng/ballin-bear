@@ -28,7 +28,7 @@
 {
     color: #00ade0;
     font-size: 2.8em;
-    font-weight: 600;
+    font-weight: normal;
     line-height: 2em;
 }
 
@@ -303,7 +303,8 @@
 
 #go,
 #advice,
-#did-you-know
+#did-you-know,
+#result
 {
     float: right;
     width: 33%;
@@ -311,11 +312,12 @@
 
 #go h3,
 #advice h3,
-#did-you-know h3
+#did-you-know h3,
+#result h3
 {
     font-size: 2.8em;
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 2.5em;
 }
 

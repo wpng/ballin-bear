@@ -1,0 +1,87 @@
+#page-quizz
+{
+    padding: 0 7%;
+}
+
+#page-quizz .loader-container
+{
+    margin-bottom: 1em;
+    width: 66%;
+}
+
+.module-content
+{
+    padding: 0 1.6em 1.6em 1.6em;
+}
+
+
+/* question */
+
+#question img
+{
+    max-width: 60%;
+}
+
+#answers-question
+{
+    font-size: 1.9em;
+    display: inline-block;
+    padding: 0 0 0 0.8em;
+    vertical-align: top;
+}
+
+#answers-question .call-to-action
+{
+    margin: 0 0 0.8em 0;
+    min-width: 12em;
+}
+
+/* quizz icons */
+
+.quizz-icons
+{
+    text-align: center;
+}
+
+@media (max-width: 820px)
+{
+    #page-quizz .module
+    {
+        width: 100%;
+    }
+    
+    #advice,
+    #did-you-know
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    #question img
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #ping-light-featured .affinity-info,
+    #ping-light-featured .ping-description
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    #answers-question
+    {
+        display: block;
+        margin: 1em 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #answers-question .call-to-action
+    {
+        width: 100%;
+    }
+}

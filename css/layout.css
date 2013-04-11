@@ -50,7 +50,7 @@ h4,
 h5,
 h6
 {
-    font-family: 'caviar_dreamsregular', Arial, sans-serif;
+    font-family: 'caviar_dreamsbold', Arial, sans-serif;
 }
 
 table
@@ -407,9 +407,14 @@ input[type="checkbox"] + label
     min-width: 10em;
     text-align: center;
     text-decoration: none;
-    -webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-            border-radius: 2px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.call-to-action:hover
+{
+    background: #009fce;
 }
 
 /* more action */
