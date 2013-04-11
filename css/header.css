@@ -26,7 +26,7 @@
 
 #search input[type=text]
 {
-    height: 2.2em;
+    height: 2.1em;
     padding-left: 3%;
     width: 85%;
     -webkit-border-radius: 10px 0 0 10px;
@@ -41,7 +41,7 @@
     cursor: pointer;
     margin-left: -4px;
     padding-left: 1em;
-    height: 2.4em;
+    height: 2.3em;
     vertical-align: top;
     -webkit-border-radius: 0 10px 10px 0;
        -moz-border-radius: 0 10px 10px 0;
