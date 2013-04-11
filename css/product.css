@@ -22,7 +22,7 @@
 #global-info-product .module-content
 {
     float: left;
-    padding: 0 0em 0 1.6em;
+    padding: 0 0 1em 1.6em;
     width: 63%;
 }
 
@@ -189,7 +189,9 @@
         float: none;
         border-left: none;
         border-top: 1px solid #f1f1f1;
-        margin: 1.5em 0 0 0;
+        line-height: 3em;
+        margin: 0;
+        position: relative;
         width: auto;
     }
     
@@ -200,17 +202,26 @@
     
     #global-info-product .user-actions a
     {
-        float: none;
-        margin: 0 1.5em 1.5em 1.5em;
         display: inline-block;
+        float: none;
+        margin: 0 1em 1em 1em;
+        vertical-align: middle;
     }
     
     #affinity-info
     {
         float: none;
-        border-left: none;
-        border-top: 1px solid #f1f1f1;
-        width: auto;
+        border: none;
+        margin: 0 auto;
+        padding: 0 0 1em 0;
+        position: relative;
+        right: 0;
+        width: 100%;
+    }
+    
+    #affinity-info > p
+    {
+        margin: 1em 0 0 0;
     }
     
     #address,

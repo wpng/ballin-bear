@@ -110,9 +110,10 @@
 
 .module .products .product-geoloc
 {
-    text-align: center;
-    position: relative;
     cursor: pointer;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
 }
 
 #filtered-products .geoloc-products .product-geoloc .product-geoloc-map,
@@ -209,6 +210,7 @@
 
 .module .products .product-seller
 {
+    font-size: 1.5em;
     width: 27%;
 }
 
@@ -256,7 +258,7 @@
     width: 22%;
 }
 
-#affinity-info > p
+#affinity-info p:nth-child(1)
 {
     margin: 2.5em 0 0 0;
 }

@@ -31,6 +31,8 @@ var Dashboard =
         
         if ( App.isMobile )
             $( '#dashboard' ).removeClass('open').addClass('closed');
+        
+        $( window ).resize( Dashboard.onResize );
     },
     stateChange: function( event )
     {
@@ -45,6 +47,14 @@ var Dashboard =
             $( '#dashboard' ).removeClass('closed').addClass('open');
             //$( '#dashboard' ).switchClass( "closed", "open", 300 );
         }
+    },
+    onResize: function( event )
+    {
+        if ( $(window).width() <= 1024 && $( '#dashboard' ).hasClass('open') )
+            $( '#dashboard' ).removeClass('open').addClass('closed');
+        
+        if ( $(window).width() >= 1024 && $( '#dashboard' ).hasClass('closed') )
+            $( '#dashboard' ).removeClass('closed').addClass('open');
     }
 };
 
@@ -92,5 +102,3 @@ var Form =
 }
 
 $( document ).ready( App.init );
-
-// Custom Arc Attribute, position x&y, value portion of total, total value, Radius

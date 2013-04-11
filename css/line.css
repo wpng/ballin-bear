@@ -1,5 +1,8 @@
-#page-domain
+#page-line
 {
+    background-image: url("../img/question-advice.png");
+    background-repeat: no-repeat;
+    background-position: -2em 11em;
     padding: 0 7%;
 }
 
@@ -8,17 +11,44 @@
     padding: 0 1.6em 1.6em 1.6em;
 }
 
+/* info line */
+
+#info-line
+{
+    margin-right: 1%;
+    width: 20%;
+}
+
+#info-line p
+{
+    font-size: 2em;
+    line-height: 1.3em;
+    min-height: 15.4em;
+    text-align: justify;
+}
 
 /* question */
+
+
+#question .module-content
+{
+    padding: 1em 1.6em 1.6em 1.6em;
+}
+
+#question
+{
+    width: 45%;
+}
+
+#question h1
+{
+    line-height: 1.2em;
+    margin-bottom: 0.4em;
+}
 
 #question img
 {
     max-width: 60%;
-}
-
-#question .module-content
-{
-    background: url("../img/question-advice.png") no-repeat 98% 88%;
 }
 
 #answers-question
@@ -211,7 +241,7 @@
 
 @media (max-width: 820px)
 {
-    #page-domain .module
+    #page-line .module
     {
         width: 100%;
     }

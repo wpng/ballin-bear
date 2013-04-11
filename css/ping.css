@@ -256,13 +256,14 @@
 
 #filtered-products .offer-products .product-info
 {
-    width: 31%;
+    width: 30%;
     vertical-align: middle;
 }
 
 #filtered-products .offer-products .product-seller
 {
-    width: 30%;
+    font-size: 1.5em;
+    width: 31%;
     vertical-align: middle;
 }
 

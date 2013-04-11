@@ -585,4 +585,13 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     width: 126px;
 }
 
-/* line */
+/* more action */
+
+.icon-idea
+{
+    background-position: -64px -299px;
+    height: 17px;
+    margin: 0 3px 0 0;
+    vertical-align: bottom;
+    width: 14px;
+}
