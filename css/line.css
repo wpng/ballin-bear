@@ -239,8 +239,18 @@
     vertical-align: middle;
 }
 
+@media (max-width: 1024px)
+{
+    #page-line
+    {
+        padding: 0 3%;
+        background-image: none;
+    }
+}
+
 @media (max-width: 820px)
 {
+    
     #page-line .module
     {
         width: 100%;
@@ -250,6 +260,11 @@
     #did-you-know
     {
         width: 100%;
+    }
+    
+    #info-line p
+    {
+        min-height: inherit;
     }
 }
 
