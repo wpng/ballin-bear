@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/module.css">
     <link rel="stylesheet" href="css/quizz.css">
+    <link rel="stylesheet" href="css/ui.css">
     <script src="js/html5.js"></script>
     <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
     <script src="js/raphael-min.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -167,6 +169,22 @@
             </ul>
         </nav>
         
+        <script>
+  $(function() {
+    $( "#price-filter" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#price" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#price" ).val( "$" + $( "#price-filter" ).slider( "values", 0 ) +
+      " - $" + $( "#price-filter" ).slider( "values", 1 ) );
+  });
+  </script>
+        
         <!-- page -->
         <section id="page-quizz" class="page clearfix" role="main">
             <nav id="breadcrumbs">
@@ -210,6 +228,20 @@
                 <div class="module-punch"></div>
                 <div class="module-content clearfix">
                     <h2>Vos critères</h2>
+                    <form action="/" method="POST">
+                        <input type="hidden" id="price" name="price" value="">
+                        <label for="price">Prix</label>
+                        <div id="price-filter" class="filter"></div>
+                        <label for="brand">Marque</label>
+                        <div class="select">
+                            <select id="brand" name="brand">
+                                <option value="">Faites votre choix</option>
+                            </select>
+                            <span class="select-arrow">
+                                <i class="icon-arrow-down"></i>
+                            </span>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div id="summary" class="module">
