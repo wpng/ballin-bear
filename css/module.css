@@ -384,14 +384,9 @@
     font-size: 2em;
 }
 
-#go #go-price img
+#go img
 {
     margin: 1em 0 0 0;
-}
-
-#go #go-price p
-{
-    text-align: center;
 }
 
 #go .price-promo
