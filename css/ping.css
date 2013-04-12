@@ -149,8 +149,13 @@
 {
     display: inline-block;
     max-width: 36px;
-    margin: 1em 1.3em 0.4em 1.3em;
+    margin: 1em 0 0.4em 1.3em;
     vertical-align: top;
+}
+
+#featured-products .user-actions li span
+{
+	font-size:2em;
 }
 
 #featured-products .user-actions a
