@@ -84,8 +84,8 @@ label
     display: inline-block;
     line-height: 1em;
     font-size: 1.8em;
-    margin: 0 0 0 1%;
-    width: 16%;
+    margin: 0 0 0 3%;
+    width: 15%;
 }
 
 /* critera */
@@ -112,10 +112,14 @@ label
 
 @media (max-width: 600px)
 {
-    #question img
+    #page-quizz .loader-container
     {
         width: 100%;
-        max-width: 100%;
+    }
+    
+    #question img
+    {
+        display: none;
     }
     
     #ping-light-featured .affinity-info,
@@ -135,6 +139,6 @@ label
     
     #answers-question .call-to-action
     {
-        width: 100%;
+        width: 80%;
     }
 }

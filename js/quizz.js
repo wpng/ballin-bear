@@ -83,10 +83,10 @@ var Quizz =
                 return 'Important';
                 break;
             case 4:
-                return 'Oui, absolument';
+                return 'Très certainement';
                 break;
             case 5:
-                return 'Très certainement';
+                return 'Oui, absolument';
                 break;
             default:
                 return 'no';
