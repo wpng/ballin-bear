@@ -170,20 +170,35 @@
         </nav>
         
         <script>
-  $(function() {
-    $( "#price-filter" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#price" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#price" ).val( "$" + $( "#price-filter" ).slider( "values", 0 ) +
-      " - $" + $( "#price-filter" ).slider( "values", 1 ) );
-  });
-  </script>
+            $(function()
+            {
+                $( "#price-filter .filter" ).slider(
+                {
+                    range: true,
+                    min: 0,
+                    max: 500,
+                    values: [ 75, 300 ],
+                    slide: function( event, ui )
+                    {
+                        var min = ui.values[ 0 ];
+                        var max = ui.values[ 1 ];
+                
+                        $( "#price_min" ).val( min );
+                        $( "#price_max" ).val( max );
+                        
+                        $( "#price-filter .filter-callback" ).text( min + '€ à ' + max + '€' );
+                    }
+                });
+                
+                var min = $( "#price-filter .filter" ).slider( "values", 0 );
+                var max = $( "#price-filter .filter" ).slider( "values", 1 );
+                
+                $( "#price_min" ).val( min );
+                $( "#price_max" ).val( max );
+                
+                $( "#price-filter .filter-callback" ).text( min + '€ à ' + max + '€' );
+            });
+        </script>
         
         <!-- page -->
         <section id="page-quizz" class="page clearfix" role="main">
@@ -217,11 +232,11 @@
                     </ul>
                 </div>
             </div>
-            <div id="result" class="module">
+            <div id="results" class="module">
                 <div class="module-punch"></div>
                 <div class="module-content clearfix">
                     <h3><i class="icon-cup"></i>Vos résultats</h3>
-                    <div class="quizz-icons"><i class="icon-result"></i></div>
+                    <div class="quizz-icons"><img src="img/wepi-quizz-results.png" alt="CANON"></div>
                 </div>
             </div>
             <div id="criteria" class="module">
@@ -229,9 +244,13 @@
                 <div class="module-content clearfix">
                     <h2>Vos critères</h2>
                     <form action="/" method="POST">
-                        <input type="hidden" id="price" name="price" value="">
-                        <label for="price">Prix</label>
-                        <div id="price-filter" class="filter"></div>
+                        <div id="price-filter">
+                            <input type="hidden" id="price_min" name="price_min" value="">
+                            <input type="hidden" id="price_max" name="price_max" value="">
+                            <label>Prix</label>
+                            <div class="filter"></div>
+                            <div class="filter-callback">0€ à 500€</div>
+                        </div>
                         <label for="brand">Marque</label>
                         <div class="select">
                             <select id="brand" name="brand">
@@ -248,7 +267,7 @@
                 <div class="module-punch"></div>
                 <div class="module-content clearfix">
                     <h2>Récapitulatif</h2>
-                    <div class="quizz-icons"><i class="icon-summary"></i></div>
+                    <div class="quizz-icons"><img src="img/wepi-quizz-summary.png" alt="CANON"></div>
                 </div>
             </div>
         </section>
