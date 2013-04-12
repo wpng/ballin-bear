@@ -65,7 +65,7 @@
     vertical-align: top;
 }
 
-#global-info-account b
+#global-info-account strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
     font-size: 1.3em;
@@ -310,7 +310,7 @@ input[type=submit]
 
 @media (max-width: 525px)
 {
-    #global-info-account b
+    #global-info-account strong
     {
         display: block;
     }
