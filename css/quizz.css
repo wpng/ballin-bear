@@ -383,7 +383,8 @@ label
 
 @media (max-width: 820px)
 {
-    #page-quizz .module
+    #page-quizz .module,
+    #page-quizz-end .module
     {
         width: 100%;
     }

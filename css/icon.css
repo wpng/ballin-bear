@@ -670,3 +670,17 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     height: 18px;
     width: 20px;
 }
+
+.icon-strong
+{
+    background-position: -127px -705px;
+    height: 18px;
+    width: 20px;
+}
+
+.icon-weak
+{
+    background-position: -151px -705px;
+    height: 18px;
+    width: 20px;
+}
