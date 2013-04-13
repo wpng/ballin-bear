@@ -1,0 +1,138 @@
+#page-wishlist
+{
+    padding: 0 7%;
+}
+
+.wished-product
+{
+    width: 24%;
+    margin: 0 1% 0 0;
+    text-align: center;
+}
+
+.wished-product h2
+{
+    color: #343434;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    text-align: left;
+}
+
+.wished-product .ping-count
+{
+    font-size: 2.4em;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    text-align: left;
+}
+
+.wished-product .price
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.wished-product .from
+{
+    color: #009fce;
+}
+
+.wished-product .user-actions
+{
+    float: none;
+    border-left: none;
+    border-top: 1px solid #f1f1f1;
+    line-height: 3em;
+    margin: 0;
+    position: relative;
+    width: auto;
+}
+
+.wished-product .user-actions li
+{
+    display: inline;
+}
+
+.wished-product .user-actions a
+{
+    display: inline-block;
+    float: none;
+    margin: 0 2.8em 1em 2.8em;
+    vertical-align: middle;
+}
+
+.wished-product h3
+{
+    color: #00ade0;
+    font-family: 'caviar_dreamsbold',Arial,sans-serif;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.wished-product p
+{
+    font-size: 2em;
+}
+
+/* affinity */
+
+.wished-product .affinity-info
+{
+    position: relative;
+}
+
+.wished-product .affinity-info h2
+{
+    display: block;
+    font-size: 1.4em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.wished-product .affinity-info p
+{
+    font-weight: normal;
+}
+
+.affinity-actions
+{
+    display: none;
+    height: 90px;
+    right: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    z-index: 999;
+}
+
+.affinity-info.active .affinity-actions
+{
+    display: block;
+}
+
+.wished-product .affinity-action
+{
+    position: absolute;
+}
+
+.wished-product .affinity-share
+{
+    left: auto;
+    right: 6px;
+    top: 26px;
+}
+
+.wished-product .affinity-like
+{
+    bottom: 3px;
+    right: 13px;
+    top: auto;
+}
+
+@media (max-width: 600px)
+{
+    #page-wishlist .module
+    {
+        width: 100%;
+    }
+}

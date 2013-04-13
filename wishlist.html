@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>Wepingo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/wishlist.css">
+    <script src="js/html5.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/affinity-bot.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=534996806543201";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <div id="modal-container">
+        <div id="close-modal-background-target"></div>
+        <div id="modal" class="clearfix">
+            <div id="modal-close"><i class="icon-close"></i></div>
+            <div id="modal-content">
+                <h2>Vos points forts et vos points faibles</h2>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- header -->
+    <header id="header" role="banner" class="clearfix">
+        <a href="" id="logo" title="Wepingo">
+            <img src="img/logo.png" alt="Logo Wepingo">
+        </a>
+        <nav id="session">
+            <ul>
+                <li id="sign-in" class="dropdown">
+                    <h4>Connexion</h4>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-arrow">
+                            <i class="icon-arrow-up"></i>
+                        </span>
+                        <form method="POST" action="">
+                            <input type="text" name="email" value="E-mail">
+                            <input type="text" name="password" value="Mot de passe">
+                        </form>
+                    </div>
+                </li>
+                <li id="sign-up" class="dropdown">
+                    <h4>S'inscrire</h4>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-arrow">
+                            <i class="icon-arrow-up"></i>
+                        </span>
+                        <form method="POST" action="">
+                            <input type="text" name="last_name" value="Nom">
+                            <input type="text" name="first_name" value="Prénom">
+                            <input type="text" name="email" value="E-mail">
+                            <input type="text" name="password" value="Mot de passe">
+                        </form>
+                    </div>
+                </li>
+                <li id="lang" class="dropdown">
+                    <i class="icon-fr"></i> <h4>FR</h4> <i class="icon-arrow-down"></i>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-arrow">
+                            <i class="icon-arrow-up"></i>
+                        </span>
+                        <ul>
+                            <li><i class="icon-fr"></i>EN</li>
+                            <li><i class="icon-fr"></i>DE</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="search-container">
+            <form id="search" role="search" method="GET" action="">
+                <input type="text" name="search" value="Recherche...">
+                <button><i class="icon-find"></i></button>
+            </form>
+        </div>
+    </header>
+    
+    <!-- wrapper -->
+    <div id="wrapper" class="clearfix">
+        
+        <!-- sidebar -->
+        <nav id="dashboard" class="open" role="navigation">
+            <div id="dashboard-toggle">
+                <h4 class="toggle-name">Univers</h4> <i class="icon-toggle"></i> <span class="toggle-arrow"><i class="icon-arrow-toggle"></i></span>
+            </div>
+            <ul>
+                <li class="dropdown" data-level="1">
+                    <h4 class="menu"><i class="icon-camera"></i><span>Mon compte</span><i class="icon-arrow-right"></i></h4>
+                </li>
+                <li class="dropdown" data-level="1">
+                    <hr>
+                    <h4 class="menu"><i class="icon-camera"></i><span>Photos, caméscope</span><i class="icon-arrow-right"></i></h4>
+                    <ul>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
+                            <ul>
+                                <li class="dropdown" data-level="3">
+                                    <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
+                                    <ul>
+                                        <li>
+                                            <a href="" title="Les nomades">Les nomades</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Les performants">Les performants</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Les ultra-légers">Les ultra-légers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-profiles"></i>Profils d’utilisations<i class="icon-arrow-right"></i></h5>
+                            <ul>
+                                <li>
+                                    <a href="" title="Je suis père de famille">Je suis père de famille</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Je pratique un sport extrème">Je pratique un sport extrème</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Je suis plutôt créative">Je suis plutôt créative</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camcorder"></i>Caméscope<i class="icon-arrow-right"></i></h5>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown" data-level="1">
+                    <hr>
+                    <h4 class="menu"><i class="icon-tv"></i><span>Tv, Vidéo, Home Cinéma</span><i class="icon-arrow-right"></i></h4>
+                    <ul>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
+                            <ul>
+                                <li class="dropdown" data-level="3">
+                                    <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
+                                    <ul>
+                                        <li>
+                                            <a href="" title="Les nomades">Les nomades</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Les performants">Les performants</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Les ultra-légers">Les ultra-légers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- page -->
+        <section id="page-wishlist" class="page clearfix" role="main">
+            <nav id="breadcrumbs">
+                Home     Photos, caméscope     Appareils photos
+            </nav>
+            <div class="wished-product module">
+                <div class="module-punch"></div>
+                <div class="module-content">
+                    <h2><i class="icon-camera"></i>Les ultra-légers</h2>
+                    <div class="affinity-info">
+                        <div class="affinity-actions">
+                            <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
+                            <a href="#" title="share" class="affinity-action affinity-share"><i class="icon-share"></i></a>
+                        </div>
+                        <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="1">
+                            <div class="affinity-score">93%</div>
+                        </div>
+                    </div>
+                    <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                    <h3>CANON</h3>
+                    <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                    <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
+                </div>
+                <ul class="user-actions">
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-share"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-wishlist"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-like"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="icon-pinger"></i>
+                        <span>231</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="wished-product module">
+                <div class="module-punch"></div>
+                <div class="module-content">
+                    <h2><i class="icon-camera"></i>Les ultra-légers</h2>
+                    <div class="affinity-info">
+                        <div class="affinity-actions">
+                            <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
+                            <a href="#" title="share" class="affinity-action affinity-share"><i class="icon-share"></i></a>
+                        </div>
+                        <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="2">
+                            <div class="affinity-score">93%</div>
+                        </div>
+                    </div>
+                    <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                    <h3>CANON</h3>
+                    <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                    <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
+                </div>
+                <ul class="user-actions">
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-share"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-wishlist"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-like"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="icon-pinger"></i>
+                        <span>231</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="wished-product module">
+                <div class="module-punch"></div>
+                <div class="module-content">
+                    <h2><i class="icon-camera"></i>Les ultra-légers</h2>
+                    <div class="affinity-info">
+                        <div class="affinity-actions">
+                            <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
+                            <a href="#" title="share" class="affinity-action affinity-share"><i class="icon-share"></i></a>
+                        </div>
+                        <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="3">
+                            <div class="affinity-score">93%</div>
+                        </div>
+                    </div>
+                    <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                    <h3>CANON</h3>
+                    <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                    <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
+                </div>
+                <ul class="user-actions">
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-share"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-wishlist"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-like"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="icon-pinger"></i>
+                        <span>231</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    </div>
+    
+    <!-- footer -->
+    <footer id="footer" role="contentinfo">
+        <nav class="complementary">
+            <h4>Suivez-nous</h4>
+            <hr>
+            <a href="https://www.facebook.com/Wepingo" title="Facebook" target="_blank" rel="external">
+                <i class="icon-facebook"></i>
+            </a>
+            <a href="https://twitter.com/Wepingo" title="Twitter" target="_blank" rel="external">
+                <i class="icon-twitter"></i>
+            </a>
+            <a href="https://plus.google.com/104395575119681523422" title="Google+" target="_blank" rel="external">
+                <i class="icon-googleplus"></i>
+            </a>
+            <div class="fb-like" data-href="https://www.facebook.com/Wepingo" data-send="false" data-layout="button_count" data-width="170" data-show-faces="false"></div>
+        </nav>
+        <nav class="complementary">
+            <h4>Informations</h4>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#" title="Guide">Guide</a>
+                </li>
+                <li>
+                    <a href="#" title="Conditions générales">Conditions générales</a>
+                </li>
+                <li>
+                    <a href="#" title="Plan du site">Plan du site</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="complementary">
+            <h4>Wepingo</h4>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#" title="Avantages">Avantages</a>
+                </li>
+                <li>
+                    <a href="#" title="Équipe">Équipe</a>
+                </li>
+                <li>
+                    <a href="#" title="Qui sommes-nous ?">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                    <a href="#" title="Wepingo, c'est quoi ?">Wepingo, c'est quoi ?</a>
+                </li>
+            </ul>
+        </nav>
+        <p id="copyright">Wepingo - 2012 - Tous droits réservés - Adresse 6 Cours Saint Éloi 75012 Paris</p>
+    </footer>
+    
+</body>
+</html>
