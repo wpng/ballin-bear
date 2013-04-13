@@ -183,9 +183,9 @@ label
 
 .affinity-score
 {
-    font-size: 1.4em;
-    line-height: 3em;
-    padding: 0 0 0 0.3em;
+    font-size: 1.3em;
+    line-height: 3.3em;
+    text-indent: 0.2em;
 }
 
 #results .price
