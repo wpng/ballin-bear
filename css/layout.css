@@ -317,8 +317,10 @@ input[type=password],
 {
    background: transparent;
    border: 0;
+   overflow:hidden;
    width: 100%;
    -webkit-appearance: none;
+   -moz-appearance: window;
 }
 
 .select-arrow

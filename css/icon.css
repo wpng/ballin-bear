@@ -606,6 +606,14 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     width: 20px;
 }
 
+.icon-wepi
+{
+    background-position: -2px -298px;
+    height: 45px;
+    margin: 1px 12px 12px 0;
+    width: 37px;
+}
+
 .affinity-info .icon-like
 {
     background-position: -105px -348px;
@@ -652,4 +660,13 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 .affinity-info .icon-wishlist:hover
 {
     background-position: -211px -348px;
+}
+
+/* modal */
+
+.icon-close
+{
+    background-position: -176px -705px;
+    height: 18px;
+    width: 20px;
 }

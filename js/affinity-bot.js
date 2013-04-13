@@ -6,8 +6,8 @@ var AffinityBot =
     {
         $('.affinity-bot').each( AffinityBot.set );
         
-        $('.affinity-info').on( 'mouseover', AffinityBot.onHover );
-        $( '.affinity-info .affinity-actions' ).on( 'mouseleave', AffinityBot.onOut );
+        $('.affinity-bot').on( 'mouseover', AffinityBot.onHover );
+        $( '.affinity-actions' ).on( 'mouseleave', AffinityBot.onOut );
         
         $(' .affinity-actions i ').on( 'mouseover', function( event ) {event.preventDefault();} );
     },
@@ -53,16 +53,18 @@ var AffinityBot =
     {
         event.preventDefault();
         
-        var id = parseInt( $( '.affinity-bot', this ).attr('data-id') );
+        var parent = $( this ).parents( '.affinity-info' )[ 0 ];
         
-        if ( !$( this ).hasClass( 'active' ) && id)
+        var id = parseInt( $( '.affinity-bot', parent ).attr('data-id') );
+        
+        if ( !$( parent ).hasClass( 'active' ) && id)
         {
-            $( this ).addClass( 'active' );
+            $( parent ).addClass( 'active' );
 
             // Retrieve raw data
-            var score = parseInt( $( '.affinity-bot', this ).attr('data-score') );
-            var size = parseInt( $( '.affinity-bot', this ).attr('data-size') );
-            var stroke = parseInt( $( '.affinity-bot', this ).attr('data-stroke') );
+            var score = parseInt( $( '.affinity-bot', parent ).attr('data-score') );
+            var size = parseInt( $( '.affinity-bot', parent ).attr('data-size') );
+            var stroke = parseInt( $( '.affinity-bot', parent ).attr('data-stroke') );
 
             var colorStroke = "#00a9da";
 
@@ -78,7 +80,7 @@ var AffinityBot =
             // Animate affinity boat circle
             var anim = Raphael.animation(  {arc: [radius, radius, score, 100, midSize]}, 1000, "linear" );
             
-            $( '.affinity-actions', this ).animate( { opacity: 1 }, 500 );
+            $( '.affinity-actions', parent ).animate( { opacity: 1 }, 500 );
             AffinityBot.affinityArc[id].animate( anim.delay( 300 ) );
             AffinityBot.affinityBg[id].animate({stroke: colorFill}, 300);
         }

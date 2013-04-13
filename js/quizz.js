@@ -7,6 +7,8 @@ var Quizz =
         
         // global filters
         Quizz.setFilters();
+        
+        $( '#details-expert' ).on( 'click', Modal.show );
     },
     setPriceFilter: function()
     {
