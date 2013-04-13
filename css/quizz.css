@@ -103,12 +103,14 @@ label
     display: inline-block;
     float: left;
     margin: 0 11px 0 0;
-    width: 59px;
+    width: 50px;
 }
 
 #results .affinity-info
 {
     display: inline-block;
+    margin: 0 0 0 25px;
+    position: relative;
     text-align: left;
     vertical-align: top;
     width: 100%;
@@ -127,15 +129,45 @@ label
     font-weight: normal;
 }
 
-#results .affinity-actions
+.affinity-actions
 {
     display: none;
-    height: 126px;
-    left: -40px;
+    height: 95px;
+    left: -30px;
+    opacity: 0;
     position: absolute;
-    top: -10px;
-    width: 150px;
+    top: -30px;
+    width: 100px;
     z-index: 999;
+}
+
+.affinity-action
+{
+    position: absolute;
+}
+
+.affinity-like
+{
+    right: 3px;
+    top: 5px;
+}
+
+.affinity-share
+{
+    left: 14px;
+    top: 4px;
+}
+
+.affinity-ping
+{
+    left: 0;
+    top: 30px;
+}
+
+.affinity-wishlist
+{
+    left: 42px;
+    top: 0;
 }
 
 #results .affinity-info.active .affinity-actions
@@ -151,8 +183,8 @@ label
 
 .affinity-score
 {
-    font-size: 1.6em;
-    line-height: 3.2em;
+    font-size: 1.4em;
+    line-height: 3em;
     padding: 0 0 0 0.3em;
 }
 
@@ -171,13 +203,14 @@ label
 #results .product
 {
     border-bottom: 1px solid #bfbfbf;
-    margin: 2em 0 0 0;
+    margin: 3em 0 6em 0;
     padding: 0 0 1em 0;
 }
 
 #results .product:nth-child(4n)
 {
     border: none;
+    margin: 3em 0 0 0;
     padding: 0;
 }
 

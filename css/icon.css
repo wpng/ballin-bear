@@ -605,3 +605,51 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     margin: 0 3px 0 0;
     width: 20px;
 }
+
+.affinity-info .icon-like
+{
+    background-position: -105px -348px;
+    height: 23px;
+    width: 26px;
+}
+
+.affinity-info .icon-like:hover
+{
+    background-position: -245px -348px;
+}
+
+.affinity-info .icon-share
+{
+    background-position: -39px -348px;
+    height: 23px;
+    width: 26px;
+}
+
+.affinity-info .icon-share:hover
+{
+    background-position: -179px -348px;
+}
+
+.affinity-info .icon-ping
+{
+    background-position: -7px -348px;
+    height: 23px;
+    width: 26px;
+}
+
+.affinity-info .icon-ping:hover
+{
+    background-position: -147px -348px;
+}
+
+.affinity-info .icon-wishlist
+{
+    background-position: -71px -348px;
+    height: 23px;
+    width: 26px;
+}
+
+.affinity-info .icon-wishlist:hover
+{
+    background-position: -211px -348px;
+}

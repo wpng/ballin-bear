@@ -7,7 +7,9 @@ var AffinityBot =
         $('.affinity-bot').each( AffinityBot.set );
         
         $('.affinity-info').on( 'mouseover', AffinityBot.onHover );
-        $('.affinity-info .affinity-actions').on( 'mouseleave', AffinityBot.onOut );
+        $( '.affinity-info .affinity-actions' ).on( 'mouseleave', AffinityBot.onOut );
+        
+        $(' .affinity-actions i ').on( 'mouseover', function( event ) {event.preventDefault();} );
     },
     set: function()
     {
@@ -26,7 +28,7 @@ var AffinityBot =
         var colorFill = "#fdcca1";
         
         // Set affinity bot size
-        var fullSize = size + stroke;
+        var fullSize = size + stroke + 2;
         var midSize = size / 2;
         var radius = parseInt( fullSize / 2 );
         
@@ -47,14 +49,16 @@ var AffinityBot =
         AffinityBot.affinityBg[id] = paper.circle(radius, radius, midSize);
         AffinityBot.affinityBg[id].attr( {stroke: colorFill, "stroke-width": stroke} );
     },
-    onHover: function()
+    onHover: function( event )
     {
+        event.preventDefault();
+        
         var id = parseInt( $( '.affinity-bot', this ).attr('data-id') );
         
-        if ( id )
+        if ( !$( this ).hasClass( 'active' ) && id)
         {
             $( this ).addClass( 'active' );
-            
+
             // Retrieve raw data
             var score = parseInt( $( '.affinity-bot', this ).attr('data-score') );
             var size = parseInt( $( '.affinity-bot', this ).attr('data-size') );
@@ -73,21 +77,22 @@ var AffinityBot =
 
             // Animate affinity boat circle
             var anim = Raphael.animation(  {arc: [radius, radius, score, 100, midSize]}, 1000, "linear" );
-
+            
+            $( '.affinity-actions', this ).animate( { opacity: 1 }, 500 );
             AffinityBot.affinityArc[id].animate( anim.delay( 300 ) );
             AffinityBot.affinityBg[id].animate({stroke: colorFill}, 300);
         }
     },
-    onOut: function()
+    onOut: function( event )
     {   
+        event.preventDefault();
+        
         var parent = $( this ).parents( '.affinity-info' )[ 0 ];
         
         var id = parseInt( $( '.affinity-bot', parent ).attr('data-id') );
         
         if ( id )
-        {
-            $( parent ).removeClass( 'active' );
-            
+        {   
             // Retrieve raw data
             var score = parseInt( $( '.affinity-bot', parent ).attr('data-score') );
             var size = parseInt( $( '.affinity-bot', parent ).attr('data-size') );
@@ -105,8 +110,14 @@ var AffinityBot =
 
             // Animate affinity boat circle
             var anim = Raphael.animation(  {arc: [radius, radius, score, 100, midSize]}, 1000, "linear" );
-
+            
+            $( '.affinity-actions', parent ).animate({opacity: 0}, 500, function()
+            {
+                $( parent ).removeClass( 'active' );
+            });
+            
             AffinityBot.affinityArc[id].animate( anim.delay( 300 ) );
+            
             AffinityBot.affinityBg[id].animate({stroke: colorFill}, 300);
         }
     },
