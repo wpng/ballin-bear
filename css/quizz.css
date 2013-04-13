@@ -96,6 +96,112 @@ label
     width: 15%;
 }
 
+/* results */
+
+#results .affinity-bot
+{
+    display: inline-block;
+    float: left;
+    margin: 0 11px 0 0;
+    width: 59px;
+}
+
+#results .affinity-info
+{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+}
+
+#results .affinity-info h2
+{
+    display: block;
+    font-size: 1.4em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+#results .affinity-info p
+{
+    font-weight: normal;
+}
+
+#results .affinity-actions
+{
+    display: none;
+    height: 126px;
+    left: -40px;
+    position: absolute;
+    top: -10px;
+    width: 150px;
+    z-index: 999;
+}
+
+#results .affinity-info.active .affinity-actions
+{
+    display: block;
+}
+
+.affinity-bot svg,
+.affinity-bot div
+{
+    top: 0 !important;
+}
+
+.affinity-score
+{
+    font-size: 1.6em;
+    line-height: 3.2em;
+    padding: 0 0 0 0.3em;
+}
+
+#results .price
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+#results .from
+{
+    color: #009fce;
+}
+
+#results .product
+{
+    border-bottom: 1px solid #bfbfbf;
+    margin: 2em 0 0 0;
+    padding: 0 0 1em 0;
+}
+
+#results .product:nth-child(4n)
+{
+    border: none;
+    padding: 0;
+}
+
+#results .product-thumbnails
+{
+    text-align: center;
+    margin: 1em 0;
+}
+
+#results .product-thumbnails li
+{
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.4em 0 0 0;
+    padding: 0.4em 0;
+    width: 31%;
+}
+
+#results .product-thumbnails img
+{
+    width: 90%;
+}
+
 @media (max-width: 820px)
 {
     #page-quizz .module
@@ -140,5 +246,17 @@ label
     #answers-question .call-to-action
     {
         width: 80%;
+    }
+    
+    /* filters */
+    
+    label
+    {
+        width: 38%;
+    }
+    
+    .filter-callback
+    {
+        display: none;
     }
 }
