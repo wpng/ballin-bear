@@ -27,6 +27,14 @@
     width: 5px;
 }
 
+#breadcrumbs .icon-bubble
+{
+    background-position: -11px -196px;
+    height: 5px;
+    margin: 5px 5px 0 0;
+    width: 5px;
+}
+
 /* toggle */
 
 .icon-toggle

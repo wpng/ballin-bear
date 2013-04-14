@@ -151,6 +151,7 @@ hr
     position: absolute;
     right: -19px;
     top: 0;
+    z-index: 99;
 }
 
 #dashboard.closed .toggle-name,
@@ -258,8 +259,25 @@ hr
 
 #breadcrumbs
 {
+    color: #797979;
     font-size: 1.9em;
     line-height: 2.9em;
+}
+
+#breadcrumbs li
+{
+    display: inline-block;
+}
+
+#breadcrumbs a
+{
+    color: #797979;
+    text-decoration: none;
+}
+
+#breadcrumbs a:hover
+{
+    font-style: italic;
 }
 
 /* user actions */
