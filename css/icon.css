@@ -332,6 +332,12 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -247px -265px;
 }
 
+.wished-product .icon-wishlist,
+.wished-product .icon-wishlist:hover
+{
+    background-position: -216px -299px;
+}
+
 .icon-like
 {
     background-position: -128px -232px;
@@ -428,6 +434,14 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 .icon-camera
 {
     background-position: -78px -52px;
+    height: 14px;
+    margin: 1px 4px 0 0;
+    width: 20px;
+}
+
+.wished-product .icon-camera
+{
+    background-position: -78px -71px;
     height: 14px;
     margin: 1px 4px 0 0;
     width: 20px;

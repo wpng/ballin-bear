@@ -71,7 +71,7 @@ var AffinityBot =
             var colorFill = "#ccebf4";
 
             // Set affinity bot size
-            var fullSize = size + stroke;
+            var fullSize = size + stroke + 2;
             var midSize = size / 2;
             var radius = parseInt( fullSize / 2 );
 
@@ -104,7 +104,7 @@ var AffinityBot =
             var colorFill = "#fdcca1";
 
             // Set affinity bot size
-            var fullSize = size + stroke;
+            var fullSize = size + stroke + 2;
             var midSize = size / 2;
             var radius = parseInt( fullSize / 2 );
 
