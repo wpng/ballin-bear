@@ -296,6 +296,34 @@ label
     display: none;
 }
 
+#page-quizz-end #summary
+{
+    position: relative;
+}
+
+#page-quizz-end #summary.show-full-summary #summary-inner
+{
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    -webkit-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+#page-quizz-end #summary.show-full-summary #full-summary
+{
+    display: block;
+}
+
+#show-full-summary
+{
+    float: right;
+    font-size: 1.9em;
+    margin: 1em 0 0 0;
+}
+
 /* ping light */
 
 #page-quizz-end .ping-light h2

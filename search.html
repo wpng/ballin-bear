@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/module.css">
-    <link rel="stylesheet" href="css/ping.css">
+    <link rel="stylesheet" href="css/search.css">
     <script src="js/html5.js"></script>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/raphael-min.js"></script>
@@ -168,191 +168,124 @@
         </nav>
         
         <!-- page -->
-        <section id="page-ping" class="page clearfix" role="main">
+        <section id="page-search" class="page clearfix" role="main">
             <nav id="breadcrumbs">
                 Home     Photos, caméscope     Appareils photos     Les reflexs     Les réflexs amateurs
             </nav>
-            <div id="global-info-product" class="module">
-                <div class="module-punch"></div>
-                <div class="module-content">
-                    <h1>Réflexs amateurs</h1>
-                    <div id="offers-ping" class="clearfix">
-                        <p>
-                            <b>Information mise en avant</b>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis.Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        </p>
-                        <div class="product-from">
-                            <p><span>47 produits</span> à partir de</p>
-                            <span class="price">308,94 €</span>
-                        </div>
-                        <div class="product-ping">
-                            <p>Nombre d’inscrits au ping:</p>
-                            <span class="ping">123<i class="icon-pinger"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <ul class="user-actions">
-                    <li>
-                        <a href="#" title="" class="user-action">
-                            <i class="icon-ping"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="" class="user-action">
-                            <i class="icon-share"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="" class="user-action">
-                            <i class="icon-wishlist"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="" class="user-action">
-                            <i class="icon-like"></i>
-                        </a>
-                    </li>
-                </ul>
-                <div id="affinity-info">
-                    <p>Affinité de l’animal de compagnie</p>
-                    <div id="holder" class="affinity-bot" data-score="80" data-size="80" data-stroke="8">
-                        <div class="affinity-score">80%</div>
-                    </div>
-                    <p>Vous aussi, calculez votre affinité</p>
-                </div>
-            </div>
-            <div id="go" class="module">
+            <div id="ping-search-result" class="module clearfix">
                 <div class="module-punch"></div>
                 <div class="module-content clearfix">
-                    <h3><i class="icon-advice"></i>Vente flash</h3>
-                    <img src="img/dynamic/ping-featured-product.jpg" alt="CANON">
-                    <h2>CANON</h2>
-                    <p>EOS 600D + objectif EF-S 18-135mm IS livré avec un chargeur et une batterielithium.</p>
-                    <div id="go-date" class="step2">
-                        <p class="go-offer">Pour profiter de cette offre*, il vous reste:</p>
-                        <strong class="date">2jours  11:34:46</strong>
-                        <p class="asterisk">*Offre valable que pour les membres Wepingo</p>
+                    <div id="affinity-info">
+                        <h1>Réflexs amateurs</h1>
+                        <p>Affinité de l’animal de compagnie</p>
+                        <div class="affinity-bot" data-score="80" data-size="80" data-stroke="8">
+                            <div class="affinity-score">80%</div>
+                        </div>
+                        <p>Vous aussi, calculez votre affinité</p>
                     </div>
-                    <a href="" title="Inscrivez-vous !" class="call-to-action">Inscrivez-vous !</a>
+                    <div id="featured-products">
+                        <a href="" title="Voir tous les produits" class="more-action"><i class="icon-dart"></i>Voir tous les produits</a>
+                        <ul>
+                            <li class="product">
+                                <div class="affinity-bot" data-score="90" data-size="40" data-stroke="4">
+                                    <div class="affinity-score">90%</div>
+                                </div>
+                                <img src="img/dynamic/ping-featured-product.jpg" alt="CANON">
+                                <h3>CANON</h3>
+                                <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                                <b>à partir de </b>
+                                <span class="price">308,94€</span>
+                                <ul class="user-actions">
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-share"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-wishlist"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-like"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-pinger"></i>
+                                        <span>231</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="product">
+                                <div class="affinity-bot" data-score="70" data-size="40" data-stroke="4">
+                                    <div class="affinity-score">70%</div>
+                                </div>
+                                <img src="img/dynamic/ping-featured-product.jpg" alt="CANON">
+                                <h3>CANON</h3>
+                                <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                                <b>à partir de </b>
+                                <span class="price">308,94€</span>
+                                <ul class="user-actions">
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-share"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-wishlist"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-like"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-pinger"></i>
+                                        <span>231</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="product">
+                                <div class="affinity-bot" data-score="60" data-size="40" data-stroke="4">
+                                    <div class="affinity-score">60%</div>
+                                </div>
+                                <img src="img/dynamic/ping-featured-product.jpg" alt="CANON">
+                                <h3>CANON</h3>
+                                <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                                <b>à partir de </b>
+                                <span class="price">308,94€</span>
+                                <ul class="user-actions">
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-share"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-wishlist"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="" class="user-action">
+                                            <i class="icon-like"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-pinger"></i>
+                                        <span>231</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div id="featured-products" class="module">
-                <div class="module-punch"></div>
-                <div class="module-content">
-                    <h2>Produits conseillés</h2> <img class="user-picture" src="https://graph.facebook.com/828809796/picture" alt="Samantha Kist" height="27"> <span class="user-name">Pour un animal de compagnie</span>
-                    <ul>
-                        <li class="product">
-                            <div class="affinity-bot" data-score="90" data-size="40" data-stroke="4">
-                                <div class="affinity-score">90%</div>
-                            </div>
-                            <img src="img/dynamic/ping-featured-product.jpg" alt="CANON">
-                            <h3>CANON</h3>
-                            <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
-                            <b>à partir de </b>
-                            <span class="price">308,94€</span>
-                            <ul class="user-actions">
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-share"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-wishlist"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-like"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <i class="icon-pinger"></i>
-                                    <span>231</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product">
-                            <div class="affinity-bot" data-score="70" data-size="40" data-stroke="4">
-                                <div class="affinity-score">70%</div>
-                            </div>
-                            <img src="img/dynamic/ping-featured-product.jpg" alt="CANON">
-                            <h3>CANON</h3>
-                            <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
-                            <b>à partir de </b>
-                            <span class="price">308,94€</span>
-                            <ul class="user-actions">
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-share"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-wishlist"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-like"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <i class="icon-pinger"></i>
-                                    <span>231</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product">
-                            <div class="affinity-bot" data-score="60" data-size="40" data-stroke="4">
-                                <div class="affinity-score">60%</div>
-                            </div>
-                            <img src="img/dynamic/ping-featured-product.jpg" alt="CANON">
-                            <h3>CANON</h3>
-                            <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
-                            <b>à partir de </b>
-                            <span class="price">308,94€</span>
-                            <ul class="user-actions">
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-share"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-wishlist"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="" class="user-action">
-                                        <i class="icon-like"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <i class="icon-pinger"></i>
-                                    <span>231</span>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="advice" class="module">
-                <div class="module-punch"></div>
-                <div class="module-content clearfix">
-                    <h3><i class="icon-advice"></i>Conseil d'utilisation</h3>
-                    <blockquote>
-                        <img src="img/dynamic/advice.jpg" alt="Conseil d'utilisation">
-                        Quelle différence y a-t-il entre un viseur optique et un viseur électronique ? Le viseur optique va vérifier la zone de couverture mais cette dernière ne sera pas très précise. Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène que vous souhaitez photographier. Ce dernier couvre 90 à 95 % de la zone photographiée. Quant au viseur électronique, malgré son manque de définition qui fait que la mise au point est assez difficile, ...
-                    </blockquote>
-                    <a href="#" title="Lire la suite"><i class="icon-dart"></i>Lire la suite</a>
-                </div>
-            </div>
-            <div id="filtered-products" class="module">
-                <div class="module-punch"></div>
-                <div class="module-content">
-                    <h2>Produits du ping</h2>
-                    
+            <div id="filtered-products">
+                <h2>Produits du ping</h2><p class="product-count">43 produits correspondent à votre recherche</p>
+                <div class="module">
                     <div class="products-filters clearfix">
                         <ul class="products-pagination">
                             <li>Pages</li>
@@ -1286,15 +1219,6 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <div id="did-you-know" class="module">
-                <div class="module-punch"></div>
-                <div class="module-content">
-                    <h3><i class="icon-did-you-know"></i>Le saviez-vous ?</h3>
-                    <blockquote>
-                        Le dernier épisode de la saison 6 de la série Dr House aurait été tourné entièrement avec un Appareil Photo Numérique, d'une valeur d'environ 2000€ (3000$). Le but était de prouver que la qualité de ces appareils était si puissante qu'il était possible de tourner des séries professionnelles avec. Surtout un sacré coup de pub pour le fabricant de l'appareil, Canon !
-                    </blockquote>
                 </div>
             </div>
         </section>

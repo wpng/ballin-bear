@@ -7,6 +7,8 @@ var AffinityBot =
         $('.affinity-bot').each( AffinityBot.set );
         
         $('.affinity-bot').on( 'mouseover', AffinityBot.onHover );
+        $('.affinity-bot').on( 'touchstart', AffinityBot.onHover );
+        
         $( '.affinity-actions' ).on( 'mouseleave', AffinityBot.onOut );
         
         $(' .affinity-actions i ').on( 'mouseover', function( event ) {event.preventDefault();} );

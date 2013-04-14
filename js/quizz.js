@@ -21,6 +21,19 @@ var Quizz =
                 ui.item.children( "h3" ).triggerHandler( "focusout" );
             }
         });
+        
+        $( '#show-full-summary' ).on( 'click', Quizz.showFullSummary );
+    },
+    showFullSummary: function( event )
+    {
+        event.preventDefault();
+        
+        var pos = cumulativeOffset( $( '#summary' ) );
+        
+        if ( $( '#summary' ).hasClass( 'show-full-summary' ) )
+            $( '#summary' ).removeClass( 'show-full-summary' );
+        else
+            $( '#summary' ).addClass( 'show-full-summary' );
     },
     setPriceFilter: function()
     {
@@ -110,3 +123,17 @@ var Quizz =
 };
 
 $( document ).ready( Quizz.init );
+
+var cumulativeOffset = function(element) {
+    var top = 0, left = 0;
+    do {
+        top += element.offsetTop  || 0;
+        left += element.offsetLeft || 0;
+        element = element.offsetParent;
+    } while(element);
+
+    return {
+        top: top,
+        left: left
+    };
+};

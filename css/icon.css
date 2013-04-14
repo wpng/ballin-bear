@@ -61,12 +61,28 @@
     width: 8px;
 }
 
+.products-filters .icon-arrow-down
+{
+    background-position: -66px -52px;
+    height: 4px;
+    margin: 5px 0 0 3px;
+    width: 7px;
+}
+
 .icon-arrow-right
 {
     background-position: -152px -299px;
     height: 5px;
     margin: 5px 0 0 2px;
     width: 11px;
+}
+
+.products-filters .icon-arrow-right
+{
+    background-position: -186px -52px;
+    height: 7px;
+    margin: 3px 0 0 3px;
+    width: 4px;
 }
 
 #dashboard h4 .icon-arrow-right
@@ -147,7 +163,8 @@
     width: 18px;
 }
 
-.ui-accordion .icon-arrow-down
+.ui-accordion .icon-arrow-down,
+#page-quizz-end #summary .icon-arrow-down
 {
     background-position: -99px -705px;
     float: right;
@@ -163,7 +180,16 @@
     margin-right: 3px;
 }
 
-.ui-accordion .ui-accordion-header-active .icon-arrow-down
+#page-quizz-end #summary .icon-arrow-down
+{
+    float: none;
+    width: 11px;
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+.ui-accordion .ui-accordion-header-active .icon-arrow-down,
+#page-quizz-end #summary.show-full-summary .icon-arrow-down
 {
     background-position: -110px -705px;
     float: right;

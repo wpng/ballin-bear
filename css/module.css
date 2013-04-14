@@ -416,6 +416,47 @@
     margin: 0 0 1em 0;
 }
 
+/* filters */
+
+.products-filters
+{
+    color: #8b8b8b;
+    font-size: 1.9em;
+    line-height: 2em;
+}
+
+.products-filters .products-pagination
+{
+    float: left;
+}
+
+.products-filters .products-sort
+{
+    float: right;
+}
+
+.products-filters li
+{
+    display: inline-block;
+}
+
+.products-filters a
+{
+    color: #8b8b8b;
+    text-decoration: none;
+}
+
+.products-sort a
+{
+    margin: 0 0.4em 0 0;
+}
+
+.products-filters a:hover,
+.products-filters a.active
+{
+    color: #f68b2c;
+}
+
 /* ping light */
 
 .ping-light
