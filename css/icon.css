@@ -182,7 +182,8 @@ input[type="radio"] + .checkbox:hover .icon-checkbox,
 }
 
 input[type="radio"]:checked + .checkbox .icon-checkbox,
-#modal-avantages input[type="radio"]:checked + label .icon-checkbox
+#modal-avantages input[type="radio"]:checked + label .icon-checkbox,
+#page-news input[type="checkbox"]:checked + .checkbox .icon-checkbox
 {
     background-position: -93px -16px;
 }
@@ -196,6 +197,22 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 {
     background-position: -70px -705px;
 }
+
+#page-news .icon-delete
+{
+    display: none;
+    background-position: -245px -299px;
+    height: 6px;
+    margin: 10px 0 0 0;
+    width: 8px;
+    float: right;
+}
+
+#page-news label:hover .icon-delete
+{
+    display: block;
+}
+
 
 /* social */
 
@@ -459,7 +476,8 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     width: 20px;
 }
 
-.wished-product .icon-camera
+.wished-product .icon-camera,
+.actuality .icon-camera
 {
     background-position: -78px -71px;
     height: 14px;

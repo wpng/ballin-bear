@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/module.css">
-    <link rel="stylesheet" href="css/wishlist.css">
+    <link rel="stylesheet" href="css/news.css">
     <script src="js/html5.js"></script>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
@@ -23,7 +23,7 @@
     <script src="js/dropdown.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/wishlist.js"></script>
+    <script src="js/news.js"></script>
     <script src="js/affinity-bot.js"></script>
 </head>
 <body>
@@ -185,14 +185,111 @@
         </nav>
         
         <!-- page -->
-        <section id="page-wishlist" class="page clearfix" role="main">
+        <section id="page-news" class="page clearfix" role="main">
             <nav id="breadcrumbs">
                 Home     Photos, caméscope     Appareils photos
             </nav>
-            <div id="wishlist">
-                <div class="wished-product module">
+            <div id="news">
+                <div class="actuality actuality-filter module">
                     <div class="module-punch"></div>
-                    <div class="module-content">
+                    <div class="module-content clearfix">
+                        <h2>Mes actualités</h2>
+                        <a href="#" title="Tout sélectionner" id="select-all-news">Tout sélectionner</a>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="popular_pings" value="1" id="popular_pings">
+                                <label class="checkbox" for="popular_pings"><i class="icon-checkbox"></i>Pings populaires<i class="icon-delete"></i></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="daily_pings" value="1" id="daily_pings">
+                                <label class="checkbox" for="daily_pings"><i class="icon-checkbox"></i>Pings du jour<i class="icon-delete"></i></label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="camera" value="1" id="camera">
+                                <label class="checkbox" for="camera"><i class="icon-checkbox"></i>Appareils photos<i class="icon-delete"></i></label>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="camera_reflex_pro" value="1" id="camera_reflex_pro">
+                                        <label class="checkbox" for="camera_reflex_pro"><i class="icon-checkbox"></i>Les reflexs pro<i class="icon-delete"></i></label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="camera_light" value="1" id="camera_light">
+                                        <label class="checkbox" for="camera_light"><i class="icon-checkbox"></i>Les ultra légers<i class="icon-delete"></i></label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="camera_nomad" value="1" id="camera_nomad">
+                                        <label class="checkbox" for="camera_nomad"><i class="icon-checkbox"></i>Les nomades<i class="icon-delete"></i></label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="camera_reflex" value="1" id="camera_reflex">
+                                        <label class="checkbox" for="camera_reflex"><i class="icon-checkbox"></i>Les reflexs pro<i class="icon-delete"></i></label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="vacuum" value="1" id="vacuum">
+                                <label class="checkbox" for="vacuum"><i class="icon-checkbox"></i>Aspirateurs<i class="icon-delete"></i></label>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="robots_water" value="1" id="robots_water">
+                                        <label class="checkbox" for="robots_water"><i class="icon-checkbox"></i>Les robots à l’eau<i class="icon-delete"></i></label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="robots" value="1" id="robots">
+                                        <label class="checkbox" for="robots"><i class="icon-checkbox"></i>Les robots<i class="icon-delete"></i></label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="noisy" value="1" id="noisy">
+                                        <label class="checkbox" for="noisy"><i class="icon-checkbox"></i>Les bruyants<i class="icon-delete"></i></label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="silent" value="1" id="silent">
+                                        <label class="checkbox" for="silent"><i class="icon-checkbox"></i>Les silencieux<i class="icon-delete"></i></label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="user-actions">
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-share"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-like"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actuality module">
+                    <div class="module-punch"></div>
+                    <div class="module-content clearfix">
+                        <h2><i class="icon-advice"></i>Conseil d'utilisation</h2>
+                        <p class="message"><img src="img/dynamic/advice.jpg" alt="Conseil d'utilisation">Quelle différence y a-t-il entre un viseur optique et un viseur électronique ? Le viseur optique va vérifier la zone de couverture mais cette dernière ne sera pas très précise. Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène que vous souhaitez photographier. Ce dernier couvre 90 à 95 % de la zone photographiée. Quant au viseur électronique, malgré son manque de définition qui fait que la mise au point est assez difficile, ...</p>
+                        <a href="#" title="Lire la suite" class="more-action"><i class="icon-dart"></i>Lire la suite</a>
+                    </div>
+                    <ul class="user-actions">
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-share"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-like"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actuality module">
+                    <div class="module-punch"></div>
+                    <div class="module-content clearfix">
                         <h2><i class="icon-camera"></i>Les ultra-légers</h2>
                         <div class="affinity-info">
                             <div class="affinity-actions">
@@ -231,9 +328,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="wished-product module">
+                <div class="actuality module">
                     <div class="module-punch"></div>
-                    <div class="module-content">
+                    <div class="module-content clearfix">
                         <h2><i class="icon-camera"></i>Les ultra-légers</h2>
                         <div class="affinity-info">
                             <div class="affinity-actions">
@@ -246,7 +343,7 @@
                         </div>
                         <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
                         <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
                         <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
                     </div>
@@ -272,9 +369,29 @@
                         </li>
                     </ul>
                 </div>
-                <div class="wished-product module">
+                <div class="actuality module">
                     <div class="module-punch"></div>
-                    <div class="module-content">
+                    <div class="module-content clearfix">
+                        <h2><i class="icon-advice"></i>Conseil d'utilisation</h2>
+                        <p class="message"><img src="img/dynamic/advice.jpg" alt="Conseil d'utilisation">Quelle différence y a-t-il entre un viseur optique et un viseur électronique ? Le viseur optique va vérifier la zone de couverture mais cette dernière ne sera pas très précise. Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène que vous souhaitez photographier. Ce dernier couvre 90 à 95 % de la zone photographiée. Quant au viseur électronique, malgré son manque de définition qui fait que la mise au point est assez difficile, ...</p>
+                        <a href="#" title="Lire la suite" class="more-action"><i class="icon-dart"></i>Lire la suite</a>
+                    </div>
+                    <ul class="user-actions">
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-share"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-like"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actuality module">
+                    <div class="module-punch"></div>
+                    <div class="module-content clearfix">
                         <h2><i class="icon-camera"></i>Les ultra-légers</h2>
                         <div class="affinity-info">
                             <div class="affinity-actions">
@@ -287,7 +404,7 @@
                         </div>
                         <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
                         <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
                         <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
                     </div>
@@ -313,9 +430,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="wished-product module">
+                <div class="actuality module">
                     <div class="module-punch"></div>
-                    <div class="module-content">
+                    <div class="module-content clearfix">
                         <h2><i class="icon-camera"></i>Les ultra-légers</h2>
                         <div class="affinity-info">
                             <div class="affinity-actions">
@@ -328,7 +445,7 @@
                         </div>
                         <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
                         <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
                         <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
                     </div>
@@ -354,9 +471,29 @@
                         </li>
                     </ul>
                 </div>
-                <div class="wished-product module">
+                <div class="actuality module">
                     <div class="module-punch"></div>
-                    <div class="module-content">
+                    <div class="module-content clearfix">
+                        <h2><i class="icon-advice"></i>Conseil d'utilisation</h2>
+                        <p class="message"><img src="img/dynamic/advice.jpg" alt="Conseil d'utilisation">Quelle différence y a-t-il entre un viseur optique et un viseur électronique ? Le viseur optique va vérifier la zone de couverture mais cette dernière ne sera pas très précise. Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène que vous souhaitez photographier. Ce dernier couvre 90 à 95 % de la zone photographiée. Quant au viseur électronique, malgré son manque de définition qui fait que la mise au point est assez difficile, ...</p>
+                        <a href="#" title="Lire la suite" class="more-action"><i class="icon-dart"></i>Lire la suite</a>
+                    </div>
+                    <ul class="user-actions">
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-share"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-like"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actuality module">
+                    <div class="module-punch"></div>
+                    <div class="module-content clearfix">
                         <h2><i class="icon-camera"></i>Les ultra-légers</h2>
                         <div class="affinity-info">
                             <div class="affinity-actions">
@@ -395,9 +532,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="wished-product module">
+                <div class="actuality module">
                     <div class="module-punch"></div>
-                    <div class="module-content">
+                    <div class="module-content clearfix">
                         <h2><i class="icon-camera"></i>Les ultra-légers</h2>
                         <div class="affinity-info">
                             <div class="affinity-actions">
@@ -410,7 +547,7 @@
                         </div>
                         <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
                         <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
+                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                         <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
                         <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
                     </div>
@@ -436,9 +573,29 @@
                         </li>
                     </ul>
                 </div>
-                <div class="wished-product module">
+                <div class="actuality module">
                     <div class="module-punch"></div>
-                    <div class="module-content">
+                    <div class="module-content clearfix">
+                        <h2><i class="icon-advice"></i>Conseil d'utilisation</h2>
+                        <p class="message"><img src="img/dynamic/advice.jpg" alt="Conseil d'utilisation">Quelle différence y a-t-il entre un viseur optique et un viseur électronique ? Le viseur optique va vérifier la zone de couverture mais cette dernière ne sera pas très précise. Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène que vous souhaitez photographier. Ce dernier couvre 90 à 95 % de la zone photographiée. Quant au viseur électronique, malgré son manque de définition qui fait que la mise au point est assez difficile, ...</p>
+                        <a href="#" title="Lire la suite" class="more-action"><i class="icon-dart"></i>Lire la suite</a>
+                    </div>
+                    <ul class="user-actions">
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-share"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-like"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actuality module">
+                    <div class="module-punch"></div>
+                    <div class="module-content clearfix">
                         <h2><i class="icon-camera"></i>Les ultra-légers</h2>
                         <div class="affinity-info">
                             <div class="affinity-actions">
@@ -451,212 +608,7 @@
                         </div>
                         <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
                         <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
-                        <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
-                        <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
-                    </div>
-                    <ul class="user-actions">
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-share"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-wishlist"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-like"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="icon-pinger"></i>
-                            <span>231</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wished-product module">
-                    <div class="module-punch"></div>
-                    <div class="module-content">
-                        <h2><i class="icon-camera"></i>Les ultra-légers</h2>
-                        <div class="affinity-info">
-                            <div class="affinity-actions">
-                                <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
-                                <a href="#" title="share" class="affinity-action affinity-share"><i class="icon-share"></i></a>
-                            </div>
-                            <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="8">
-                                <div class="affinity-score">93%</div>
-                            </div>
-                        </div>
-                        <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
-                        <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
-                        <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
-                        <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
-                    </div>
-                    <ul class="user-actions">
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-share"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-wishlist"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-like"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="icon-pinger"></i>
-                            <span>231</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wished-product module">
-                    <div class="module-punch"></div>
-                    <div class="module-content">
-                        <h2><i class="icon-camera"></i>Les ultra-légers</h2>
-                        <div class="affinity-info">
-                            <div class="affinity-actions">
-                                <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
-                                <a href="#" title="share" class="affinity-action affinity-share"><i class="icon-share"></i></a>
-                            </div>
-                            <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="9">
-                                <div class="affinity-score">93%</div>
-                            </div>
-                        </div>
-                        <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
-                        <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
-                        <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
-                        <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
-                    </div>
-                    <ul class="user-actions">
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-share"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-wishlist"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-like"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="icon-pinger"></i>
-                            <span>231</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wished-product module">
-                    <div class="module-punch"></div>
-                    <div class="module-content">
-                        <h2><i class="icon-camera"></i>Les ultra-légers</h2>
-                        <div class="affinity-info">
-                            <div class="affinity-actions">
-                                <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
-                                <a href="#" title="share" class="affinity-action affinity-share"><i class="icon-share"></i></a>
-                            </div>
-                            <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="10">
-                                <div class="affinity-score">93%</div>
-                            </div>
-                        </div>
-                        <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
-                        <h3>CANON</h3>
                         <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
-                        <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
-                    </div>
-                    <ul class="user-actions">
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-share"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-wishlist"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-like"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="icon-pinger"></i>
-                            <span>231</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wished-product module">
-                    <div class="module-punch"></div>
-                    <div class="module-content">
-                        <h2><i class="icon-camera"></i>Les ultra-légers</h2>
-                        <div class="affinity-info">
-                            <div class="affinity-actions">
-                                <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
-                                <a href="#" title="share" class="affinity-action affinity-share"><i class="icon-share"></i></a>
-                            </div>
-                            <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="11">
-                                <div class="affinity-score">93%</div>
-                            </div>
-                        </div>
-                        <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
-                        <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
-                        <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
-                    </div>
-                    <ul class="user-actions">
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-share"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-wishlist"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="" class="user-action">
-                                <i class="icon-like"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <i class="icon-pinger"></i>
-                            <span>231</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wished-product module">
-                    <div class="module-punch"></div>
-                    <div class="module-content">
-                        <h2><i class="icon-camera"></i>Les ultra-légers</h2>
-                        <div class="affinity-info">
-                            <div class="affinity-actions">
-                                <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
-                                <a href="#" title="share" class="affinity-action affinity-share"><i class="icon-share"></i></a>
-                            </div>
-                            <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="12">
-                                <div class="affinity-score">93%</div>
-                            </div>
-                        </div>
-                        <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
-                        <h3>CANON</h3>
-                        <p>EOS 600D + objectif EF-S 18-135 mm IS Livré avec chargeur, batterie lithium</p>
                         <p class="ping-count"><span class="from">17 produits</span> à partir de <span class="price">9 999.80 €</span></p>
                         <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-dart"></i>Voir toutes les offres</a>
                     </div>
