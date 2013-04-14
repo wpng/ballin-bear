@@ -60,6 +60,13 @@
     vertical-align: top;
 }
 
+#page-quizz-end .ui-accordion-content,
+#page-quizz-end .ui-accordion-header
+{
+    background: none;
+    border: 0;
+}
+
 
 /* Misc visuals
 ----------------------------------*/

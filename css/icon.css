@@ -156,6 +156,13 @@
     width: 6px;
 }
 
+#page-quizz-end .ui-accordion .icon-arrow-down
+{
+    float: none;
+    width: 11px;
+    margin-right: 3px;
+}
+
 .ui-accordion .ui-accordion-header-active .icon-arrow-down
 {
     background-position: -110px -705px;
@@ -736,6 +743,7 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 {
     background-position: -127px -705px;
     height: 18px;
+    margin: 1em 0 0 0;
     width: 20px;
 }
 
@@ -750,6 +758,7 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 .icon-weak
 {
     background-position: -151px -705px;
+    margin: 1em 0 0 0;
     height: 18px;
     width: 20px;
 }

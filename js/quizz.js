@@ -10,6 +10,17 @@ var Quizz =
         
         $( '#details-expert' ).on( 'click', Modal.show );
         $( '.product-thumbnails li' ).on( 'click', Modal.show );
+        
+        $( ".strongs" ).accordion( { header: "> div > h3", icons: null } )
+        .sortable(
+        {
+            axis: "y",
+            handle: "h3",
+            stop: function( event, ui )
+            {
+                ui.item.children( "h3" ).triggerHandler( "focusout" );
+            }
+        });
     },
     setPriceFilter: function()
     {

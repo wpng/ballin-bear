@@ -252,7 +252,7 @@ label
 #global-explain
 {
     width: 32%;
-    margin: 0 1% 0 0;
+    margin: 0 1% 1em 0;
 }
 
 #global-explain .icon-wepi
@@ -380,6 +380,22 @@ label
     top: 4px;
 }
 
+/* strongs */
+
+#page-quizz-end .strongs h3
+{
+    color: #00ade0;
+    display: block;
+    font-family: 'caviar_dreamsregular', Arial, sans-serif;
+    font-size: 2em;
+    margin: 0;
+}
+
+#page-quizz-end .strongs p
+{
+    width: 100%
+}
+
 @media (max-width: 820px)
 {
     #page-quizz .module,
@@ -393,6 +409,12 @@ label
     {
         width: 100%;
     }
+}
+
+#pings-light
+{
+    clear: both;
+    margin: 1em 0 0 0;
 }
 
 @media (max-width: 600px)
