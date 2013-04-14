@@ -147,6 +147,24 @@
     width: 18px;
 }
 
+.ui-accordion .icon-arrow-down
+{
+    background-position: -99px -705px;
+    float: right;
+    height: 11px;
+    margin-top: 3px;
+    width: 6px;
+}
+
+.ui-accordion .ui-accordion-header-active .icon-arrow-down
+{
+    background-position: -110px -705px;
+    float: right;
+    height: 6px;
+    margin-top: 5px;
+    width: 11px;
+}
+
 /* checkbox */
 
 .icon-checkbox
@@ -610,6 +628,15 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     margin: 0 3px 0 0;
     vertical-align: bottom;
     width: 14px;
+}
+
+#modal-expert .icon-idea
+{
+    background-position: -2px -206px;
+    height: 22px;
+    margin: 0 3px 0 0;
+    vertical-align: text-top;
+    width: 18px;
 }
 
 /* quizz */
