@@ -19,6 +19,14 @@
     width: 12px;
 }
 
+.icon-bubble
+{
+    background-position: -155px -206px;
+    height: 5px;
+    margin: 5px 5px 0 0;
+    width: 5px;
+}
+
 /* toggle */
 
 .icon-toggle
@@ -63,10 +71,16 @@
 
 .products-filters .icon-arrow-down
 {
-    background-position: -66px -52px;
+    background-position: -169px -90px;
     height: 4px;
     margin: 5px 0 0 3px;
-    width: 7px;
+    width: 8px;
+}
+
+.products-filters a:hover .icon-arrow-down,
+.products-filters a.active .icon-arrow-down
+{
+    background-position: -169px -100px;
 }
 
 .icon-arrow-right
@@ -79,10 +93,15 @@
 
 .products-filters .icon-arrow-right
 {
-    background-position: -186px -52px;
-    height: 7px;
+    background-position: -181px -90px;
+    height: 8px;
     margin: 3px 0 0 3px;
     width: 4px;
+}
+
+.products-filters a:hover .icon-arrow-right
+{
+    background-position: -181px -100px;
 }
 
 #dashboard h4 .icon-arrow-right

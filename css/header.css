@@ -17,8 +17,6 @@
 #search-container
 {
     display: inline-block;
-    font-size: 0em;
-    letter-spacing: -1em;
     margin: 22px 0 0 10%;
     position: relative;
     width: 35%
@@ -46,6 +44,76 @@
     -webkit-border-radius: 0 10px 10px 0;
        -moz-border-radius: 0 10px 10px 0;
             border-radius: 0 10px 10px 0;
+}
+
+#search-container .dropdown-menu
+{
+    left: 2px;
+    right: auto;
+    top: 39px;
+    font-size: 1em;
+    min-width: inherit;
+    padding: 0 1%;
+    width: 91%;
+}
+
+#search-container .dropdown-menu h4
+{
+    color: #00ade0;
+    font-size: 2.4em;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin: 1em 0 0 0;
+    text-transform: uppercase;
+}
+
+#search-container .dropdown-menu a
+{
+    color: #343434;
+    font-size: 1.9em;
+    line-height: 1.2em;
+    margin: 0 0 0 10px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+#search-container .products 
+{
+    margin: 1em 0 0 1em;
+}
+
+#search-container .products img
+{
+    margin: 0 1em 0 0;
+    width: 7em;
+}
+
+#search-container .product
+{
+    border: 1px solid #f1f1f1;
+    margin: 0 0 0.4em 0;
+    padding: 0.4em;
+}
+
+#search-container .product:nth-child(2n)
+{
+    background: #ededef;
+}
+
+#search-container .products .product-info
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+
+#search-container .products h5
+{   
+    color: #00ade0;
+    font-size: 2.4em;
+    font-weight: normal;
+    line-height: 1.4em;
+    text-transform: uppercase;
 }
 
 /* SESSION */
@@ -104,7 +172,8 @@
     display: none;
 }
 
-#session .dropdown.open .dropdown-menu
+#session .dropdown.open .dropdown-menu,
+#search-container.dropdown.open .dropdown-menu
 {
     cursor: auto;
     display: block;
@@ -272,15 +341,29 @@
     {
         width: 70%;
     }
+    
+    #search-container.dropdown.open .dropdown-menu
+    {
+        display: none;
+    }
 }
 
-@media (max-width: 630px)
+@media (max-width: 780px)
 {
     #header
     {
         text-align: center;
     }
     
+    #search-container
+    {
+        margin: 22px auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 630px)
+{   
     #session
     {
         display: block;
@@ -292,17 +375,5 @@
     {
         float: none;
         margin: 10px 0 0 0;
-    }
-    
-    #search-container
-    {
-        margin: 22px 0;
-        text-align: center;
-        width: 80%;
-    }
-    
-    #search input[type=text]
-    {
-        width: 70%;
     }
 }
