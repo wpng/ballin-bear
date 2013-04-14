@@ -15,6 +15,8 @@ var App =
         
         Form.title();
         
+        Toggle.init();
+        
         $( '.user-action' ).bind( 'click', App.userAction );
         
         $( '#delete-account .user-action' ).on( 'click', App.showDelete );
@@ -107,6 +109,49 @@ var Form =
                 }
             });
         });
+    }
+}
+
+var Toggle =
+{
+    init: function()
+    {
+        $( '.toggle' ).on( 'click', Toggle.onClick );
+    },
+    onClick: function()
+    {
+        console.log('toggle');
+        
+        var parent = $( this ).parents( 'div' )[ 0 ];
+        
+        if ( $( parent ).hasClass( 'on' ) )
+        {
+            $( this ).animate( { 'text-indent': "-29px" },
+            {
+                step: function(now, fx)
+                {
+                    $(fx.elem).css("background-position", now+"px 0px");
+                },
+                complete: function()
+                {
+                    $( parent ).removeClass( 'on' );
+                }
+            }, 1000 );
+        }
+        else
+        {
+            $( this ).animate( { 'text-indent': "0px" },
+            {
+                step: function(now, fx)
+                {
+                    $(fx.elem).css("background-position", now+"px 0px");
+                },
+                complete: function()
+                {
+                    $( parent ).addClass( 'on' );
+                }
+            }, 1000 );
+        }
     }
 }
 

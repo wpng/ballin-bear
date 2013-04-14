@@ -8,6 +8,17 @@ var Dropdown =
         $( '#filtered-products .offer-action' ).bind( 'click', Dropdown.offerProducts );
         
         $( '.geoloc-products .dropdown' ).bind( 'click', Dropdown.geolocMap );
+        
+        $( '#search input').focus( Dropdown.searchShow );
+        $( '#search input').focusout( Dropdown.searchHide );
+    },
+    searchShow: function ( event )
+    {
+        $( '#search-container' ).addClass( 'open' );
+    },
+    searchHide: function ( event )
+    {
+        $( '#search-container' ).removeClass( 'open' );
     },
     show: function( event )
     {

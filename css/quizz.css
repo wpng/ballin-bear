@@ -421,7 +421,31 @@ label
 
 #page-quizz-end .strongs p
 {
+    font-size: 1.6em;
     width: 100%
+}
+
+/* toggle */
+
+.toggle
+{
+    display: inline-block;
+    background: url("../img/toggle.png") no-repeat top right;
+    cursor: pointer;
+    height: 19px;
+    margin: 0 3px 0 0;
+    width: 45px;
+    text-indent: -29px;
+    vertical-align: middle;
+    -webkit-border-radius: 14px;
+       -moz-border-radius: 14px;
+            border-radius: 14px;
+}
+
+.on .toggle
+{
+    background-position: top left;
+    text-indent: 0px;
 }
 
 @media (max-width: 820px)
