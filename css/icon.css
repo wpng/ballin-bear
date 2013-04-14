@@ -157,12 +157,14 @@
     width: 10px;
 }
 
-input[type="radio"] + .checkbox:hover .icon-checkbox
+input[type="radio"] + .checkbox:hover .icon-checkbox,
+#modal-avantages input[type="radio"] + label:hover .icon-checkbox
 {
     background-position: -93px -31px;
 }
 
-input[type="radio"]:checked + .checkbox .icon-checkbox
+input[type="radio"]:checked + .checkbox .icon-checkbox,
+#modal-avantages input[type="radio"]:checked + label .icon-checkbox
 {
     background-position: -93px -16px;
 }
@@ -697,4 +699,44 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     background-position: -151px -705px;
     height: 18px;
     width: 20px;
+}
+
+#modal-avantages .icon-privileges
+{
+    background-position: -5px -725px;
+    height: 100px;
+    margin: 0 0 0.4em 0;
+    width: 86px;
+}
+
+#modal-avantages .icon-trends
+{
+    background-position: -104px -725px;
+    height: 100px;
+    margin: 0 0 0.4em 0;
+    width: 86px;
+}
+
+#modal-avantages .icon-advice
+{
+    background-position: -201px -725px;
+    height: 100px;
+    margin: 0 0 0.4em 0;
+    width: 86px;
+}
+
+#modal-avantages .icon-share
+{
+    background-position: -5px -829px;
+    height: 100px;
+    margin: 0 0 0.4em 0;
+    width: 86px;
+}
+
+#modal-avantages .icon-gifts
+{
+    background-position: -103px -829px;
+    height: 100px;
+    margin: 0 0 0.4em 0;
+    width: 86px;
 }

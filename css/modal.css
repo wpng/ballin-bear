@@ -39,7 +39,7 @@
     overflow: visible;
     padding: 15px;
     position: relative;
-    top: 120px;
+    top: 80px;
     width: 560px;
     z-index: 6000;
     -webkit-box-shadow: 0 4px 12px rgba(0,0,0,.4);
@@ -60,4 +60,121 @@
     position: absolute;
     right: 7px;
     top: 7px;
+}
+
+/* avantages */
+
+#modal-avantages .modal
+{
+    width: 790px;
+    padding: 15px 0 0 0;
+}
+
+#modal-avantages .avantages
+{
+    text-align: center;
+}
+
+#modal-avantages .avantages li
+{
+    display: inline-block;
+    max-width: 10em;
+    margin: 1em 0.2em;
+    vertical-align: top;
+}
+
+#modal-sign-up
+{
+    border-top: 1px solid #dbd8d4;
+}
+
+#modal-avantages h3
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 1.6em;
+    line-height: 2em;
+    text-align: center;
+}
+
+#modal-avantages #sign-up-facebook
+{
+    display: inline-block;
+    padding: 0 0 15px 0;
+    text-align: center;
+    vertical-align: top;
+    width: 49%;
+}
+
+#modal-avantages #login-facebook
+{
+    font-size: 0.9em;
+    margin: 2em 0 0 0;
+}
+
+#modal-avantages #sign-up-email
+{
+    border-left: 1px solid #dbd8d4;
+    display: inline-block;
+    padding: 0 0 15px 0;
+    vertical-align: top;
+    text-align: center;
+    width: 49%;
+}
+
+#sign-up-email form
+{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#modal-avantages input[type=text],
+#modal-avantages input[type=password]
+{
+    margin: 0.4em 0 0 0;
+    padding: 0.4em 2%;
+}
+
+#modal-avantages #sign-up-email input[name=first_name]
+{
+    float: left;
+    width: 45%;
+}
+
+#modal-avantages #sign-up-email input[name=last_name]
+{
+    float: right;
+    width: 45%;
+}
+
+#modal-avantages #sign-up-email input[name=email],
+#modal-avantages #sign-up-email input[type=password]
+{
+    width: 96%;
+}
+
+#modal-avantages #sign-up-email input[type=submit]
+{
+    float: right;
+    font-size: 1.6em;
+    margin: 1em 0 0 0;
+}
+
+#modal-avantages #sign-up-email ul
+{
+    float: left;
+    margin: 0.6em 0 0 0;
+    text-align: left;
+}
+
+#modal-avantages input[type="radio"] + label
+{
+    color: #a7a7a7;
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+#modal-avantages input[type="radio"]:checked + label
+{
+    color: #4b4b4b;
 }
