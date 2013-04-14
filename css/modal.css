@@ -1,4 +1,4 @@
-#modal-container
+.modal-container
 {
     display: none;
     position: fixed;
@@ -11,7 +11,7 @@
     z-index: 5000;
 }
 
-#close-modal-background-target
+.close-modal-background-target
 {
     display: none;
     background: url('../img/modal.png');
@@ -22,13 +22,13 @@
     left: 0;
 }
 
-#modal-container.open,
-#modal-container.open #close-modal-background-target
+.modal-container.open,
+.modal-container.open .close-modal-background-target
 {
     display: block;
 }
 
-#modal
+.modal
 {
     background-color: #fff;
     border: 1px solid #999 9;
@@ -47,14 +47,14 @@
             box-shadow: 0 4px 12px rgba(0,0,0,.4);
 }
 
-#modal h2
+.modal h2
 {
     font-size: 1.6em;
     text-align: center;
     text-transform: uppercase;
 }
 
-#modal-close
+.modal-close
 {
     cursor: pointer;
     position: absolute;

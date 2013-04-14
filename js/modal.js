@@ -2,15 +2,17 @@ var Modal =
 {
     init: function()
     {
-        $( '#close-modal-background-target, #modal-close' ).on( 'click', Modal.hide );
+        $( '.close-modal-background-target, .modal-close' ).on( 'click', Modal.hide );
     },
     show: function()
     {
-        $( '#modal-container' ).addClass( 'open' );
+        $( '.modal-container' ).addClass( 'open' );
     },
     hide: function()
     {
-        $( '#modal-container' ).removeClass( 'open' );
+        var parent = $( this ).parents( '.modal-container' )[0];
+        
+        $( parent ).removeClass( 'open' );
     }
 }
 
