@@ -9,6 +9,7 @@ var Quizz =
         Quizz.setFilters();
         
         $( '#details-expert' ).on( 'click', Modal.show );
+        $( '.product-thumbnails li' ).on( 'click', Modal.show );
     },
     setPriceFilter: function()
     {

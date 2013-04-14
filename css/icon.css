@@ -721,11 +721,27 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     width: 20px;
 }
 
+#modal-strong-weak .icon-strong
+{
+    background-position: -4px -1041px;
+    height: 106px;
+    margin: 1.6em 0 0 0;
+    width: 90px;
+}
+
 .icon-weak
 {
     background-position: -151px -705px;
     height: 18px;
     width: 20px;
+}
+
+#modal-strong-weak .icon-weak
+{
+    background-position: -105px -1041px;
+    height: 106px;
+    margin: 1.6em 0 0 0;
+    width: 90px;
 }
 
 #modal-avantages .icon-privileges

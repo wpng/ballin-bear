@@ -78,6 +78,164 @@
     line-height: 2em;
 }
 
+/* result */
+
+#modal-result .modal
+{
+    width: 412px;
+}
+
+#modal-result .modal .result-product img
+{
+    width: 12em;
+}
+
+.modal .product-info
+{
+    float: right;
+    width: 16.5em;
+}
+
+.modal .product-info h2
+{
+    color: #009fce;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0.4em 0 0 0;
+    text-align: left;
+}
+
+.modal .product-description
+{
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+.modal .product-from
+{
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 0.6em 0 0 0;
+    text-align: right;
+}
+
+.modal .product-from span
+{
+    color: #009fce;
+}
+
+.modal .product-from .price
+{
+    color: #f62c2c;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.modal .more-action
+{
+    font-size: 0.9em;
+}
+
+.modal .product
+{
+    border: 1px solid #e5e5e5;
+    margin: 0.6em 0 0 0;
+    padding: 0.6em 0.4em;
+}
+
+.modal .product:nth-child(2n)
+{
+    background: #e7ebea;
+}
+
+.modal .product div
+{
+    display: inline-block;
+    margin: 0 0.8em 0 0;
+}
+
+.modal .products .product-picture img
+{
+    width: 4em;
+    vertical-align: middle;
+}
+
+.modal .products .product-seller img
+{
+    max-height: 2.4em;
+    max-width: 4em;
+    vertical-align: middle;
+}
+
+.modal .products p
+{
+    display: inline-block;
+}
+
+.modal .products .product-description
+{
+    width: 14em;
+    vertical-align: middle;
+}
+
+.modal .products .product-seller
+{
+    width: 4em;
+}
+
+.modal .products .product-offer
+{
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: 7em;
+}
+
+.modal .products .price
+{
+    color: #f62c2c;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.modal .see-all-offers
+{
+    float: right;
+    margin: 0.5em 0 0 0;
+}
+
+/* strong, weak */
+
+#modal-strong
+{
+    float: left;
+    width: 49%;
+    text-align: center;
+}
+
+#modal-weak
+{
+    float: right;
+    width: 49%;
+    text-align: center;
+}
+
+#modal-strong-weak p
+{
+    width: auto;
+}
+
+#modal-strong-weak h3
+{
+    color: #00ade0;
+    font-family: 'caviar_dreamsregular', Arial, sans-serif;
+}
+
 /* avantages */
 
 #modal-avantages .modal
