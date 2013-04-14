@@ -23,13 +23,11 @@ var News =
         
         if ( News.isChecked )
         {
-            console.log('uncheck');
             $( '.actuality-filter input' ).prop('checked', false);
             News.isChecked = false;
         }
         else
         {
-            console.log('check');
             $( '.actuality-filter input' ).prop('checked', 'checked');
             News.isChecked = true;
         }
