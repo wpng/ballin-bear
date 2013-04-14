@@ -13,7 +13,7 @@
     float: none;
     padding: 2em 2%;
     margin: 0 3% 3em 0;
-    min-height: 30em;
+    min-height: 36em;
     min-width: 28em;
     width: 25.5%;
     vertical-align: top;
@@ -77,7 +77,7 @@
 {
     margin: 0 auto;
     text-align: left;
-    width: 70em;
+    width: 70%;
 }
 
 .page-account-inner .module
@@ -174,6 +174,40 @@
     text-decoration: none;
 }
 
+.page-account-inner #delete-account .user-action:hover
+{
+    color: #f68b2c;
+}
+
+#delete-account #masked-delete
+{
+    display: none;
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+#delete-account #masked-delete.open
+{
+    display: block;
+}
+
+#delete-account #masked-delete strong
+{
+    font-weight: bold;
+    display: block;
+}
+
+#delete-account #masked-delete p
+{
+    font-size: 1.9em;
+    text-align: justify;
+}
+
+#delete-account #masked-delete input[type=submit]
+{
+    float: right;
+}
+
 .page-account-inner #edit-account
 {
     border: none;
@@ -193,6 +227,7 @@
 input[type=submit]
 {
     font-size: 3em;
+    text-transform: uppercase;
 }
 
 /* profile */

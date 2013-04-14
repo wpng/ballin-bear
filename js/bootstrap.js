@@ -16,10 +16,19 @@ var App =
         Form.title();
         
         $( '.user-action' ).bind( 'click', App.userAction );
+        
+        $( '#delete-account .user-action' ).on( 'click', App.showDelete );
     },
     userAction: function( event )
     {
         event.preventDefault();
+    },
+    showDelete: function( event )
+    {
+        if ( $( '#masked-delete' ).hasClass( 'open' ) )
+            $( '#masked-delete' ).removeClass( 'open' )
+        else
+            $( '#masked-delete' ).addClass( 'open' )
     }
 };
 

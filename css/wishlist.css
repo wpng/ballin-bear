@@ -1,6 +1,12 @@
 #page-wishlist
 {
     padding: 0 5%;
+    text-align: center;
+}
+
+#breadcrumbs
+{
+    text-align: left;
 }
 
 .wished-product
@@ -9,6 +15,7 @@
     float: none;
     width: 40em;
     margin: 0 1.4em 1.4em 0;
+    text-align: left;
     vertical-align: top;
 }
 
