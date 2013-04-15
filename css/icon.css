@@ -321,7 +321,7 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     display: none;
     background-position: -245px -299px;
     height: 6px;
-    margin: 10px 0 0 0;
+    margin: 7px 0 0 0;
     width: 8px;
     float: right;
 }
