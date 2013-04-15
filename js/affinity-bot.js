@@ -120,6 +120,11 @@ var AffinityBot =
                 $( parent ).removeClass( 'active' );
             });
             
+            if($('.affinity-share').hasClass('active')){
+            $( '.affinity-share').removeClass('active');
+            }
+            
+            
             AffinityBot.affinityArc[id].animate( anim.delay( 300 ) );
             
             AffinityBot.affinityBg[id].animate({stroke: colorFill}, 300);
