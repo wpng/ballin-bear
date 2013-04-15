@@ -488,6 +488,13 @@ label
         width: 100%;
     }
     
+    #question h1
+    {
+        margin-top: 0.4em;
+        line-height: 1.4em;
+    }
+    
+    #question .icon-wepi,
     #question img
     {
         display: none;

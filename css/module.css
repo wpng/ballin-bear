@@ -595,3 +595,16 @@
 {
     top: 2px;
 }
+
+/* responsive */
+
+@media (max-width: 600px)
+{
+    #did-you-know blockquote,
+    #did-you-know a,
+    #advice blockquote,
+    #advice a
+    {
+        display: none;
+    }
+}

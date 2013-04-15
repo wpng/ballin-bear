@@ -383,4 +383,17 @@
         float: none;
         margin: 10px 0 0 0;
     }
+    
+    #sign-in .dropdown-menu
+    {
+        left: -18px;
+        right: auto;
+    }
+    
+    #sign-in .dropdown-menu .dropdown-arrow
+    {
+        left: 45px;
+        text-align: left;
+        width: auto;
+    }
 }

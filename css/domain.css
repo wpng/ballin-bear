@@ -229,15 +229,18 @@
 {
     #question img
     {
-        width: 100%;
-        max-width: 100%;
+        display: none;
     }
     
-    #ping-light-featured .affinity-info,
-    #ping-light-featured .ping-description
+    #question h1
     {
-        display: block;
-        width: 100%;
+        margin-top: 0.4em;
+        line-height: 1.4em;
+    }
+    
+    #question .module-content
+    {
+        background: none;
     }
     
     #answers-question
@@ -251,5 +254,22 @@
     #answers-question .call-to-action
     {
         width: 100%;
+    }
+    
+    #ping-light-featured .affinity-info,
+    #ping-light-featured .ping-description
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    #ping-light-featured .products .product-info
+    {
+        width: 30%; 
+    }
+    
+    #ping-light-featured .products .product-from
+    {
+        width: 45%;
     }
 }

@@ -89,6 +89,11 @@
     width: 30%;
 }
 
+#geoloc-products .product-seller
+{
+    width: 25%;
+}
+
 /* geoloc */
 
 #address
@@ -116,7 +121,7 @@
     border: none;
     font-size: 0.9em;
     padding: 2% 3%;
-    width: 70%;
+    width: 65%;
     vertical-align: middle;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
@@ -127,7 +132,10 @@
 {
     font-size: 1.9em;
     vertical-align: middle;
-    width: 23%;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 28%;
 }
 
 /* features */
@@ -229,5 +237,28 @@
     {
         float: none;
         width: auto;
+    }
+    
+    #filtered-products .product .user-actions
+    {
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media (max-width: 600px)
+{
+    #offer-products .product img,
+    #geoloc-products .product img,
+    #geoloc-products .product-geoloc
+    {
+        display: none !important;
+    }
+    
+    #offer-products .price,
+    #geoloc-products .price
+    {
+        width: 33%;
     }
 }

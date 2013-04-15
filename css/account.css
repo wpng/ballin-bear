@@ -261,7 +261,8 @@ input[type=submit]
     color: #515050;
     display: block;
     font-size: 1.6em;
-    line-height: 3em;
+    line-height: 1em;
+    margin: 1em 0 0 0;
     text-decoration: none;
 }
 
@@ -353,5 +354,22 @@ input[type=submit]
     #details-profile
     {
         width: 64%;
+    }
+    
+    .page-account-inner #link-account p
+    {
+        width: 60%;
+    }
+    
+    input[type="submit"]
+    {
+        font-size: 2.7em;
+    }
+    
+    #global-info-account .picture-user,
+    #global-info-account .picture-user img
+    {
+        height: 9em;
+        width: 9em;
     }
 }

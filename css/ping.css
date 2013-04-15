@@ -365,9 +365,6 @@
         width: auto;
     }
     
-    #advice blockquote,
-    #advice a,
-    #did-you-know blockquote,
     #featured-products .product:nth-child(2n),
     #featured-products .product:nth-child(3n),
     #filtered-products .products .product:nth-child(4n),
@@ -376,4 +373,36 @@
         display: none;
     }
     
+    #filtered-products .product
+    {
+        padding-top: 2.5em;
+    }
+    
+    #filtered-products .product img
+    {
+        display: none;
+    }
+    
+    #filtered-products .product-info
+    {
+        width: 40%;
+    }
+    
+    #filtered-products .geoloc-products .product-geoloc
+    {
+        display: none !important;
+    }
+    
+    #filtered-products .offer-products .price,
+    #filtered-products .geoloc-products .price
+    {
+        width: 33%;
+    }
+    
+    #filtered-products .product .user-actions
+    {
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
 }

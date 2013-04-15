@@ -20,6 +20,9 @@ var App =
         $( '.affinity-action, .user-action' ).bind( 'click', App.userAction );
         
         $( '#delete-account .user-action' ).on( 'click', App.showDelete );
+        
+        if ( App.isMobile )
+            $( '#did-you-know h3, #advice h3' ).on( 'touchstart', App.showDetails )
     },
     userAction: function( event )
     {
@@ -36,6 +39,12 @@ var App =
             $( '#masked-delete' ).removeClass( 'open' )
         else
             $( '#masked-delete' ).addClass( 'open' )
+    },
+    showDetails: function( event )
+    {
+        var parent = $( this ).parents( 'div' )[ 0 ];
+        
+        $( 'blockquote, a' , parent ).show();
     }
 };
 
