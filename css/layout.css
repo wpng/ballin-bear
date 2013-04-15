@@ -418,6 +418,8 @@ input[type="checkbox"] + label
 }
 
 #global-info-product .affinity-bot,
+#page-wishlist .affinity-bot,
+#page-news .affinity-bot,
 #ping-search-result .affinity-bot,
 #page-domain .ping-light .affinity-bot
 {
@@ -426,6 +428,8 @@ input[type="checkbox"] + label
 }
 
 #global-info-product .affinity-score,
+#page-wishlist .affinity-score,
+#page-news .affinity-score,
 #ping-search-result .affinity-bot .affinity-score,
 #page-domain .ping-light .affinity-score
 {
@@ -434,8 +438,11 @@ input[type="checkbox"] + label
 
 #global-info-product .affinity-bot .user-picture,
 #ping-search-result .affinity-bot .user-picture,
+#page-wishlist .affinity-bot .user-picture,
+#page-news .affinity-bot .user-picture,
 #page-domain .ping-light .affinity-bot .user-picture
 {
+    width: 50px;
     top: 15px;
 }
 
@@ -472,10 +479,28 @@ input[type="checkbox"] + label
     background: #009fce;
 }
 
+#dashboard .call-to-action,
+#dashboard .call-to-action:hover
+{
+    color: #fff;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
 /* more action */
 
 .more-action
 {
     color: #f68b2c;
     text-decoration: none;
+}
+
+#dashboard .dropdown .more-action,
+#dasboard .dropdown .more-action:hover
+{
+    color: #f68b2c;
+    float: right;
 }

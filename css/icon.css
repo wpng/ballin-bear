@@ -60,6 +60,64 @@
     background-position: -36px -27px;
 }
 
+/* profile */
+
+.icon-profile
+{
+    background-position: -2px -52px;
+    height: 14px;
+    margin: 0 3px 0 0;
+    width: 12px;
+}
+
+li.open > h5 .icon-profile,
+.menu:hover .icon-profile
+{
+    background-position: -2px -71px;
+}
+
+.icon-news
+{
+    background-position: -19px -52px;
+    height: 11px;
+    margin: 2px 3px 0 1px;
+    width: 11px;
+}
+
+li.open > h5 .icon-news,
+.menu:hover .icon-news
+{
+    background-position: -19px -71px;
+}
+
+.icon-my-wishlist
+{
+    background-position: -35px -52px;
+    height: 11px;
+    margin: 2px 3px 0 0;
+    width: 12px;
+}
+
+li.open > h5 .icon-my-wishlist,
+.menu:hover .icon-my-wishlist
+{
+    background-position: -35px -71px;
+}
+
+.icon-needs
+{
+    background-position: -52px -52px;
+    height: 11px;
+    margin: 2px 3px 0 3px;
+    width: 9px;
+}
+
+li.open > h5 .icon-needs,
+.menu:hover .icon-needs
+{
+    background-position: -52px -71px;
+}
+
 /* arrow */
 
 .icon-arrow-up

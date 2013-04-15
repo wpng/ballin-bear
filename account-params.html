@@ -36,7 +36,7 @@
         </a>
         <nav id="session">
             <div id="user" class="dropdown">
-                <img src="https://graph.facebook.com/828809796/picture" title="Samantha Kist" height="40"> <h4>Samantha Kist<i class="icon-arrow-down"></i></h4>
+                <img class="user-picture" src="https://graph.facebook.com/828809796/picture" alt="Samantha Kist" height="40"> <h4>Samantha Kist<i class="icon-arrow-down"></i></h4>
                 <div class="dropdown-menu">
                     <span class="dropdown-arrow">
                         <i class="icon-arrow-up"></i>
@@ -78,8 +78,34 @@
                 <h4 class="toggle-name">Univers</h4> <i class="icon-toggle"></i> <span class="toggle-arrow"><i class="icon-arrow-toggle"></i></span>
             </div>
             <ul>
-                <li class="dropdown" data-level="1">
-                    <h4 class="menu"><i class="icon-camera"></i><span>Mon compte</span><i class="icon-arrow-right"></i></h4>
+                <li class="user-profile dropdown clearfix" data-level="1">
+                    <img class="user-picture" src="https://graph.facebook.com/828809796/picture" title="Samantha Kist" height="40">
+                    <h4 class="menu"><span>Samantha Kist</span><i class="icon-arrow-right"></i></h4>
+                    <ul>
+                        <li>
+                            <h5 class="menu"><i class="icon-profile"></i>Mon profil</h5>
+                        </li>
+                        <li>
+                            <h5 class="menu"><i class="icon-news"></i>Mes actualités</h5>
+                        </li>
+                        <li>
+                            <h5 class="menu"><i class="icon-my-wishlist"></i>Ma wishlist</h5>
+                        </li>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-needs"></i>Mes profils de besoin<i class="icon-arrow-right"></i></h5>
+                            <ul>
+                                <li>
+                                    <a href="" title="Les nomades">Les nomades</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Les performants">Les performants</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Les ultra-légers">Les ultra-légers</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
                 <li class="dropdown" data-level="1">
                     <hr>
@@ -88,7 +114,7 @@
                         <li class="dropdown" data-level="2">
                             <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
                             <ul>
-                                <li class="dropdown" data-level="3">
+                                <li class="dropdown clearfix" data-level="3">
                                     <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
                                     <ul>
                                         <li>
@@ -99,6 +125,12 @@
                                         </li>
                                         <li>
                                             <a href="" title="Les ultra-légers">Les ultra-légers</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Faites-vous conseiller !" class="call-to-action">Faites-vous conseiller !</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Guide" class="more-action"><i class="icon-dart"></i>Guide</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -152,20 +184,21 @@
         </nav>
         
         <section id="page-account" class="page" role="main">
-            <nav id="breadcrumbs">
-                <ul>
-                    <li>
-                        <a href="" title="Home">Home</a>
-                    </li>
-                    <li>
-                        <i class="icon-bubble"></i><a href="" title="Photos, caméscope">Photos, caméscope</a>
-                    </li>
-                    <li>
-                        <i class="icon-bubble"></i><a href="" title="Appareils photos">Appareils photos</a>
-                    </li>
-                </ul>
-            </nav>
+            
             <div id="account-params" class="page-account-inner">
+                <nav id="breadcrumbs">
+                    <ul>
+                        <li>
+                            <a href="" title="Home">Home</a>
+                        </li>
+                        <li>
+                            <i class="icon-bubble"></i><a href="" title="Photos, caméscope">Photos, caméscope</a>
+                        </li>
+                        <li>
+                            <i class="icon-bubble"></i><a href="" title="Appareils photos">Appareils photos</a>
+                        </li>
+                    </ul>
+                </nav>
                 <h1>Paramètre du compte</h1>
                 <form method="POST" action="" class="module">
                     <div id="global-info-account" class="row">
