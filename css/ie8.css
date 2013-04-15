@@ -1,0 +1,22 @@
+#featured-products .product
+{
+    width: 32.5%;
+}
+
+#geoloc textarea
+{
+    width: 65%;
+}
+
+#geoloc button
+{
+    font-size: 1.4em;
+    float: right;
+    width: 28%;
+}
+
+input[type=radio],
+input[type=checkbox]
+{
+    display: inline-block !important;
+}

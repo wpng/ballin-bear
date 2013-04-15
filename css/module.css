@@ -126,6 +126,7 @@
     left: -13.7em;
     position: absolute;
     width: 30em;
+    z-index: 9;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;
