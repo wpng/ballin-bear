@@ -1,5 +1,11 @@
 /* home */
 
+#page-home
+{
+	padding-top: 25px;
+}
+
+
 #graphics-home
 {
     background: url("../img/circle-home.png") no-repeat top center;
