@@ -305,10 +305,21 @@ input[type=submit]
 #interests-account h3
 {
     color: #343434;
+    cursor: pointer;
     font-family: Arial, sans-serif;
     font-size: 1.9em;
     line-height: 2em;
     margin: 1.2em 0 0 0;
+}
+
+#interests-account li div
+{
+    display: none;
+}
+
+#interests-account li.active div
+{
+    display: block;
 }
 
 #childrens-account
@@ -324,6 +335,7 @@ input[type=submit]
 #familly-account .checkbox
 {
     margin: 0 1em 0 0.5em;
+    text-align: left;
 }
 
 /* responsive */
@@ -341,6 +353,32 @@ input[type=submit]
     .page-account-inner
     {
         width: 98%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    #page-account-global
+    {
+        text-align: center;
+    }
+    
+    #page-account-global .module
+    {
+        margin: 0 0 3em 0;
+        min-height: inherit;
+        min-width: inherit;
+        width: 95%;
+    }
+    
+    #page-account-global .module p
+    {
+        display: none;
+    }
+    
+    #profile-account .checkbox
+    {
+        display: block;
     }
 }
 

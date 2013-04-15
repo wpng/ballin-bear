@@ -510,3 +510,33 @@ input[type="checkbox"] + label
     color: #f68b2c;
     float: right;
 }
+
+@media  (max-width: 820px)
+{
+    #wrapper
+    {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    #dashboard.open
+    {
+        bottom: 0;
+        top: 0;
+        background: #2e2e2e;
+        position: absolute;
+        z-index: 99;
+    }
+    
+    #dashboard.open #dashboard-toggle
+    {
+        top: 10px;
+        z-index: 109;
+    }
+    
+    #dashboard.open + .page
+    {
+        left: 260px;
+        position: relative;
+    }
+}

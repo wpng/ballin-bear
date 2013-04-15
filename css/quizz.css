@@ -531,4 +531,15 @@ label
     {
         display: none;
     }
+    
+    #results .product-thumbnails li
+    {
+        width: 46%;
+    }
+    
+    #results .product-thumbnails li:nth-child(n+5),
+    #results .product-thumbnails li:nth-child(n+6)
+    {
+        display: none;
+    }
 }

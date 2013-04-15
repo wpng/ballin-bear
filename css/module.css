@@ -20,7 +20,7 @@
     left: -2px;
     position: absolute;
     top: 10px;
-    width: 13px;
+    width: 12px;
 }
 
 .module h1,
@@ -603,8 +603,13 @@
     #did-you-know blockquote,
     #did-you-know a,
     #advice blockquote,
-    #advice a
+    #advice a,
+    #news .actuality-filter ul,
+    #news .actuality-filter a,
+    #global-explain i,
+    #global-explain p
     {
         display: none;
     }
+
 }

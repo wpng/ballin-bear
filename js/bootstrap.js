@@ -21,12 +21,21 @@ var App =
         
         $( '#delete-account .user-action' ).on( 'click', App.showDelete );
         
+        $( '#interests-account h3' ).on( 'click', App.showParams );
+        
         if ( App.isMobile )
-            $( '#did-you-know h3, #advice h3' ).on( 'touchstart', App.showDetails )
+        {
+            $( '#did-you-know h3, #advice h3, #news .actuality-filter h2, #global-explain h1' ).on( 'touchstart', App.showDetails )
+            $( '#interests-account li' ).removeClass( 'active' );
+        }
+        
+        
     },
     userAction: function( event )
     {
         event.preventDefault();
+        
+        $( '.user-action, .affinity-action' ).removeClass( 'active' );
         
         if ( $( this ).hasClass( 'active' ) )
             $( this ).removeClass( 'active' );
@@ -41,10 +50,27 @@ var App =
             $( '#masked-delete' ).addClass( 'open' )
     },
     showDetails: function( event )
-    {
+    {   
         var parent = $( this ).parents( 'div' )[ 0 ];
         
-        $( 'blockquote, a' , parent ).show();
+        $( 'blockquote, a, ul, i, p' , parent ).show();
+        
+        var $container = $('#news');
+   
+        $container.imagesLoaded( function(){
+          $container.masonry({
+            itemSelector : '.actuality'
+          });
+        });
+    },
+    showParams: function( event )
+    {
+        var parent = $( this ).parents( 'li' )[ 0 ];
+        
+        if ( $( parent ).hasClass('active') )
+            $( parent ).removeClass( 'active' );
+        else
+            $( parent ).addClass( 'active' );
     }
 };
 
@@ -74,8 +100,8 @@ var Dashboard =
         }
     },
     onResize: function( event )
-    {
-        if ( $(window).width() <= 1024 && $( '#dashboard' ).hasClass('open') )
+    {   
+        if ( ( $(window).width() > 820 ) && ( $(window).width() <= 1024 ) && $( '#dashboard' ).hasClass('open') )
             $( '#dashboard' ).removeClass('open').addClass('closed');
         
         if ( $(window).width() >= 1024 && $( '#dashboard' ).hasClass('closed') )

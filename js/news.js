@@ -24,11 +24,13 @@ var News =
         if ( News.isChecked )
         {
             $( '.actuality-filter input' ).prop('checked', false);
+            $( '#select-all-news' ).text( 'Tout sélectionner');
             News.isChecked = false;
         }
         else
         {
             $( '.actuality-filter input' ).prop('checked', 'checked');
+            $( '#select-all-news' ).text( 'Tout désélectionner');
             News.isChecked = true;
         }
     }
