@@ -251,6 +251,12 @@
     min-width: inherit;
 }
 
+#lang .dropdown-menu li
+{
+    cursor: pointer;
+    margin: 0.5em 0;
+}
+
 #user .dropdown-menu
 {
     font-size: 100%;
