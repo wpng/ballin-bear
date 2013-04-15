@@ -56,6 +56,11 @@
     text-align: right;
 }
 
+#global-info-product .user-actions li
+{
+    margin-top: 1.4em;
+}
+
 /* featured products */
 
 #featured-products .module-content
@@ -153,6 +158,11 @@
     float: none;
     margin: 0;
     display: inline-block;
+}
+
+#featured-products .user-actions span
+{
+    font-size: 2em;
 }
 
 #featured-products .affinity-bot

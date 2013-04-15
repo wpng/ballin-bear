@@ -137,6 +137,7 @@
 #filtered-products .product-geoloc .product-geoloc-map .map-arrow,
 #geoloc-products .product-geoloc .product-geoloc-map .map-arrow
 {
+    left: 0;
     bottom: -14px;
     position: absolute;
     text-align: center;
@@ -281,6 +282,11 @@
     line-height: 5.6em;
     text-align: center;
     width: 7%;
+}
+
+.user-action
+{
+    position: relative;
 }
 
 #global-info-product .user-actions
@@ -532,4 +538,59 @@
     float: right;
     font-size: 1.9em;
     margin: 0.4em 0 0 0;
+}
+
+/* share actions */
+
+.share-actions
+{
+    display: none !important;
+    background: #343434;
+    height: 35px;
+    left: 40px;
+    position: absolute;
+    padding: 0 0.8em;
+    text-align: left;
+    top: 13px;
+    width: 100px;
+    z-index: 9;
+}
+
+.user-action.active .share-actions,
+.affinity-action.active .share-actions
+{
+    display: block !important;
+}
+
+.share-actions .share-action
+{
+    display: inline-block;
+    line-height: 2em;
+    margin: 0 1px !important;
+    vertical-align: top;
+}
+
+#filtered-products .share-actions
+{
+    left: 30px;
+    top: -4px;
+}
+
+#featured-products .share-actions
+{
+    top: -1px;
+}
+
+.affinity-action .share-actions
+{
+    left: 35px;
+    top: -6px;
+}
+
+#page-quizz-end .user-action .share-actions,
+#page-wishlist .user-action .share-actions,
+#page-line .user-action .share-actions,
+#page-domain .user-action .share-actions
+{
+    top: 2px;
 }

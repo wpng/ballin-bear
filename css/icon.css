@@ -594,6 +594,14 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     width: 20px;
 }
 
+li.open > h4 .icon-camera,
+.menu:hover .icon-camera,
+li.open > h4 .icon-tv,
+.menu:hover .icon-tv
+{
+    background-position: -78px -71px;
+}
+
 .wished-product .icon-camera,
 .actuality .icon-camera
 {
@@ -611,6 +619,12 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     width: 14px;
 }
 
+li.open > h5 .icon-camera-small,
+.menu:hover .icon-camera-small
+{
+    background-position: -103px -71px;
+}
+
 .icon-profiles
 {
     background-position: -122px -52px;
@@ -619,12 +633,24 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     width: 14px;
 }
 
+li.open > h5 .icon-profiles,
+.menu:hover .icon-profiles
+{
+    background-position: -122px -71px;
+}
+
 .icon-camcorder
 {
     background-position: -141px -52px;
     height: 10px;
     margin: 3px 4px 0 0;
     width: 13px;
+}
+
+li.open > h5 .icon-camcorder,
+.menu:hover .icon-camcorder
+{
+    background-position: -141px -71px;
 }
 
 .icon-tv
@@ -920,4 +946,52 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
     height: 100px;
     margin: 0 0 0.4em 0;
     width: 86px;
+}
+
+/* share actions */
+
+.icon-arrow-share
+{
+    background-position: -1px -931px;
+    height: 35px;
+    width: 10px;
+    position: absolute;
+    left: -10px;
+    top: -2px;
+}
+
+.icon-facebook-share
+{
+    background-position: -16px -931px;
+    height: 27px;
+    width: 27px;
+}
+
+.icon-facebook-share:hover
+{
+    background-position: -16px -961px;
+}
+
+.icon-twitter-share
+{
+    background-position: -50px -931px;
+    height: 27px;
+    width: 27px;
+}
+
+.icon-twitter-share:hover
+{
+    background-position: -50px -961px;
+}
+
+.icon-google-share
+{
+    background-position: -83px -931px;
+    height: 27px;
+    width: 27px;
+}
+
+.icon-google-share:hover
+{
+    background-position: -83px -961px;
 }

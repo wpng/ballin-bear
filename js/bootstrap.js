@@ -17,13 +17,18 @@ var App =
         
         Toggle.init();
         
-        $( '.user-action' ).bind( 'click', App.userAction );
+        $( '.affinity-action, .user-action' ).bind( 'click', App.userAction );
         
         $( '#delete-account .user-action' ).on( 'click', App.showDelete );
     },
     userAction: function( event )
     {
         event.preventDefault();
+        
+        if ( $( this ).hasClass( 'active' ) )
+            $( this ).removeClass( 'active' );
+        else
+            $( this ).addClass( 'active' );
     },
     showDelete: function( event )
     {
@@ -126,7 +131,7 @@ var Toggle =
         
         if ( $( parent ).hasClass( 'on' ) )
         {
-            $( this ).animate( { 'text-indent': "-29px" },
+            $( this ).animate( {'text-indent': "-29px"},
             {
                 step: function(now, fx)
                 {
@@ -140,7 +145,7 @@ var Toggle =
         }
         else
         {
-            $( this ).animate( { 'text-indent': "0px" },
+            $( this ).animate( {'text-indent': "0px"},
             {
                 step: function(now, fx)
                 {

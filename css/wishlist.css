@@ -151,6 +151,7 @@
 
 .wished-product .affinity-share
 {
+    cursor: pointer;
     left: auto;
     right: 6px;
     top: 26px;
