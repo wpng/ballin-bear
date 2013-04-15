@@ -41,6 +41,11 @@ var Dropdown =
         
         var level = $( this ).attr('data-level');
         
+        var reload = false;
+        
+        if ( $( this ).hasClass( 'open' ) )
+            reload = true;
+        
         switch( level )
         {
             case '1':
@@ -54,7 +59,8 @@ var Dropdown =
                 break;
         }
         
-        $( this ).addClass( 'open' );
+        if ( !reload )
+            $( this ).addClass( 'open' );
     },
     geolocProducts: function( event )
     {
