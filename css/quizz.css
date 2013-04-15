@@ -328,6 +328,11 @@ label
 
 /* ping light */
 
+#page-quizz-end .ping-light
+{
+    margin: 1em 1% 1em 0;
+}
+
 #page-quizz-end .ping-light h2
 {
     text-align: center;
@@ -425,6 +430,11 @@ label
 {
     font-size: 1.6em;
     width: 100%
+}
+
+#page-quizz-end #pings-light
+{
+    text-align: center;
 }
 
 /* toggle */
