@@ -20,3 +20,9 @@ input[type=checkbox]
 {
     display: inline-block !important;
 }
+
+input[type="radio"] + label [class^="icon-"],
+input[type="checkbox"] + label [class*=" icon-"]
+{
+    display: none;
+}
