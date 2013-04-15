@@ -49,7 +49,7 @@ var AffinityBot =
         // Create background circle
         var paper = Raphael( $( this )[0], fullSize, fullSize );
         AffinityBot.affinityBg[id] = paper.circle(radius, radius, midSize);
-        AffinityBot.affinityBg[id].attr( {stroke: colorFill, "stroke-width": stroke} );
+        AffinityBot.affinityBg[id].attr( {fill: '#fff', stroke: colorFill, "stroke-width": stroke} );
     },
     onHover: function( event )
     {

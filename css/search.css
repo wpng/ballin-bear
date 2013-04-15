@@ -39,6 +39,16 @@
     font-weight: bold;
 }
 
+#featured-products .affinity-bot
+{
+    height: 60px;
+}
+
+#featured-products .affinity-score
+{
+    width: 47px;
+}
+
 #ping-search-result #affinity-info .affinity-bot
 {
     width: 88px;
@@ -58,7 +68,7 @@
 
 #ping-search-result .affinity-score
 {
-    line-height: 3.5em;
+    line-height: 3.4em;
     top: 20px !important;
 }
 

@@ -157,6 +157,7 @@
 
 #featured-products .affinity-bot
 {
+    height: 50px;
     width: 44px;
 }
 
@@ -171,6 +172,7 @@
 {
     line-height: 3em;
     top: 0 !important;
+    width: 50px;
 }
 
 /* filtered products */
