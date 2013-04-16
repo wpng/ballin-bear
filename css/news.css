@@ -122,6 +122,8 @@
     color: #f68b2c;
     font-size: 1.9em;
     text-decoration: none;
+    display: block;
+    margin-top:12px;
 }
 
 .actuality .message
