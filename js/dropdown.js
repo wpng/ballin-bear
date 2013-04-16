@@ -61,6 +61,9 @@ var Dropdown =
         
         if ( !reload )
             $( this ).addClass( 'open' );
+
+        if ($('#dashboard').hasClass('closed'))
+            $('#dashboard').removeClass('closed').addClass('open')
     },
     geolocProducts: function( event )
     {
