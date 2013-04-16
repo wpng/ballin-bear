@@ -355,9 +355,24 @@
 
 @media ( max-width: 560px )
 {
+    #modal-strong-weak .modal,
     #modal-expert .modal
     {
         width: 90%;
+    }
+    
+    #modal-strong-weak h2
+    {
+        line-height: 1.4em;
+        margin: 0 auto;
+        text-align: center;
+        width: 95%;
+    }
+    
+    #modal-strong,
+    #modal-weak
+    {
+        width: auto;
     }
 }
 
