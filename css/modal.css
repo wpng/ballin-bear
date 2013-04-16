@@ -353,10 +353,23 @@
     color: #4b4b4b;
 }
 
+@media ( max-width: 560px )
+{
+    #modal-expert .modal
+    {
+        width: 90%;
+    }
+}
+
 @media (max-width: 412px)
 {
     #modal-result .modal
     {
-        width: 100%;
+        width: 90%;
+    }
+    
+    .modal .product-info
+    {
+        width: inherit;
     }
 }
