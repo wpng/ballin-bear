@@ -55,6 +55,7 @@
     min-width: inherit;
     padding: 0 1%;
     width: 91%;
+    z-index: 109;
 }
 
 #search-container .dropdown-menu h4
@@ -351,7 +352,7 @@
     
     #search-container.dropdown.open .dropdown-menu
     {
-        display: none;
+        text-align: left;
     }
 }
 

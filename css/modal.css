@@ -352,3 +352,11 @@
 {
     color: #4b4b4b;
 }
+
+@media (max-width: 412px)
+{
+    #modal-result .modal
+    {
+        width: 100%;
+    }
+}
