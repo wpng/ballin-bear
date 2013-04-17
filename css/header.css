@@ -346,12 +346,12 @@
 
     #search-container form
     {
-	    display: inline-block;
+	    display: none;
     }
     
     #small-search
     {
-	    display: none;
+	    display: inline-block;
     }
     
     #search input[type=text]

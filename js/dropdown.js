@@ -11,31 +11,15 @@ var Dropdown =
     // Small-search bar toggling 
     search: function()
     {
-    	var n = 0;
-    	console.log('passé dans la fonction search');
-    
-    	$('#session').toggleClass('notvisible');
-    	console.log('session class toggled to visible');
+    	var n = 0;    
+    		   
+    	if ( $(window).width() >= 630)
+    		$('#session').toggleClass('notvisible');
     	$('#small-search a').toggleClass('notvisible'); 
 	    $('#search').toggleClass('smallone');
 	    $('#search-container form').toggleClass('visible');
 	    
-		    $("#search").mouseenter(function() {
-			    n = 0;
-			 }).mouseleave(function() {
-				n = 1;
-			 });
-	
-			 $("html").click(function(){ 
-				 if (n == 1) {
-					 $('#search-container form').toggleClass('visible');
-					 $('#small-search a').toggleClass('notvisible');
-					 $('#session').toggleClass('notvisible');
-					 n = 2;
-					 console.log('passé dans la fonction body');
-				}
-			});
-		    
+		 		    
     },
     toggle: function(event)
     {		
