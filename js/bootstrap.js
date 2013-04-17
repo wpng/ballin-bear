@@ -47,7 +47,7 @@ var Dashboard =
         {
             $( '#dashboard' ).removeClass('closed', 300, "swing").addClass('open', 300, "swing");
             setTimeout(function(){
-            	$('#dashboard .dropdown span,#dashboard .dropdown i:last-child').delay(1000).show();
+            	$('#dashboard .dropdown span,#dashboard .dropdown i:last-child').show();
             },300);
             //$( '#dashboard' ).switchClass( "closed", "open", 300 );
         }
