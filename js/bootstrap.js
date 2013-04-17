@@ -61,7 +61,9 @@ var Dashboard =
         
         if ( $(window).width() >= 1024 && $( '#dashboard' ).hasClass('closed') ){
             $( '#dashboard' ).removeClass('closed', 300, "swing").addClass('open', 300, "swing");
-            $('#dashboard .dropdown span,#dashboard .dropdown i:last-child').show();
+            setTimeout(function(){
+            	$('#dashboard .dropdown span,#dashboard .dropdown i:last-child').show();
+            },300);
         }
     }
 };
