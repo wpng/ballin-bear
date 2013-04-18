@@ -17,9 +17,9 @@ var Dropdown =
 	    
 	    //RESIZE
 	    if ( $(window).width() <= 1107){
-    		$('#session').toggleClass('notvisible');
+    		$('#session').addClass('notvisible');
         }
-
+        
         // BODY CLICK
 	    $('#search-container form').click(function(event) {
 		    $('html').one('click',function() {
