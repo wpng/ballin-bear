@@ -1,3 +1,23 @@
+/* Titre module */
+
+.bloc-title-wrapper h2
+{
+    color: #00ade0;
+    display: inline-block;
+    font-family: 'caviar_dreamsbold', Arial, sans-serif;
+    font-size: 2.8em;
+    font-weight: normal;
+    line-height: 1.4em;
+    padding-right: .8em;
+}
+
+.bloc-title-wrapper .product-count
+{
+    display: inline-block;
+    font-family: 'irregularisregular', Arial, sans-serif;
+    font-size: 2.1em;
+}
+
 /* module */
 
 .module
@@ -282,7 +302,7 @@
     float: right;
     line-height: 5.6em;
     text-align: center;
-    padding-left:20px;
+    padding-left:0;
     width: 7%;
 }
 
