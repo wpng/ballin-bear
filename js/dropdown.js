@@ -25,6 +25,7 @@ var Dropdown =
 		    $('html').one('click',function() {
 			    $('#small-search a').removeClass('notvisible');
 			    $('#session').removeClass('notvisible');
+			    $('#search-container').css('position','absolute');
 			    $('#search-container form').removeClass('visible');
 			});
 		    event.stopPropagation();
