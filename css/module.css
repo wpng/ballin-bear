@@ -602,6 +602,20 @@
 
 @media (max-width: 600px)
 {
+    .page,
+    #page-account,
+    #page-ping,
+    #page-domain,
+    #page-product,
+    #page-quizz,
+    #page-quizz-end,
+    #page-wishlist,
+    #page-news,
+    #page-line
+    {
+        padding-top: 1em !important;
+    }
+    
     #did-you-know blockquote,
     #did-you-know a,
     #advice blockquote,

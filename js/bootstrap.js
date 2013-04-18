@@ -26,6 +26,7 @@ var App =
         if ( App.isMobile )
         {
             $( '#did-you-know h3, #advice h3, #news .actuality-filter h2, #global-explain h1' ).on( 'touchstart', App.showDetails )
+            $( '#did-you-know h3, #advice h3, #news .actuality-filter h2, #global-explain h1' ).on( 'click', App.showDetails )
             $( '#interests-account li' ).removeClass( 'active' );
         }
         

@@ -334,6 +334,19 @@
     {
         width: 100%;
     }
+    
+    #ping-search-result .product:nth-child(n),
+    #ping-search-result .product:nth-child(2n)
+    {
+        width: 49%;
+    }
+    
+    #ping-search-result .product:nth-child(3n),
+    #filtered-products .products .product:nth-child(4n),
+    #filtered-products .products .product:nth-child(5n)
+    {
+        display: none;
+    }
 }
 
 @media  (max-width: 600px)
