@@ -600,14 +600,7 @@
     width: 66%;
 }
 
-#right-col
-{
-    float: right;
-    width: 33%;
-}
-
-#center-col .module,
-#right-col .module
+#center-col .module
 {
     width: 100%;
 }
@@ -625,8 +618,7 @@
 
 @media (max-width: 820px)
 {
-    #center-col,
-    #right-col
+    #center-col
     {
         width: 100%;
     }
