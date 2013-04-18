@@ -392,7 +392,7 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 
 #login-google
 {
-    background: url("../img/sprite.png") no-repeat -187px -680px;
+    background: url("../img/sprite.png") no-repeat -187px -679px;
     display: inline-block;
     height: 26px;
     margin-top: 1px;
@@ -792,6 +792,7 @@ li.open > h5 .icon-camcorder,
     width: 14px;
 }
 
+#details-expert .icon-idea,
 #modal-expert .icon-idea
 {
     background-position: -2px -206px;
@@ -799,6 +800,11 @@ li.open > h5 .icon-camcorder,
     margin: 0 3px 0 0;
     vertical-align: text-top;
     width: 18px;
+}
+
+#details-expert .icon-idea
+{
+    vertical-align: text-bottom;
 }
 
 /* quizz */

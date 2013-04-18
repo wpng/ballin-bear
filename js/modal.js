@@ -4,7 +4,7 @@ var Modal =
     {
         $( '.close-modal-background-target, .modal-close' ).on( 'click', Modal.hide );
         
-        $( ".advice-expert" ).accordion( { header: "> div > h3", icons: null } )
+        $( ".advice-expert" ).accordion( { header: "> div > h3", collapsible: true, icons: null } )
         .sortable(
         {
             axis: "y",
@@ -15,8 +15,10 @@ var Modal =
             }
         });
     },
-    show: function()
+    show: function( event )
     {
+        event.preventDefault();
+        
         $( '.modal-container' ).addClass( 'open' );
     },
     hide: function()

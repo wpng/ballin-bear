@@ -139,6 +139,7 @@
 {
     display: inline-block;
     font-size: 1.9em;
+    line-height: 1.4em;
     text-align: justify;
     margin: 1.5em 0 0 0;
     vertical-align: top;
@@ -247,6 +248,11 @@
     vertical-align: middle;
 }
 
+.module .products h3,
+.product h3
+{
+    line-height: 1.4em;
+}
 
 /* affinity */
 

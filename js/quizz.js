@@ -8,10 +8,10 @@ var Quizz =
         // global filters
         Quizz.setFilters();
         
-        $( '#details-expert' ).on( 'click', Modal.show );
+        $( '#details-expert, .show-modal-strong-weak' ).on( 'click', Modal.show );
         $( '.product-thumbnails li' ).on( 'click', Modal.show );
         
-        $( ".strongs" ).accordion( { header: "> div > h3", icons: null } )
+        $( ".strongs" ).accordion( { header: "> div > h3", collapsible: true, icons: null } )
         .sortable(
         {
             axis: "y",

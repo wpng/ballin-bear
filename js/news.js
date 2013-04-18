@@ -6,6 +6,8 @@ var News =
         News.gallery();
         
         $( '#select-all-news' ).on( 'click', News.filter );
+        
+        $( 'input[type=checkbox]' ).on( 'click', News.checkCategory );
     },
     gallery: function()
     {
@@ -33,6 +35,19 @@ var News =
             $( '#select-all-news' ).text( 'Tout désélectionner');
             News.isChecked = true;
         }
+    },
+    checkCategory: function( event )
+    {
+        var parent = $( this ).parents( 'li' )[ 0 ];
+        
+        var test = $( 'input[type=checkbox]:first-child:checked', parent ).attr('name');
+        
+        console.log(test);
+        
+        if ( $( 'input[type=checkbox]:first-child:checked', parent ).attr('name') == $( 'input[type=checkbox]:first-child', parent ).attr('name') ) 
+            $( 'ul input[type=checkbox]', parent ).prop('checked', 'checked');
+        else
+            $( 'ul input[type=checkbox]', parent ).prop('checked', false);
     }
 };
 
