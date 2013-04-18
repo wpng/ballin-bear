@@ -257,28 +257,54 @@
             <div class="loader-container">
                 <div class="loader"></div>
             </div>
-            <div id="question" class="module">
-                <div class="module-punch"></div>
-                <div class="module-content">
-                    <h1><i class="icon-wepi"></i>Quel degré d'importance apportez-vous à la légèreté ?</h1>
-                    <img src="img/dynamic/domain.jpg" alt="Quel degré d'importance apportez-vous à la légèreté ?">
-                    <ul id="answers-question">
-                        <li>
-                            <a href="#" class="call-to-action" title="Pas vraiment">Pas vraiment</a>
-                        </li>
-                        <li>
-                            <a href="#" class="call-to-action" title="Un peu">Un peu</a>
-                        </li>
-                        <li>
-                            <a href="#" class="call-to-action" title="Plutôt oui">Plutôt oui</a>
-                        </li>
-                        <li>
-                            <a href="#" class="call-to-action" title="Oui, absolument">Oui, absolument</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Précision de l’expert" id="details-expert" class="more-action"><i class="icon-idea"></i>Précision de l’expert</a>
-                        </li>
-                    </ul>
+            <div id="center-col" class="clearfix">
+                <div id="question" class="module">
+                    <div class="module-punch"></div>
+                    <div class="module-content">
+                        <h1><i class="icon-wepi"></i>Quel degré d'importance apportez-vous à la légèreté ?</h1>
+                        <img src="img/dynamic/domain.jpg" alt="Quel degré d'importance apportez-vous à la légèreté ?">
+                        <ul id="answers-question">
+                            <li>
+                                <a href="#" class="call-to-action" title="Pas vraiment">Pas vraiment</a>
+                            </li>
+                            <li>
+                                <a href="#" class="call-to-action" title="Un peu">Un peu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="call-to-action" title="Plutôt oui">Plutôt oui</a>
+                            </li>
+                            <li>
+                                <a href="#" class="call-to-action" title="Oui, absolument">Oui, absolument</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Précision de l’expert" id="details-expert" class="more-action"><i class="icon-idea"></i>Précision de l’expert</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="criteria" class="module">
+                    <div class="module-punch"></div>
+                    <div class="module-content clearfix">
+                        <h2>Vos critères</h2>
+                        <form action="/" method="POST">
+                            <div id="price-filter">
+                                <input type="hidden" id="price_min" name="price_min" value="">
+                                <input type="hidden" id="price_max" name="price_max" value="">
+                                <label>Prix</label>
+                                <div class="filter"></div>
+                                <div class="filter-callback">0€ à 500€</div>
+                            </div>
+                            <label for="brand">Marque</label>
+                            <div class="select">
+                                <select id="brand" name="brand">
+                                    <option value="">Faites votre choix</option>
+                                </select>
+                                <span class="select-arrow">
+                                    <i class="icon-arrow-down"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div id="results" class="module">
@@ -421,30 +447,6 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div id="criteria" class="module">
-                <div class="module-punch"></div>
-                <div class="module-content clearfix">
-                    <h2>Vos critères</h2>
-                    <form action="/" method="POST">
-                        <div id="price-filter">
-                            <input type="hidden" id="price_min" name="price_min" value="">
-                            <input type="hidden" id="price_max" name="price_max" value="">
-                            <label>Prix</label>
-                            <div class="filter"></div>
-                            <div class="filter-callback">0€ à 500€</div>
-                        </div>
-                        <label for="brand">Marque</label>
-                        <div class="select">
-                            <select id="brand" name="brand">
-                                <option value="">Faites votre choix</option>
-                            </select>
-                            <span class="select-arrow">
-                                <i class="icon-arrow-down"></i>
-                            </span>
-                        </div>
-                    </form>
                 </div>
             </div>
             <div id="summary" class="module">

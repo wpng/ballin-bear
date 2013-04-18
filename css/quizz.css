@@ -230,7 +230,7 @@ label
 #results .product-thumbnails
 {
     text-align: center;
-    margin: 1em 0;
+    margin: 3em 0 1em 0;
 }
 
 #results .product-thumbnails li
@@ -323,6 +323,12 @@ label
     float: right;
     font-size: 1.9em;
     margin: 1em 0 0 0;
+}
+
+#page-quizz #summary.active h3,
+#page-quizz #summary.active form
+{
+    display: block;
 }
 
 /* ping light */
@@ -532,13 +538,16 @@ label
         display: none;
     }
     
-    #results .product-thumbnails li
+    #results .module-content .product
     {
-        width: 46%;
+        border: none;
+        margin: 3em 0 0em 0;
     }
     
-    #results .product-thumbnails li:nth-child(n+5),
-    #results .product-thumbnails li:nth-child(n+6)
+    #summary h3,
+    #summary form,
+    #results .module-content .product:nth-child(3n),
+    #results .module-content .product:nth-child(4n)
     {
         display: none;
     }

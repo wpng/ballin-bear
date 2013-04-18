@@ -25,8 +25,12 @@ var App =
         
         if ( App.isMobile )
         {
-            $( '#did-you-know h3, #advice h3, #news .actuality-filter h2, #global-explain h1' ).on( 'touchstart', App.showDetails )
-            $( '#did-you-know h3, #advice h3, #news .actuality-filter h2, #global-explain h1' ).on( 'click', App.showDetails )
+            $( '#did-you-know h3, #advice h3, #news .actuality-filter h2, #global-explain h1' ).on( 'touchstart', App.showDetails );
+            $( '#did-you-know h3, #advice h3, #news .actuality-filter h2, #global-explain h1' ).on( 'click', App.showDetails );
+            
+            $( '#summary h2').on( 'click', App.switchViewMobile );
+            $( '#summary h2').on( 'touchstart', App.switchViewMobile );
+            
             $( '#interests-account li' ).removeClass( 'active' );
         }
         
@@ -54,7 +58,7 @@ var App =
     {   
         var parent = $( this ).parents( 'div' )[ 0 ];
         
-        $( 'blockquote, a, ul, i, p' , parent ).show();
+        $( 'blockquote, a, ul, i, p, h3, form' , parent ).show();
         
         var $container = $('#news');
    
@@ -63,6 +67,15 @@ var App =
             itemSelector : '.actuality'
           });
         });
+    },
+    switchViewMobile: function ( event )
+    {
+        var parent = $( this ).parents( '.module' )[ 0 ];
+        
+        if ( $( parent ).hasClass('active') )
+            $( parent ).removeClass( 'active' );
+        else
+            $( parent ).addClass( 'active' );
     },
     showParams: function( event )
     {
