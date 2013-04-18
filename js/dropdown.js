@@ -11,9 +11,9 @@ var Dropdown =
     // Small-search bar toggling 
     search: function()
     {    		   
-    	$('#small-search a').toggleClass('notvisible');
+    	$('#small-search a').addClass('notvisible');
     	$('#search-container').css('position','relative'); 
-	    $('#search-container form').toggleClass('visible');
+	    $('#search-container form').addClass('visible');
 	    
 	    //RESIZE
 	    if ( $(window).width() <= 1107){
@@ -21,11 +21,11 @@ var Dropdown =
         }
 
         // BODY CLICK
-	    $('#search').click(function(event) {
+	    $('#search-container form').click(function(event) {
 		    $('html').one('click',function() {
-			    $('#small-search a').toggleClass('notvisible');
-			    $('#session').toggleClass('notvisible');
-			    $('#search-container form').toggleClass('visible');
+			    $('#small-search a').removeClass('notvisible');
+			    $('#session').removeClass('notvisible');
+			    $('#search-container form').removeClass('visible');
 			});
 		    event.stopPropagation();
 		});
