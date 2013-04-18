@@ -10,12 +10,11 @@ var Dropdown =
     },
     // Small-search bar toggling 
     search: function()
-    {
-    	var n = 0;    
-    		   
-    	if ( $(window).width() >= 630)
-    		$('#session').toggleClass('notvisible');
-    	$('#small-search a').toggleClass('notvisible'); 
+    {    		   
+    	if ( $(window).width() <= 1107)
+    		$('#session').addClass('notvisible');
+    	$('#small-search a').toggleClass('notvisible');
+    	$('#search-container').css('position','relative'); 
 	    $('#search').toggleClass('smallone');
 	    $('#search-container form').toggleClass('visible');
 	    
