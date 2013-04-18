@@ -73,6 +73,7 @@
 	font-size:13px;
 	font-family: Arial,sans-serif;
 	font-weight: bold;
+	display: inline-block;
 }
 
 #small-search a.notvisible
