@@ -28,7 +28,8 @@
 {
 	display:inline-block;
 	margin-left:10px;
-	width:300px;
+	width:100%;
+	min-width: auto;
 }
 
 #search.smallone
@@ -74,6 +75,7 @@
 	font-family: Arial,sans-serif;
 	font-weight: bold;
 	display: inline-block;
+	text-transform: uppercase;
 }
 
 #small-search a.notvisible
@@ -298,8 +300,10 @@
 
 	#search-container
 	{
-		width:auto;
-		min-width: auto;
+		width:20%;
+		min-width: 300px;
+		margin: 22px 0 0 15%;
+		text-align: center;
 	}
 
 	#search-container form
@@ -310,17 +314,17 @@
 	#small-search
 	{
 		display: inline-block;
-		margin-right: 10em;
+		margin-right: 1em;
 	}
 	
 	#search input[type=text]
     {
-        width: auto;
+        width: 80%;
     }
 	
 }
 
-@media (max-width: 860px)
+@media (max-width: 750px)
 {
     #header
     {
