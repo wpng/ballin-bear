@@ -193,7 +193,8 @@
     width: 41%;
 }
 
-#session input[type=text]
+#session input[type=text],
+#session input[type=email]
 {
     margin: 0 0 0.5em 0;
 }
@@ -215,7 +216,7 @@
     padding: 0.8em 0.8em 0 0.8em;
     position: absolute;
     top: 25px;
-    z-index: 10;
+    z-index: 100;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;
@@ -267,7 +268,8 @@
 }
 
 .dropdown-menu input[type=text],
-.dropdown-menu input[type=password]
+.dropdown-menu input[type=password],
+.dropdown-menu input[type=email]
 {
     line-height: 2em;
     padding: 0 10px;
