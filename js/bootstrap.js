@@ -173,9 +173,7 @@ var Toggle =
         $( '.toggle' ).on( 'click', Toggle.onClick );
     },
     onClick: function()
-    {
-        console.log('toggle');
-        
+    {   
         var parent = $( this ).parents( 'div' )[ 0 ];
         
         if ( $( parent ).hasClass( 'on' ) )

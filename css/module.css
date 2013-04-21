@@ -87,6 +87,7 @@
     width: 100%;
 }
 
+.module .dropdown:nth-child(2n) > .product,
 .module .products .product:nth-child(2n),
 .module li .geoloc-products .product:nth-child(2n)
 {

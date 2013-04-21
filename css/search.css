@@ -140,7 +140,7 @@
     padding: 1em;
 }
 
-#ping-search-result .product b
+#ping-search-result .product strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
     font-size: 2em;
@@ -245,7 +245,7 @@
     width: auto;
 }
 
-#filtered-products .product-from b
+#filtered-products .product-from strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
     font-size: 2em;

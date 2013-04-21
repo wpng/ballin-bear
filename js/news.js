@@ -42,8 +42,6 @@ var News =
         
         var test = $( 'input[type=checkbox]:first-child:checked', parent ).attr('name');
         
-        console.log(test);
-        
         if ( $( 'input[type=checkbox]:first-child:checked', parent ).attr('name') == $( 'input[type=checkbox]:first-child', parent ).attr('name') ) 
             $( 'ul input[type=checkbox]', parent ).prop('checked', 'checked');
         else

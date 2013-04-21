@@ -23,7 +23,7 @@
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
-    line-height: 1.4em;
+    line-height: 1em;
     text-transform: uppercase;
 }
 
@@ -37,7 +37,7 @@
 {
     background: #eff1f1;
     border: 1px solid #e5e5e5;
-    padding: 0.5em;
+    padding: 0 0.5em;
     border-top: 0;
     overflow: auto;
     -webkit-border-radius: 0;
@@ -48,8 +48,8 @@
 .ui-accordion .ui-accordion-content p
 {
     display: inline-block;
-    font-size: 0.8em;
-    width: 28em;
+    font-size: 0.9em;
+    width: 25em;
     text-align: justify;
     vertical-align: top;
 }
@@ -752,7 +752,7 @@ body .ui-tooltip {
 /* Component containers
 ----------------------------------*/
 .ui-widget {
-	font-family: Verdana,Arial,sans-serif;
+	font-family: Arial,sans-serif;
 	font-size: 1.1em;
 }
 .ui-widget .ui-widget {
@@ -762,7 +762,7 @@ body .ui-tooltip {
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
-	font-family: Verdana,Arial,sans-serif;
+	font-family: Arial,sans-serif;
 	font-size: 1em;
 }
 .ui-widget-content {
