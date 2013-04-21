@@ -172,15 +172,42 @@ li.open > h5 .icon-needs,
 
 #dashboard h4 .icon-arrow-right
 {
-    background-position: -159px -52px;
+    background-position: -175px -8px;
+    height: 10px;
+    margin: 5px 0 0 4px;
+    width: 5px;
+}
+
+#dashboard h4:hover .icon-arrow-right
+{
+    background-position: -175px -22px;
+}
+
+#dashboard .dropdown.open > h4 .icon-arrow-right
+{
+    background-position: -159px -71px;
     height: 6px;
     margin: 7px 0 0 4px;
     width: 10px;
 }
 
+
 #dashboard h5 .icon-arrow-right
 {
-    background-position: -174px -52px;
+    background-position: -186px -62px;
+    height: 8px;
+    margin: 5px 0 0 4px;
+    width: 5px;
+}
+
+#dashboard h5:hover .icon-arrow-right
+{
+    background-position: -186px -71px;
+}
+
+#dashboard .dropdown.open > h5 .icon-arrow-right
+{
+    background-position: -174px -71px;
     height: 6px;
     margin: 7px 0 0 4px;
     width: 10px;
@@ -188,28 +215,23 @@ li.open > h5 .icon-needs,
 
 #dashboard h6 .icon-arrow-right
 {
-    background-position: -174px -52px;
+    background-position: -186px -52px;
+    height: 10px;
+    margin: 4px 0 0 4px;
+    width: 5px;
+}
+
+#dashboard h6:hover .icon-arrow-right
+{
+    background-position: -186px -71px;
+}
+
+#dashboard .dropdown.open > h6 .icon-arrow-right
+{
+    background-position: -174px -71px;
     height: 6px;
     margin: 5px 0 0 4px;
     width: 10px;
-}
-
-#dashboard .dropdown.open > h4 .icon-arrow-right,
-#dashboard h4:hover .icon-arrow-right
-{
-    background-position: -159px -71px;
-}
-
-#dashboard .dropdown.open > h5 .icon-arrow-right,
-#dashboard h5:hover .icon-arrow-right
-{
-    background-position: -174px -71px;
-}
-
-#dashboard .dropdown.open > h6 .icon-arrow-right,
-#dashboard h6:hover .icon-arrow-right
-{
-    background-position: -174px -71px;
 }
 
 .select .icon-arrow-down
@@ -595,11 +617,38 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 }
 
 li.open > h4 .icon-camera,
-.menu:hover .icon-camera,
+.menu:hover .icon-camera
+{
+    background-position: -78px -71px;
+}
+
+.icon-tv
+{
+    background-position: -270px -52px;
+    height: 14px;
+    margin: 1px 4px 0 0;
+    width: 20px;
+}
+
 li.open > h4 .icon-tv,
 .menu:hover .icon-tv
 {
-    background-position: -78px -71px;
+    background-position: -270px -91px;
+}
+
+.icon-account
+{
+    background-position: -227px -52px;
+    height: 30px;
+    margin: 0 -7px 2px 0;
+    width: 37px;
+    vertical-align: text-bottom;
+}
+
+li.open > h4 .icon-account,
+.menu:hover .icon-account
+{
+    background-position: -227px -91px;
 }
 
 .wished-product .icon-camera,
@@ -651,14 +700,6 @@ li.open > h5 .icon-camcorder,
 .menu:hover .icon-camcorder
 {
     background-position: -141px -71px;
-}
-
-.icon-tv
-{
-    background-position: -78px -52px;
-    height: 14px;
-    margin: 1px 4px 0 0;
-    width: 20px;
 }
 
 /* account */

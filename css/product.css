@@ -119,6 +119,7 @@
 {
     background: #f1f1f1;
     border: none;
+    float: left;
     font-size: 0.9em;
     padding: 2% 3%;
     width: 65%;
@@ -130,7 +131,9 @@
 
 #geoloc button
 {
+    float: right;
     font-size: 1.9em;
+    line-height: 1em;
     vertical-align: middle;
     padding: 0;
     margin: 0;
