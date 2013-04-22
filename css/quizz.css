@@ -17,7 +17,7 @@
 
 h3
 {
-    font-size: 2.8em;
+    font-size: 1.5em;
     font-family: 'irregularisregular', Arial, sans-serif;
 }
 
@@ -198,21 +198,15 @@ label
 
 #results .price
 {
-    display: inline;
+    display: inline-block;
     font-family: Arial, sans-serif;
-    font-size: 1.2em;
-}
-
-#results .from
-{
-    color: #009fce;
 }
 
 #results .product
 {
     border-bottom: 1px solid #bfbfbf;
-    margin: 3em 0 6em 0;
-    padding: 0 0 1em 0;
+    margin: 40px 0 0 0;
+    padding: 0 0 10px 0;
 }
 
 #results .product:nth-child(4n)
@@ -259,7 +253,6 @@ label
 
 #global-explain p
 {
-    font-size: 1.9em;
     line-height: 1.2em;
     text-align: justify;
 }
@@ -267,7 +260,6 @@ label
 #global-explain strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 1.2em;
     font-weight: bold;
     line-height: 2.5em;
 }
@@ -323,7 +315,7 @@ label
 #show-full-summary
 {
     float: right;
-    font-size: 1.9em;
+    font-size: 1.2em;
     margin: 1em 0 0 0;
 }
 
@@ -354,21 +346,15 @@ label
     width: 200px;
 }
 
-#page-quizz-end .affinity-info p
-{
-    font-size: 1.3em;
-}
-
 #page-quizz-end .affinity-score
 {
     font-size: 2.6em;
-    line-height: 3em;
+    line-height: 2.5em;
     width: 82px;
 }
 
 #page-quizz-end .ping-count
 {
-    font-size: 2.4em;
     font-family: 'irregularisregular', Arial, sans-serif;
     text-align: right;
 }
@@ -377,12 +363,17 @@ label
 {
     display: inline;
     font-family: Arial, sans-serif;
-    font-size: 1.2em;
 }
 
-#page-quizz-end .from
+#page-quizz-end .from 
+{
+    font-size: 1.4em
+}
+
+#page-quizz-end .from strong
 {
     color: #009fce;
+    font-weight: normal;
 }
 
 #page-quizz-end .affinity-actions
@@ -430,13 +421,17 @@ label
     color: #00ade0;
     display: block;
     font-family: 'caviar_dreamsregular', Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.2em;
     margin: 0;
+}
+
+#page-quizz-end .state
+{
+    text-align: left;
 }
 
 #page-quizz-end .strongs p
 {
-    font-size: 1.6em;
     width: 100%
 }
 
