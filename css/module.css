@@ -303,10 +303,7 @@
     float: right;
     line-height: 5.6em;
     text-align: center;
-<<<<<<< HEAD
     padding-left:0;
-=======
->>>>>>> change on .ping-light + remove padding on horizontal .user-actions
     width: 7%;
 }
 
@@ -531,7 +528,6 @@
     margin: 0;
     position: relative;
     width: auto;
-    padding-left: 30px;
 }
 
 .ping-light .user-actions li
