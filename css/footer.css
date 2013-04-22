@@ -51,6 +51,7 @@
 #footer li
 {
     list-style-image: url("../img/icon-list.png");
+    margin-top: 1.7em;
 }
 
 #copyright
