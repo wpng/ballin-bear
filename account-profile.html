@@ -204,161 +204,162 @@
                 <h1>Mon profil</h1>
                 
                 <form method="POST" action="" class="module">
-                    
-                    <div id="global-info-account" class="row clearfix">
-                        <div id="picture-profile">
-                            <div class="picture-user">
-                                <img src="https://graph.facebook.com/828809796/picture?type=large" title="Samantha Kist" >
+                    <fieldset>
+                        <div id="global-info-account" class="row clearfix">
+                            <div id="picture-profile">
+                                <div class="picture-user">
+                                    <img src="https://graph.facebook.com/828809796/picture?type=large" title="Samantha Kist" >
+                                </div>
+                                <a href="" title="Modifier ma photo de profil" class="user-action">Modifier ma photo de profil</a>
                             </div>
-                            <a href="" title="Modifier ma photo de profil" class="user-action">Modifier ma photo de profil</a>
+                            <div id="details-profile" class="clearfix">
+                                <ul>
+                                    <li>Prénom: <strong>Samantha</strong></li>
+                                    <li>Nom: <strong>Kist</strong></li>
+                                    <li>E-mail: <strong>Samantha.Steenacker@gmail.com</strong></li>
+                                    <li>Sexe: <strong>Femme</strong></li>
+                                    <li>Age: <strong>23ans</strong></li>
+                                </ul>
+                                <p id="completion-profile">Profil complet à 72%</p>
+                                <div class="loader-container">
+                                    <div class="loader"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="details-profile" class="clearfix">
+                        
+                        <div id="interests-account" class="row">
+                            <h2>CENTRE D’INTÉRÊTS</h2>
                             <ul>
-                                <li>Prénom: <strong>Samantha</strong></li>
-                                <li>Nom: <strong>Kist</strong></li>
-                                <li>E-mail: <strong>Samantha.Steenacker@gmail.com</strong></li>
-                                <li>Sexe: <strong>Femme</strong></li>
-                                <li>Age: <strong>23ans</strong></li>
+                                <li class="active">
+                                    <h3><i class="icon-sports"></i>Sports<i class="icon-arrow-right"></i></h3>
+                                    <div>
+                                        <input type="checkbox" name="sports" value="Oui" id="athletics">
+                                        <label class="checkbox" for="athletics"><i class="icon-checkbox"></i>Athlétisme</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="cycling">
+                                        <label class="checkbox" for="cycling"><i class="icon-checkbox"></i>Cyclisme</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="combats_sports">
+                                        <label class="checkbox" for="combats_sports"><i class="icon-checkbox"></i>Sports de combat</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="strength_sports">
+                                        <label class="checkbox" for="strength_sports"><i class="icon-checkbox"></i>Sports de force</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="team_sports">
+                                        <label class="checkbox" for="team_sports"><i class="icon-checkbox"></i>Sports Collectifs</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="martial_arts">
+                                        <label class="checkbox" for="martial_arts"><i class="icon-checkbox"></i>Arts Martiaux</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="gymnastics">
+                                        <label class="checkbox" for="gymnastics"><i class="icon-checkbox"></i>Gymnastique</label>
+
+                                        <input type="checkbox" name="racquet_sports" value="Oui" id="racquet_sports">
+                                        <label class="checkbox" for="racquet_sports"><i class="icon-checkbox"></i>Sports de raquette</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="mechanical_sports">
+                                        <label class="checkbox" for="mechanical_sports"><i class="icon-checkbox"></i>Sports mécanique</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="air_sports">
+                                        <label class="checkbox" for="air_sports"><i class="icon-checkbox"></i>Sports Aériens</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="ice_sports">
+                                        <label class="checkbox" for="ice_sports"><i class="icon-checkbox"></i>Sports de glace</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="water_sports">
+                                        <label class="checkbox" for="water_sports"><i class="icon-checkbox"></i>Sports nautique</label>
+
+                                        <input type="checkbox" name="sports" value="Oui" id="outdoor_sports">
+                                        <label class="checkbox" for="outdoor_sports"><i class="icon-checkbox"></i>Sports de plein air et de nature</label>
+                                    </div>
+                                </li>
+                                <li class="active">
+                                    <h3><i class="icon-culture"></i>Culture<i class="icon-arrow-right"></i></h3>
+                                    <div>
+                                        <input type="checkbox" name="culture" value="Oui" id="reading">
+                                        <label class="checkbox" for="reading"><i class="icon-checkbox"></i>Lecture</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="fashion">
+                                        <label class="checkbox" for="fashion"><i class="icon-checkbox"></i>Mode</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="theater">
+                                        <label class="checkbox" for="theater"><i class="icon-checkbox"></i>Théatre</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="magazine">
+                                        <label class="checkbox" for="magazine"><i class="icon-checkbox"></i>Magazine</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="economy">
+                                        <label class="checkbox" for="economy"><i class="icon-checkbox"></i>Economie</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="bourse">
+                                        <label class="checkbox" for="bourse"><i class="icon-checkbox"></i>Bourse</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="travel">
+                                        <label class="checkbox" for="travel"><i class="icon-checkbox"></i>Voyage</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="dance">
+                                        <label class="checkbox" for="dance"><i class="icon-checkbox"></i>Danse</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="finance">
+                                        <label class="checkbox" for="finance"><i class="icon-checkbox"></i>Finance</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="painting">
+                                        <label class="checkbox" for="painting"><i class="icon-checkbox"></i>Peinture</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="cinema">
+                                        <label class="checkbox" for="cinema"><i class="icon-checkbox"></i>Cinéma</label>
+
+                                        <input type="checkbox" name="culture" value="Oui" id="music">
+                                        <label class="checkbox" for="music"><i class="icon-checkbox"></i>Musique</label>
+                                    </div>
+                                </li>
+                                <li class="active">
+                                    <h3><i class="icon-activities"></i>Loisirs<i class="icon-arrow-right"></i></h3>
+                                    <div>
+                                        <input type="checkbox" name="activities" value="Oui" id="cards">
+                                        <label class="checkbox" for="cards"><i class="icon-checkbox"></i>Cartes</label>
+
+                                        <input type="checkbox" name="activities" value="Oui" id="video_games">
+                                        <label class="checkbox" for="video_games"><i class="icon-checkbox"></i>Jeux Vidéos</label>
+
+                                        <input type="checkbox" name="activities" value="Oui" id="gardening">
+                                        <label class="checkbox" for="gardening"><i class="icon-checkbox"></i>Jardinage</label>
+
+                                        <input type="checkbox" name="activities" value="Oui" id="discover">
+                                        <label class="checkbox" for="discover"><i class="icon-checkbox"></i>Découverte</label>
+
+                                        <input type="checkbox" name="activities" value="Oui" id="shopping">
+                                        <label class="checkbox" for="shopping"><i class="icon-checkbox"></i>Shopping</label>
+
+                                        <input type="checkbox" name="activities" value="Oui" id="drawing">
+                                        <label class="checkbox" for="drawing"><i class="icon-checkbox"></i>Dessin</label>
+                                    </div>
+                                </li>
                             </ul>
-                            <p id="completion-profile">Profil complet à 72%</p>
-                            <div class="loader-container">
-                                <div class="loader"></div>
+                        </div>
+                        
+                        <div id="familly-account" class="row">
+                            <h2>SITUATION FAMILIALE</h2>
+                            <label for="relationship">Situation amoureuse:</label>
+                            <div class="select">
+                                <select id="relationship" name="relationship">
+                                    <option value="">Faites votre choix</option>
+                                </select>
+                            </div>
+                            <div id="childrens-account">
+                                <label>Avez-vous des enfants ?</label>
+                                <input type="radio" name="childrens" value="Oui" id="has_childrens">
+                                <label class="checkbox" for="has_childrens"><i class="icon-checkbox"></i>Oui</label>
+                                <input type="radio" name="childrens" value="Non" id="hasnot_childrens">
+                                <label class="checkbox" for="hasnot_childrens"><i class="icon-checkbox"></i>Non</label>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div id="interests-account" class="row">
-                        <h2>CENTRE D’INTÉRÊTS</h2>
-                        <ul>
-                            <li class="active">
-                                <h3><i class="icon-sports"></i>Sports<i class="icon-arrow-right"></i></h3>
-                                <div>
-                                    <input type="checkbox" name="sports" value="Oui" id="athletics">
-                                    <label class="checkbox" for="athletics"><i class="icon-checkbox"></i>Athlétisme</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="cycling">
-                                    <label class="checkbox" for="cycling"><i class="icon-checkbox"></i>Cyclisme</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="combats_sports">
-                                    <label class="checkbox" for="combats_sports"><i class="icon-checkbox"></i>Sports de combat</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="strength_sports">
-                                    <label class="checkbox" for="strength_sports"><i class="icon-checkbox"></i>Sports de force</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="team_sports">
-                                    <label class="checkbox" for="team_sports"><i class="icon-checkbox"></i>Sports Collectifs</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="martial_arts">
-                                    <label class="checkbox" for="martial_arts"><i class="icon-checkbox"></i>Arts Martiaux</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="gymnastics">
-                                    <label class="checkbox" for="gymnastics"><i class="icon-checkbox"></i>Gymnastique</label>
-
-                                    <input type="checkbox" name="racquet_sports" value="Oui" id="racquet_sports">
-                                    <label class="checkbox" for="racquet_sports"><i class="icon-checkbox"></i>Sports de raquette</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="mechanical_sports">
-                                    <label class="checkbox" for="mechanical_sports"><i class="icon-checkbox"></i>Sports mécanique</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="air_sports">
-                                    <label class="checkbox" for="air_sports"><i class="icon-checkbox"></i>Sports Aériens</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="ice_sports">
-                                    <label class="checkbox" for="ice_sports"><i class="icon-checkbox"></i>Sports de glace</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="water_sports">
-                                    <label class="checkbox" for="water_sports"><i class="icon-checkbox"></i>Sports nautique</label>
-
-                                    <input type="checkbox" name="sports" value="Oui" id="outdoor_sports">
-                                    <label class="checkbox" for="outdoor_sports"><i class="icon-checkbox"></i>Sports de plein air et de nature</label>
-                                </div>
-                            </li>
-                            <li class="active">
-                                <h3><i class="icon-culture"></i>Culture<i class="icon-arrow-right"></i></h3>
-                                <div>
-                                    <input type="checkbox" name="culture" value="Oui" id="reading">
-                                    <label class="checkbox" for="reading"><i class="icon-checkbox"></i>Lecture</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="fashion">
-                                    <label class="checkbox" for="fashion"><i class="icon-checkbox"></i>Mode</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="theater">
-                                    <label class="checkbox" for="theater"><i class="icon-checkbox"></i>Théatre</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="magazine">
-                                    <label class="checkbox" for="magazine"><i class="icon-checkbox"></i>Magazine</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="economy">
-                                    <label class="checkbox" for="economy"><i class="icon-checkbox"></i>Economie</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="bourse">
-                                    <label class="checkbox" for="bourse"><i class="icon-checkbox"></i>Bourse</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="travel">
-                                    <label class="checkbox" for="travel"><i class="icon-checkbox"></i>Voyage</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="dance">
-                                    <label class="checkbox" for="dance"><i class="icon-checkbox"></i>Danse</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="finance">
-                                    <label class="checkbox" for="finance"><i class="icon-checkbox"></i>Finance</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="painting">
-                                    <label class="checkbox" for="painting"><i class="icon-checkbox"></i>Peinture</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="cinema">
-                                    <label class="checkbox" for="cinema"><i class="icon-checkbox"></i>Cinéma</label>
-
-                                    <input type="checkbox" name="culture" value="Oui" id="music">
-                                    <label class="checkbox" for="music"><i class="icon-checkbox"></i>Musique</label>
-                                </div>
-                            </li>
-                            <li class="active">
-                                <h3><i class="icon-activities"></i>Loisirs<i class="icon-arrow-right"></i></h3>
-                                <div>
-                                    <input type="checkbox" name="activities" value="Oui" id="cards">
-                                    <label class="checkbox" for="cards"><i class="icon-checkbox"></i>Cartes</label>
-
-                                    <input type="checkbox" name="activities" value="Oui" id="video_games">
-                                    <label class="checkbox" for="video_games"><i class="icon-checkbox"></i>Jeux Vidéos</label>
-
-                                    <input type="checkbox" name="activities" value="Oui" id="gardening">
-                                    <label class="checkbox" for="gardening"><i class="icon-checkbox"></i>Jardinage</label>
-
-                                    <input type="checkbox" name="activities" value="Oui" id="discover">
-                                    <label class="checkbox" for="discover"><i class="icon-checkbox"></i>Découverte</label>
-
-                                    <input type="checkbox" name="activities" value="Oui" id="shopping">
-                                    <label class="checkbox" for="shopping"><i class="icon-checkbox"></i>Shopping</label>
-
-                                    <input type="checkbox" name="activities" value="Oui" id="drawing">
-                                    <label class="checkbox" for="drawing"><i class="icon-checkbox"></i>Dessin</label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div id="familly-account" class="row">
-                        <h2>SITUATION FAMILIALE</h2>
-                        <label for="relationship">Situation amoureuse:</label>
-                        <div class="select">
-                            <select id="relationship" name="relationship">
-                                <option value="">Faites votre choix</option>
-                            </select>
+                        
+                        <div id="edit-account" class="row">
+                            <input type="submit" class="cancel" name="cancel" value="ANNULER">
+                            <input type="submit" class="save" name="submit" value="ENREGISTRER LES MODIFICATIONS">
                         </div>
-                        <div id="childrens-account">
-                            <label>Avez-vous des enfants ?</label>
-                            <input type="radio" name="childrens" value="Oui" id="has_childrens">
-                            <label class="checkbox" for="has_childrens"><i class="icon-checkbox"></i>Oui</label>
-                            <input type="radio" name="childrens" value="Non" id="hasnot_childrens">
-                            <label class="checkbox" for="hasnot_childrens"><i class="icon-checkbox"></i>Non</label>
-                        </div>
-                    </div>
-                    
-                    <div id="edit-account" class="row">
-                        <input type="submit" class="cancel" name="cancel" value="ANNULER">
-                        <input type="submit" class="save" name="submit" value="ENREGISTRER LES MODIFICATIONS">
-                    </div>
+                    </fieldset>
                 </form>
             </div>
         </section>
