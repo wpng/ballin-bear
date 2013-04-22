@@ -20,7 +20,6 @@
     top: 0;
     margin: 0;
     padding: 0;
-    font-size: 1em;
     position: relative;
     text-align: center;
     width: 30%;
@@ -30,30 +29,19 @@
 {
     display: block;
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2.4em;
     text-align: left;
-    padding-bottom: 5em;
+    padding-bottom: 14px;
 }
 
 #affinity-info p
 {
-    font-size: 3em;
     text-align: center;
     font-weight: normal;
 }
 
 #affinity-info .affinity-bot
 {
-    font-size: 2.5em;
     font-weight: bold;
-}
-
-.bloc-title-wrapper .more-action
-{
-    font-size: 1.9em;
-    padding: .5em .2em 0 0;
-    display: block;
-    float: right;
 }
 
 #featured-products .affinity-bot
@@ -64,11 +52,6 @@
 #featured-products .affinity-score
 {
     width: 47px;
-}
-
-#affinity-info .affinity-bot .affinity-score
-{
-    margin-top: -.14em;
 }
 
 #ping-search-result #affinity-info .affinity-bot
@@ -90,9 +73,15 @@
 
 #ping-search-result .affinity-score
 {
-    line-height: 3.4em;
+    line-height: 2.4em;
     top: 20px !important;
     margin-top: .1em;
+}
+
+#affinity-info .affinity-bot .affinity-score
+{
+    font-size: 2.2em;
+    line-height: 2.7em;
 }
 
 #ping-search-result #affinity-info .affinity-bot svg,
@@ -111,9 +100,8 @@
 
 #featured-products .more-action
 {
-    left: -12.8em;
-    bottom: 1.9em;
-    font-size: 1.9em;
+    left: -150px;
+    bottom: 12px;
     position: absolute;
 }
 
@@ -159,14 +147,12 @@
 
 #ping-search-result .product p
 {
-    font-size: 2em;
     padding: 1em;
 }
 
 #ping-search-result .product strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2em;
     display: block;
 }
 
@@ -193,11 +179,6 @@
     float: none;
     margin: 0;
     display: inline-block;
-}
-
-#ping-search-result .user-actions
-{
-    font-size: 1.8em;
 }
 
 /* filtered products */
@@ -253,18 +234,16 @@
 #filtered-products .product-from strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2em;
 }
 
 #filtered-products .product .call-to-action
 {
     background: none;
     color: #f68b2c;
-    font-size: 1.9em;
     text-decoration: none;
     position: absolute;
-    right: 0.5em;
-    bottom: 0.5em;
+    right: 5px;
+    bottom: 5px;
 }
 
 #filtered-products .user-actions
@@ -306,7 +285,6 @@
 
 #filtered-products .offer-products .product-seller
 {
-    font-size: 1.5em;
     width: 31%;
     vertical-align: middle;
 }
@@ -362,11 +340,6 @@
 
 @media (max-width: 750px)
 {
-    #page-search div.bloc-title-wrapper:nth-of-type(1)
-    {
-        display: none;
-    }
-
     #page-search
     {
         padding-top: 1em;

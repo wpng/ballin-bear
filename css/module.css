@@ -5,7 +5,7 @@
     color: #00ade0;
     display: inline-block;
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
-    font-size: 2.8em;
+    font-size: 1.8em;
     font-weight: normal;
     line-height: 1.4em;
     padding-right: .8em;
@@ -15,7 +15,14 @@
 {
     display: inline-block;
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2.1em;
+    font-size: 1.4em;
+}
+
+.bloc-title-wrapper .more-action
+{
+    padding: .5em .2em 0 0;
+    display: block;
+    float: right;
 }
 
 /* module */
@@ -630,6 +637,11 @@
 
 @media (max-width: 600px)
 {
+    #page-search div.bloc-title-wrapper:nth-of-type(1)
+    {
+        display: none;
+    }
+    
     .page,
     #page-account,
     #page-ping,

@@ -478,7 +478,6 @@ input[type="checkbox"] + label
 #page-wishlist .affinity-score,
 #page-news .affinity-score,
 #page-line .affinity-score,
-#ping-search-result .affinity-bot .affinity-score,
 #page-domain .ping-light .affinity-score
 {
     font-size: 2.6em;
