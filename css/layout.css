@@ -59,8 +59,7 @@ table
     width: 100%;
 }
 
-b,
-strong
+b, strong
 {
     font-weight: bold;
 }

@@ -95,31 +95,42 @@ var Dashboard =
         $( '#dashboard-toggle' ).on( 'click', Dashboard.stateChange );
         
         if ( App.isMobile )
-            $( '#dashboard' ).removeClass('open').addClass('closed');
+            $( '#dashboard' ).removeClass('open', 300, "swing").addClass('closed', 300, "swing")
+
         
         $( window ).resize( Dashboard.onResize );
     },
-    stateChange: function( event )
+    stateChange: function( event)
     {
-        if ( $( '#dashboard' ).hasClass('open') )
+        if ( $( '#dashboard' ).hasClass('open', 300, "swing") )
         {
-            $( '#dashboard' ).removeClass('open').addClass('closed');
-            $( '#dashboard .dropdown' ).removeClass( 'open' );
+            $( '#dashboard' ).removeClass('open', 300, "swing").addClass('closed', 300, "swing");
+            $( '#dashboard .dropdown' ).removeClass( 'open', 300, "swing" );
+            $('#dashboard .dropdown span,#dashboard .dropdown i:last-child').hide();
             //$( '#dashboard' ).switchClass( "open", "closed", 300 );
         }
         else
         {
-            $( '#dashboard' ).removeClass('closed').addClass('open');
+            $( '#dashboard' ).removeClass('closed', 300, "swing").addClass('open', 300, "swing");
+            setTimeout(function(){
+            	$('#dashboard .dropdown span,#dashboard .dropdown i:last-child').show();
+            },300);
             //$( '#dashboard' ).switchClass( "closed", "open", 300 );
         }
     },
     onResize: function( event )
-    {   
-        if ( ( $(window).width() > 820 ) && ( $(window).width() <= 1024 ) && $( '#dashboard' ).hasClass('open') )
-            $( '#dashboard' ).removeClass('open').addClass('closed');
+    {
+        if ( $(window).width() <= 1024 && $( '#dashboard').hasClass('open') ){
+            $( '#dashboard' ).removeClass('open', 300, "swing").addClass('closed', 300, "swing");
+            $('#dashboard .dropdown span,#dashboard .dropdown i:last-child').hide(0);
+        }
         
-        if ( $(window).width() >= 1024 && $( '#dashboard' ).hasClass('closed') )
-            $( '#dashboard' ).removeClass('closed').addClass('open');
+        if ( $(window).width() >= 1024 && $( '#dashboard' ).hasClass('closed') ){
+            $( '#dashboard' ).removeClass('closed', 300, "swing").addClass('open', 300, "swing");
+            setTimeout(function(){
+            	$('#dashboard .dropdown span,#dashboard .dropdown i:last-child').show();
+            },300);
+        }
     }
 };
 
