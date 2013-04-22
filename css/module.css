@@ -528,6 +528,7 @@
     margin: 0;
     position: relative;
     width: auto;
+    padding-left: 30px;
 }
 
 .ping-light .user-actions li
