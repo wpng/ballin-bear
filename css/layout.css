@@ -19,7 +19,7 @@ body
     background: #2e2e2e;
     color: #343434;
     font-family: Arial, sans-serif;
-    font-size: 0.62em;
+    font-size: 0.85em;
     font-weight: 100;
     height: 100%;
 }
@@ -55,7 +55,6 @@ h6
 table
 {
     border-spacing: 0;
-    font-size: 1.9em;
     width: 100%;
 }
 
@@ -147,7 +146,7 @@ hr
     background: #00addf;
     cursor: pointer;
     font-family: 'caviar_dreamsregular', Arial, sans-serif;
-    font-size: 3.8em;
+    font-size: 2em;
     height: 39px;
     line-height: 1.8em;
     margin: 5px 0 0 0;
@@ -177,6 +176,7 @@ hr
 #dashboard.open .toggle-name
 {
     display: inline;
+    font-family: 'caviar_dreamsregular', Arial, sans-serif;
 }
 
 #dashboard.closed hr
@@ -189,7 +189,7 @@ hr
 #dashboard ul h4
 {
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
-    font-size: 2.5em;
+    font-size: 1.4em;
     font-weight: normal;
     line-height: 2em;
 }
@@ -197,7 +197,7 @@ hr
 #dashboard ul h5
 {
     font-family: Arial, sans-serif;
-    font-size: 2.2em;
+    font-size: 1.2em;
     font-weight: normal;
     line-height: 2em;
 }
@@ -207,7 +207,7 @@ hr
 {
     color: #cac9c9;
     font-family: Arial, sans-serif;
-    font-size: 1.9em;
+    font-size: 1em;
     font-weight: normal;
     line-height: 1.5em;
     text-decoration: none;
@@ -274,7 +274,7 @@ hr
 #breadcrumbs
 {
     color: #797979;
-    font-size: 1.9em;
+    font-size: 1.1em;
     line-height: 2.9em;
 }
 
