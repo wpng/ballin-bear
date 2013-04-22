@@ -65,12 +65,14 @@
                         <div id="session-facebook">
                             <a href="#" id="login-facebook" class="user-action" title="Se connecter avec Facebook">Se connecter avec Facebook</a>
                         </div>
-                        <form method="POST" action="">
-                            <input type="text" id="last_name" name="last_name" value="Nom" title="Nom">
-                            <input type="text" id="first_name" name="first_name" value="Prénom" title="Prénom">
-                            <input type="text" name="email" value="E-mail" title="E-mail">
-                            <input type="password" name="password" value="">
-                            <input type="submit" name="submit" value="S'INSCRIRE">
+                        <form method="POST" action="#">
+                            <fieldset>
+                                <input type="text" id="last_name" name="last_name" placeholder="Nom" required>
+                                <input type="text" id="first_name" name="first_name" placeholder="Prénom" required>
+                                <input type="email" name="email" placeholder="E-mail" required>
+                                <input type="password" name="password" placeholder="Mot de passe" required>
+                                <input type="submit" name="submit" value="S'INSCRIRE">
+                            </fieldset>
                         </form>
                     </div>
                 </li>
