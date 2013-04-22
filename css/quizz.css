@@ -19,7 +19,6 @@ h3
 {
     font-size: 2.8em;
     font-family: 'irregularisregular', Arial, sans-serif;
-    margin: 0.6em 0 0 0;
 }
 
 /* question */
@@ -31,7 +30,6 @@ h3
 
 #answers-question
 {
-    font-size: 1.9em;
     display: inline-block;
     padding: 0 0 0 0.8em;
     vertical-align: top;
@@ -61,7 +59,6 @@ h3
 label
 {
     display: inline-block;
-    font-size: 2em;
     margin: 2em 0 0 0;
     width: 20%;
 }
@@ -70,9 +67,8 @@ label
 {
     background: #d7d7d7 url("../img/select-arrow.png") no-repeat 96% 0.7em;
     font-family: 'irregularisregular', Arial, sans-serif;
-    height: 1.6em;
-    font-size: 2em;
-    line-height: 1em;
+    height: 25px;
+    line-height: 25px;
     margin: 0;
     padding: 0 10px;
     width: 56%;
@@ -89,7 +85,6 @@ label
     color: #989797;
     display: inline-block;
     line-height: 1em;
-    font-size: 1.8em;
     margin: 0 0 0 3%;
     width: 15%;
 }
