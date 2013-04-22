@@ -1,10 +1,13 @@
 /* global */
 
+#page-account
+{
+    padding: 0 6%;
+}
+
 #page-account-global
 {
-    margin: 2em 6%;
     position: relative;
-    text-align: center;
 }
 
 #page-account-global .module
@@ -17,6 +20,7 @@
     min-width: 28em;
     width: 25.5%;
     vertical-align: top;
+    text-align: center;
 }
 
 #page-account-global .module h2
