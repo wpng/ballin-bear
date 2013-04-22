@@ -144,7 +144,7 @@
 #page-news .actuality-filter label
 {
     display: block;
-    font-size: 1.8em;
+    font-size: 2.1em;
     line-height: 1.8em;
 }
 
@@ -172,6 +172,12 @@
 .actuality-filter ul ul
 {
     padding: 0 0 0 2em;
+    font-size:0.9em;
+}
+
+#news .icon-checkbox
+{
+	margin-top:2px;
 }
 
 /* affinity */
