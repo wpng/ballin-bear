@@ -19,7 +19,7 @@
 
 .wished-product .module-content
 {
-    padding: 1em 1.8em;
+    padding: 5px 15px;
 }
 
 .wished-product h2
@@ -30,9 +30,9 @@
 
 .wished-product .ping-count
 {
-    font-size: 2.4em;
+    font-size: 1.4em;
     font-family: 'irregularisregular', Arial, sans-serif;
-    margin: 2em 0 0 0;
+    margin: 10px 0;
     text-align: left;
 }
 
@@ -40,7 +40,7 @@
 {
     color: #00ade0;
     font-family: 'caviar_dreamsbold',Arial,sans-serif;
-    font-size: 2.4em;
+    font-size: 1.4em;
     font-weight: bold;
     margin: 1.6em 0 0 0;
     text-align: center;
@@ -48,19 +48,17 @@
 
 .wished-product p
 {
-    font-size: 2em;
     text-align: center;
 }
 
 .wished-product .more-action
 {
-    font-size: 1.9em;
     text-align: left;
 }
 
 .wished-product .price
 {
-    display: inline;
+    display: inline-block;
     font-family: Arial, sans-serif;
     font-size: 1.2em;
 }
@@ -96,15 +94,10 @@
 .wished-product .user-actions li
 {
     display: inline-block;
-    margin: 1em 1.6em 0.4em;
+    margin: 1em 10px 0.4em;
     max-width: 36px;
     line-height: 1em;
     vertical-align: top;
-}
-
-.wished-product .user-actions li span
-{
-    font-size: 1.6em;
 }
 
 /* affinity */

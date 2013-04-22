@@ -2,12 +2,13 @@
 
 #page-account
 {
-    padding: 0 6%;
+    padding: 0 3%;
 }
 
 #page-account-global
 {
     position: relative;
+    text-align: center;
 }
 
 #page-account-global .module
@@ -15,9 +16,9 @@
     display: inline-block;
     float: none;
     padding: 2em 2%;
-    margin: 0 3% 3em 0;
-    min-height: 200px;
-    min-width: 28em;
+    margin: 0 1% 3em 0;
+    min-height: 220px;
+    min-width: 300px;
     width: 25.5%;
     vertical-align: top;
     text-align: center;
@@ -33,7 +34,6 @@
 
 #page-account-global .module p
 {
-    font-size: 1.9em;
     text-align: justify;
 }
 
@@ -63,7 +63,6 @@
 #global-info-account ul
 {
     display: inline-block;
-    font-size: 1.9em;
     line-height: 1.7em;
     padding-top: 1em;
     vertical-align: top;
@@ -72,7 +71,7 @@
 #global-info-account strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: normal;
 }
 
@@ -95,17 +94,15 @@
 .page-account-inner h1
 {
     color: #00ade0;
-    font-family: 'caviar_dreamsbold', Arial, sans-serif;
-    font-size: 3em;
-    font-weight: bold;
+    font-family: 'caviar_dreamsregular', Arial, sans-serif;
+    font-size: 1.8em;
     line-height: 1.6em;
 }
 
 .page-account-inner h2
 {
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
-    font-size: 2.2em;
-    font-weight: bold;
+    font-size: 1.6em;
     line-height: 3em;
     text-transform: uppercase;
 }
@@ -113,7 +110,6 @@
 .page-account-inner label
 {
     display: inline-block;
-    font-size: 2.2em;
     text-align: right;
     width: 35%;
 }
@@ -123,7 +119,7 @@
 {
     font-family: 'irregularisregular', Arial, sans-serif;
     height: 1.7em;
-    font-size: 2.5em;
+    font-size: 1.4em;
     margin: 0.15em 0.5em;
     padding: 0 1em;
     width: 40%;
@@ -143,7 +139,6 @@
 
 .page-account-inner #link-account p
 {
-    font-size: 1.9em;
     line-height: 2.5em;
     margin: 0 0 0 2%;
     float: right;
@@ -175,7 +170,6 @@
 {
     color: #8b8b8b;
     float: right;
-    font-size: 1.9em;
     line-height: 3.3em;
     text-decoration: none;
 }
@@ -205,7 +199,6 @@
 
 #delete-account #masked-delete p
 {
-    font-size: 1.9em;
     text-align: justify;
 }
 
@@ -217,12 +210,12 @@
 .page-account-inner #edit-account
 {
     border: none;
-    padding: 1em 19% 1.5em 18%;
+    padding: 10px 19% 3px 18%;
 }
 
 #profile-account #edit-account
 {
-    padding: 1em 5% 1.5em 5%;
+    padding: 10px 5% 3px 5%;
 }
 
 .page-account-inner #edit-account .save
@@ -232,9 +225,8 @@
 
 input[type=submit]
 {
-    font-size: 3em;
+    font-size: 1.7em;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
 /* profile */
@@ -246,14 +238,13 @@ input[type=submit]
 
 #profile-account .checkbox
 {
-    font-size: 1.8em;
     line-height: 1.2em;
-    margin: 0.5em 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 #profile-account #global-info-account
 {
-    padding-top: 2em;
+    padding-top: 20px;
 }
 
 #profile-account #global-info-account #picture-profile
@@ -267,7 +258,6 @@ input[type=submit]
 {
     color: #515050;
     display: block;
-    font-size: 1.6em;
     line-height: 1em;
     margin: 1em 0 0 0;
     text-decoration: none;
@@ -277,8 +267,7 @@ input[type=submit]
 {
     float: right;
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2.4em;
-    font-weight: bold;
+    font-size: 1.5em;
     text-align: right;
     min-width: 25em;
 }
@@ -314,7 +303,7 @@ input[type=submit]
     color: #343434;
     cursor: pointer;
     font-family: Arial, sans-serif;
-    font-size: 1.9em;
+    font-size: 1.1em;
     line-height: 2em;
     margin: 1.2em 0 0 0;
 }
@@ -331,7 +320,7 @@ input[type=submit]
 
 #childrens-account
 {
-    margin: 1em 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 #familly-account label
@@ -408,7 +397,7 @@ input[type=submit]
     
     input[type="submit"]
     {
-        font-size: 2.7em;
+        
     }
     
     #global-info-account .picture-user,

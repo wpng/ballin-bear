@@ -9,8 +9,6 @@
 #footer nav.complementary
 {
     display: inline-block;
-    font-size: 100%;
-    line-height: 2em;
     margin: 40px 6%;
     text-align: left;
     vertical-align: top;
@@ -19,7 +17,7 @@
 #footer nav.complementary h4
 {
     font-family: 'caviar_dreamsregular', Arial, sans-serif;
-    font-size: 3.9em;
+    font-size: 1.7em;
     line-height: 1em;
 }
 
@@ -27,8 +25,7 @@
 {
     color: #343434;
     display: inline-block;
-    font-size: 1.9em;
-    margin: 0 4px 0 0;
+    margin: 0 2px 0 0;
     text-decoration: none;
 }
 
@@ -39,7 +36,7 @@
 
 #footer .fb-like
 {
-    display:    block;
+    display: block;
     margin: 10px 0 0 0;
 }
 
@@ -59,6 +56,5 @@
     background: #343434;
     border-top: 2px #00addf solid;
     color: #f7f7f7;
-    font-size: 1.9em;
     line-height: 3.6em;
 }
