@@ -47,7 +47,7 @@
 .module h2
 {
     color: #00ade0;
-    font-size: 2.8em;
+    font-size: 1.5em;
     font-weight: normal;
     line-height: 2em;
 }
@@ -60,7 +60,6 @@
 
 .module blockquote
 {
-    font-size: 1.9em;
     line-height: 1.4em;
     position: relative;
     text-align: justify;
@@ -70,14 +69,14 @@
 {
     color: #f62c2c;
     display: block;
-    font-size: 3.1em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
 .module .ping
 {
     color: #f68b2c;
-    font-size: 3.1em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -126,13 +125,12 @@
     display: inline;
     margin: 0 0 0 1%;
     vertical-align: middle;
-    width: 15%;
+    width: 14%;
 }
 
 .module .products .product-geoloc
 {
     cursor: pointer;
-    font-size: 1.5em;
     position: relative;
     text-align: center;
 }
@@ -202,7 +200,7 @@
 {
     color: #00ade0;
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
-    font-size: 2.4em;
+    font-size: 1.4em;
     font-weight: bold;
 }
 
@@ -221,19 +219,18 @@
 .module .products .product-info,
 #filtered-products .geoloc-products .product-info
 {
-    width: 29%;
+    width: 28%;
     padding: 0 1%;
 }
 
 .module .products .product-info p
 {
-    font-size: 1.9em;
     font-weight: bold;
 }
 
 .module .products .product-seller
 {
-    font-size: 1.5em;
+    font-size: 0.8em;
     width: 27%;
 }
 
@@ -270,8 +267,7 @@
     border-left: 2px solid #f1f1f1;
     float: right;
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2.2em;
-    font-weight: bold;
+    font-size: 1.4em;
     right: 4em;
     top: 0;
     height: 100%;
@@ -283,13 +279,13 @@
 
 #affinity-info > p:first-child
 {
-    margin: 2.5em 0 0 0;
+    margin: 40px 0 0 0;
 }
 
 .affinity-info
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2.2em;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
 }
@@ -301,7 +297,7 @@
 {
     border-left: 2px solid #f1f1f1;
     float: right;
-    line-height: 5.6em;
+    line-height: 4em;
     text-align: center;
     padding-left:0;
     width: 7%;
@@ -327,7 +323,7 @@
 #advice .module-content,
 #did-you-know .module-content
 {
-    padding: 0 2.9em 2em 3.8em;
+    padding: 0 20px 10px 20px;
 }
 
 #go,
@@ -344,7 +340,7 @@
 #did-you-know h3,
 #results h3
 {
-    font-size: 2.8em;
+    font-size: 1.5em;
     font-family: 'irregularisregular', Arial, sans-serif;
     font-weight: normal;
     line-height: 2.5em;
@@ -358,7 +354,6 @@
 #advice a
 {
     color: #f68b2c;
-    font-size: 1.9em;
     text-decoration: none;
     float: right;
 }
@@ -375,13 +370,11 @@
 
 #go p
 {
-    font-size: 2em;
     text-align: left;
 }
 
 #go .call-to-action
 {
-    font-size: 2em;
     margin: 1em 0 0 0;
 }
 
@@ -393,14 +386,13 @@
 #go .go-offer
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2.6em;
-    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #go .date
 {
     font-family: 'caviar_dreamsregular', Arial, sans-serif;
-    font-size: 5em;
+    font-size: 2.5em;
     margin: 0.4em 0 0 0;
     text-align: left;
 }
@@ -414,7 +406,6 @@
 {
     color: #f68b2c;
     display: block;
-    font-size: 2em;
 }
 
 #go img
@@ -426,13 +417,13 @@
 {
     margin: 1em 0 0 0;
     color: #838282;
-    font-size: 3em;
+    font-size: 1.2em;
     text-align: center;
 }
 
 #go .price
 {
-    font-size: 4em;
+    font-size: 2em;
     margin: 0 0 1em 0;
     text-align: center;
 }
@@ -442,7 +433,6 @@
 .products-filters
 {
     color: #8b8b8b;
-    font-size: 1.9em;
     line-height: 2em;
 }
 
@@ -514,7 +504,6 @@
 
 .ping-light .ping-description
 {
-    font-size: 1.9em;
     text-align: justify;
     line-height: 1.4em;
 }
@@ -547,7 +536,6 @@
 .ping-light .more-action
 {
     float: right;
-    font-size: 1.9em;
     margin: 0.4em 0 0 0;
 }
 

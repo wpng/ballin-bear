@@ -451,16 +451,6 @@ input[type="checkbox"] + label
     height: 130px;
 }
 
-#global-info-product .affinity-score,
-#page-wishlist .affinity-score,
-#page-news .affinity-score,
-#page-line .affinity-score,
-#ping-search-result .affinity-bot .affinity-score,
-#page-domain .ping-light .affinity-score
-{
-    line-height: 2.9em;
-}
-
 #global-info-product .affinity-bot .user-picture,
 #ping-search-result .affinity-bot .user-picture,
 #page-wishlist .affinity-bot .user-picture,
@@ -474,14 +464,25 @@ input[type="checkbox"] + label
 
 .affinity-score
 {
-    font-size: 2.6em;
+    font-size: 1.7em;
     padding: 0 0 0 0.1em;
-    line-height: 3.8em;
+    line-height: 2.5em;
     text-align: center;
     position: absolute;
     text-align: center;
     width: 88px;
     z-index: 99;
+}
+
+#global-info-product .affinity-score,
+#page-wishlist .affinity-score,
+#page-news .affinity-score,
+#page-line .affinity-score,
+#ping-search-result .affinity-bot .affinity-score,
+#page-domain .ping-light .affinity-score
+{
+    font-size: 2.6em;
+    line-height: 2.5em;
 }
 
 /* call to action */

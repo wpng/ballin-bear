@@ -8,7 +8,7 @@
 
 #global-info-product
 {
-    min-height: 36em;
+    min-height: 285px;
 }
 
 #global-info-product .module-content
@@ -20,7 +20,6 @@
 
 #global-info-product .module-content p
 {
-    font-size: 1.9em;
     text-align: justify;
 }
 
@@ -40,7 +39,6 @@
 #global-info-product .product-ping p
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2.2em;
     font-weight: bold;
 }
 
@@ -78,9 +76,9 @@
 #featured-products .user-name
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.4em;
     font-weight: bold;
-    line-height: 3.2em;
+    line-height: 2.8em;
     vertical-align: top;
 }
 
@@ -124,14 +122,12 @@
 
 #featured-products .product p
 {
-    font-size: 2em;
     padding: 1em;
 }
 
 #featured-products .product strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2em;
     display: block;
 }
 
@@ -161,21 +157,11 @@
     vertical-align: top;
 }
 
-#featured-products .user-actions li span
-{
-	font-size:2em;
-}
-
 #featured-products .user-actions a
 {
     float: none;
     margin: 0;
     display: inline-block;
-}
-
-#featured-products .user-actions span
-{
-    font-size: 2em;
 }
 
 #featured-products .affinity-bot
@@ -193,7 +179,7 @@
 
 #featured-products .affinity-score
 {
-    line-height: 3em;
+    line-height: 2.6em;
     top: 0 !important;
     width: 50px;
 }
@@ -240,18 +226,18 @@
 #filtered-products .product-from strong
 {
     font-family: 'irregularisregular', Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.2em;
+    font-weight: normal;
 }
 
 #filtered-products .product .call-to-action
 {
     background: none;
     color: #f68b2c;
-    font-size: 1.9em;
     text-decoration: none;
     position: absolute;
-    right: 0.5em;
-    bottom: 0.5em;
+    right: 3px;
+    bottom: 3px;
 }
 
 #filtered-products .user-actions
@@ -287,7 +273,6 @@
 
 #filtered-products .offer-products .product-seller
 {
-    font-size: 1.5em;
     width: 31%;
     vertical-align: middle;
 }

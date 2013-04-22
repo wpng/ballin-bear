@@ -29,7 +29,6 @@
 #global-info-product #categories-product
 {
     color: #797979;
-    font-size: 1.6em;
     padding: 0 0.4em;
     text-align: left;
 }
@@ -38,7 +37,7 @@
 {
     float: left;
     position: relative;
-    width: 27em;
+    width: 225px;
     text-align: center;
 }
 
@@ -53,11 +52,6 @@
     display: inline-block;
     padding: 1em 0;
     width: 85%;
-}
-
-#global-info-product #offers-product p
-{
-    font-size: 1.9em;
 }
 
 #global-info-product #offers-product p:nth-child(n+2)
@@ -91,14 +85,13 @@
 
 #geoloc-products .product-seller
 {
-    width: 25%;
+    width: 26%;
 }
 
 /* geoloc */
 
 #address
 {
-    font-size: 1.8em;
     line-height: 1.4em;
     float: left;
     min-height: 6em;
@@ -107,7 +100,6 @@
 
 #geoloc
 {
-    font-size: 1.8em;
     line-height: 1.4em;
     float: right;
     min-height: 6em;
@@ -121,7 +113,6 @@
     background: #f1f1f1;
     border: none;
     float: left;
-    font-size: 0.9em;
     padding: 2% 3%;
     width: 65%;
     vertical-align: middle;
@@ -133,12 +124,13 @@
 #geoloc button
 {
     float: right;
-    font-size: 1.9em;
+    font-size: 1.7em;
+    height: 25px;
     line-height: 1em;
-    vertical-align: middle;
-    padding: 0;
     margin: 0;
+    padding: 0;
     text-align: right;
+    vertical-align: middle;
     width: 28%;
 }
 

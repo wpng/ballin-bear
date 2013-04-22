@@ -22,9 +22,7 @@
 
 #info-line p
 {
-    font-size: 2em;
-    line-height: 1.3em;
-    min-height: 15.4em;
+    line-height: 1.4em;
     text-align: justify;
 }
 
@@ -55,7 +53,6 @@
 
 #answers-question
 {
-    font-size: 1.9em;
     display: inline-block;
     padding: 0 0 0 0.8em;
     vertical-align: top;
@@ -97,11 +94,10 @@
 
 #ping-light-featured .affinity-score
 {
-    font-size: 2em;
     height: 3.5em;
+    font-size: 1.8em;
     width: 68px;
-    line-height: 3em;
-    padding: 0 0.6em 0 0;
+    line-height: 2.8em;
 }
 
 #ping-light-featured .affinity-info p
@@ -116,7 +112,6 @@
 {
     display: inline;
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
-    font-size: 2em;
     font-weight: bold;
     line-height: 1em;
     text-transform: uppercase;
@@ -125,8 +120,7 @@
 #ping-light-featured .popular-products
 {
     color: #343434;
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 1.7em;
     line-height: 1.6em;
 }
 
@@ -138,7 +132,6 @@
 #ping-light-featured .ping-description
 {
     display: inline-block;
-    font-size: 1.9em;
     line-height: 1.4em;
     text-align: justify;
     margin: 1.5em 0 0 0;
@@ -168,7 +161,6 @@
 #ping-light-featured .products .product-from .offer-count
 {
     font-family: 'caviar_dreamsbold', Arial, sans-serif;
-    font-size: 2em;
     line-height: 1.2em;
 }
 
@@ -179,7 +171,6 @@
 
 #ping-light-featured .more-action
 {
-    font-size: 1.9em;
     float: right;
     margin: 1em 0 0 0;
 }
@@ -220,7 +211,6 @@
 
 .ping-light .ping-description
 {
-    font-size: 1.9em;
     text-align: justify;
 }
 
