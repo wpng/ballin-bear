@@ -115,6 +115,9 @@
     float: left;
     padding: 2% 3%;
     width: 65%;
+    height:28px;
+    min-height: 25px;
+    font-size: 1.1em;
     vertical-align: middle;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
