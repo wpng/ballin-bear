@@ -275,13 +275,13 @@
     float: right;
     font-family: 'irregularisregular', Arial, sans-serif;
     font-size: 1.4em;
-    right: 4em;
+    right: 50px;
     top: 0;
     height: 100%;
     position: absolute;
     padding: 0 2%;
     text-align: center;
-    width: 22%;
+    width: 24%;
 }
 
 #affinity-info > p:first-child
@@ -321,7 +321,7 @@
     height: 100%;
     right: 0;
     top: 0;
-    width: 6em;
+    width: 50px;
 }
 
 /* advice & did you know */
@@ -628,6 +628,11 @@
 @media (max-width: 820px)
 {
     #center-col
+    {
+        width: 100%;
+    }
+    
+    #center-col .module
     {
         width: 100%;
     }
