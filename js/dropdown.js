@@ -85,9 +85,12 @@ var Dropdown =
     geolocMap: function( event )
     {
         event.preventDefault();
-        
-        $( '.geoloc-products .dropdown' ).removeClass( 'open' );
-        
-        $( this ).addClass( 'open' );
+
+        if($(this).hasClass('open'))
+      		$(this).removeClass('open');
+      	else{
+      		$('.geoloc-products .dropdown').removeClass('open');
+      		$(this).addClass('open');
+      	}
     }
 };
