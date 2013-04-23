@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Wepingo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/line.css">
+    <script src="js/html5.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script src="js/searchbar.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/affinity-bot.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=534996806543201";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- header -->
+    <header id="header" role="banner" class="clearfix">
+        <a href="" id="logo" title="Wepingo">
+            <img src="img/logo.png" alt="Logo Wepingo">
+        </a>
+        <nav id="session">
+            <ul>
+            	<li id="small-search">
+            		<h4><a href="#">recherche</a></h4>
+            	</li>
+                <li id="sign-in" class="dropdown">
+                    <h4>Connexion</h4>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-arrow">
+                            <i class="icon-arrow-up"></i>
+                        </span>
+                        <form method="POST" action="">
+                            <input type="text" name="email" value="E-mail">
+                            <input type="text" name="password" value="Mot de passe">
+                        </form>
+                    </div>
+                </li>
+                <li id="sign-up" class="dropdown">
+                    <h4>S'inscrire</h4>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-arrow">
+                            <i class="icon-arrow-up"></i>
+                        </span>
+                        <form method="POST" action="">
+                            <input type="text" name="last_name" value="Nom">
+                            <input type="text" name="first_name" value="Prénom">
+                            <input type="text" name="email" value="E-mail">
+                            <input type="text" name="password" value="Mot de passe">
+                        </form>
+                    </div>
+                </li>
+                <li id="lang" class="dropdown">
+                    <i class="icon-fr"></i> <h4>FR</h4> <i class="icon-arrow-down"></i>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-arrow">
+                            <i class="icon-arrow-up"></i>
+                        </span>
+                        <ul>
+                            <li><i class="icon-fr"></i>EN</li>
+                            <li><i class="icon-fr"></i>DE</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="search-container">
+            <form id="search" role="search" method="GET" action="">
+                <input type="text" name="search" value="Recherche...">
+                <button><i class="icon-find"></i></button>
+            </form>
+        </div>
+    </header>
+    
+    <!-- wrapper -->
+    <div id="wrapper" class="clearfix">
+        
+        <!-- sidebar -->
+        <nav id="dashboard" class="open" role="navigation">
+            <div id="dashboard-toggle">
+                <h4 class="toggle-name">Univers</h4> <i class="icon-toggle"></i> <span class="toggle-arrow"><i class="icon-arrow-toggle"></i></span>
+            </div>
+            <ul>
+                <li class="dropdown" data-level="1">
+                    <h4 class="menu"><i class="icon-account"></i><span>Mon compte</span><i class="icon-arrow-right"></i></h4>
+                </li>
+                <li class="dropdown" data-level="1">
+                    <hr>
+                    <h4 class="menu"><i class="icon-camera"></i><span>Photos, caméscope</span><i class="icon-arrow-right"></i></h4>
+                    <ul>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
+                            <ul>
+                                <li class="dropdown clearfix" data-level="3">
+                                    <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
+                                    <ul>
+                                        <li>
+                                            <a href="" title="Les nomades">Les nomades</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Les performants">Les performants</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Les ultra-légers">Les ultra-légers</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Faites-vous conseiller !" class="call-to-action">Faites-vous conseiller !</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Guide" class="more-action"><i class="icon-dart"></i>Guide</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-profiles"></i>Profils d’utilisations<i class="icon-arrow-right"></i></h5>
+                            <ul>
+                                <li>
+                                    <a href="" title="Je suis père de famille">Je suis père de famille</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Je pratique un sport extrème">Je pratique un sport extrème</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Je suis plutôt créative">Je suis plutôt créative</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camcorder"></i>Caméscope<i class="icon-arrow-right"></i></h5>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown" data-level="1">
+                    <hr>
+                    <h4 class="menu"><i class="icon-tv"></i><span>Tv, Vidéo, Home Cinéma</span><i class="icon-arrow-right"></i></h4>
+                    <ul>
+                        <li class="dropdown" data-level="2">
+                            <h5 class="menu"><i class="icon-camera-small"></i>Appareils Photos<i class="icon-arrow-right"></i></h5>
+                            <ul>
+                                <li class="dropdown" data-level="3">
+                                    <h6 class="menu">Les compacts<i class="icon-arrow-right"></i></h6>
+                                    <ul>
+                                        <li>
+                                            <a href="" title="Les nomades">Les nomades</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Les performants">Les performants</a>
+                                        </li>
+                                        <li>
+                                            <a href="" title="Les ultra-légers">Les ultra-légers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- page -->
+        <section id="page-line" class="page clearfix" role="main">
+            <nav id="breadcrumbs">
+                <ul>
+                    <li>
+                        <a href="" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <i class="icon-bubble"></i><a href="" title="Photos, caméscope">Photos, caméscope</a>
+                    </li>
+                    <li>
+                        <i class="icon-bubble"></i><a href="" title="Appareils photos">Appareils photos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="center-col" class="clearfix">
+                <div id="info-line" class="module">
+                    <div class="module-punch"></div>
+                    <div class="module-content">
+                        <h2>Les compacts</h2>
+                        <p>Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène que vous souhaitez photographier. Ce dernier couvre 90 à 95 % de la zone photographiée. Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène.</p>
+                    </div>
+                </div>
+                <div id="question" class="module">
+                    <div class="module-punch"></div>
+                    <div class="module-content">
+                        <h1>Quel degré d'importance apportez-vous à la légèreté ?</h1>
+                        <img src="img/dynamic/domain.jpg" alt="Quel degré d'importance apportez-vous à la légèreté ?">
+                        <ul id="answers-question">
+                            <li>
+                                <a href="#" class="call-to-action" title="Pas vraiment">Pas vraiment</a>
+                            </li>
+                            <li>
+                                <a href="#" class="call-to-action" title="Un peu">Un peu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="call-to-action" title="Plutôt oui">Plutôt oui</a>
+                            </li>
+                            <li>
+                                <a href="#" class="call-to-action" title="Oui, absolument">Oui, absolument</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Précision de l’expert" class="more-action"><i class="icon-idea"></i>Précision de l’expert</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="ping-light-featured" class="module">
+                    <div class="module-punch"></div>
+                    <div class="module-content clearfix">
+                        <div class="affinity-info clearfix">
+                            <div class="affinity-bot" data-score="44" data-size="60" data-stroke="6">
+                                <img class="user-picture" src="https://graph.facebook.com/828809796/picture" alt="Samantha Kist" height="30">
+                                <div class="affinity-score">44%</div>
+                            </div>
+                            <p>de chance d’être satisfait pour Samantha Kist</p>
+                            <h2>Les ultrats compacts</h2>
+                        </div>
+                        <p class="ping-description clearfix">Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène que vous souhaitez photographier. Ce dernier couvre 90 à 95 % de la zone photographiée.</p>
+                        <h3 class="popular-products">Les produits populaires</h3>
+                        <ul class="products">
+                            <li class="product">
+                                <img src="img/dynamic/product-camera-small.png" alt="SONY DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6">
+                                <div class="product-info">
+                                    <h3>SONY</h3>
+                                    <p>DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6</p>
+                                </div>
+                                <p class="product-from">
+                                    <span class="offer-count">2 offres à partir de</span>
+                                    <span class="price">69.8 €</span>
+                                </p>
+                            </li>
+                            <li class="product">
+                                <img src="img/dynamic/product-camera-small.png" alt="SONY DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6">
+                                <div class="product-info">
+                                    <h3>SONY</h3>
+                                    <p>DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6</p>
+                                </div>
+                                <p class="product-from">
+                                    <span class="offer-count">2 offres à partir de</span>
+                                    <span class="price">69.8 €</span>
+                                </p>
+                            </li>
+                            <li class="product">
+                                <img src="img/dynamic/product-camera-small.png" alt="SONY DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6">
+                                <div class="product-info">
+                                    <h3>SONY</h3>
+                                    <p>DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6</p>
+                                </div>
+                                <p class="product-from">
+                                    <span class="offer-count">2 offres à partir de</span>
+                                    <span class="price">69.8 €</span>
+                                </p>
+                            </li>
+                            <li class="product">
+                                <img src="img/dynamic/product-camera-small.png" alt="SONY DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6">
+                                <div class="product-info">
+                                    <h3>SONY</h3>
+                                    <p>DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6</p>
+                                </div>
+                                <p class="product-from">
+                                    <span class="offer-count">2 offres à partir de</span>
+                                    <span class="price">69.8 €</span>
+                                </p>
+                            </li>
+                            <li class="product">
+                                <img src="img/dynamic/product-camera-small.png" alt="SONY DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6">
+                                <div class="product-info">
+                                    <h3>SONY</h3>
+                                    <p>DSC S3000 Obj. Canon EF-S IS USM 17 - 85 mm f/4.0 - 5.6</p>
+                                </div>
+                                <p class="product-from">
+                                    <span class="offer-count">2 offres à partir de</span>
+                                    <span class="price">96.978,87 €</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <a href="" title="Voir les autres offres" class="more-action"><i class="icon-dart"></i>Voir les autres offres</a>
+                    </div>
+                </div>
+                <div id="ping-light-perform" class="ping-light module">
+                    <div class="module-punch"></div>
+                    <div class="module-content">
+                        <h2>Les performants</h2>
+                        <div class="affinity-info">
+                            <div class="affinity-actions">
+                                <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
+                                <div class="affinity-action affinity-share">
+                                    <i class="icon-share"></i>
+                                    <div class="share-actions">
+                                        <i class="icon-arrow-share"></i>
+                                        <a href="" title="Partager sur Facebook" class="share-action">
+                                            <i class="icon-facebook-share"></i>
+                                        </a>
+                                        <a href="" title="Partager sur Twitter" class="share-action">
+                                            <i class="icon-twitter-share"></i>
+                                        </a>
+                                        <a href="" title="Partager sur Google+" class="share-action">
+                                            <i class="icon-google-share"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="1">
+                                <img class="user-picture" src="https://graph.facebook.com/828809796/picture" alt="Samantha Kist" height="50">
+                                <div class="affinity-score">93%</div>
+                            </div>
+                            <p>de chances d’en être satisfait</p>
+                        </div>
+                        <ul class="product-thumbnails">
+                            <li>
+                                <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                            </li>
+                            <li>
+                                <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                            </li>
+                            <li>
+                                <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                            </li>
+                            <li>
+                                <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                            </li>
+                            <li>
+                                <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                            </li>
+                            <li>
+                                <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                            </li>
+                        </ul>
+                        <p class="ping-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <ul class="user-actions">
+                        <li>
+                            <div class="user-action">
+                                <i class="icon-share"></i>
+                                <div class="share-actions">
+                                    <i class="icon-arrow-share"></i>
+                                    <a href="" title="Partager sur Facebook" class="share-action">
+                                        <i class="icon-facebook-share"></i>
+                                    </a>
+                                    <a href="" title="Partager sur Twitter" class="share-action">
+                                        <i class="icon-twitter-share"></i>
+                                    </a>
+                                    <a href="" title="Partager sur Google+" class="share-action">
+                                        <i class="icon-google-share"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="user-action">
+                                <i class="icon-like"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="ping-light-nomad" class="ping-light ping-light-2 module">
+                <div class="module-punch"></div>
+                <div class="module-content">
+                    <h2>Les nomades</h2>
+                    <div class="affinity-info">
+                        <div class="affinity-actions">
+                            <a href="#" title="like" class="affinity-action affinity-like"><i class="icon-like"></i></a>
+                            <div class="affinity-action affinity-share">
+                                <i class="icon-share"></i>
+                                <div class="share-actions">
+                                    <i class="icon-arrow-share"></i>
+                                    <a href="" title="Partager sur Facebook" class="share-action">
+                                        <i class="icon-facebook-share"></i>
+                                    </a>
+                                    <a href="" title="Partager sur Twitter" class="share-action">
+                                        <i class="icon-twitter-share"></i>
+                                    </a>
+                                    <a href="" title="Partager sur Google+" class="share-action">
+                                        <i class="icon-google-share"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="affinity-bot" data-score="93" data-size="80" data-stroke="8" data-id="2">
+                            <img class="user-picture" src="https://graph.facebook.com/828809796/picture" alt="Samantha Kist" height="50">
+                            <div class="affinity-score">93%</div>
+                        </div>
+                        <p>de chances d’en être satisfait</p>
+                    </div>
+                    <ul class="product-thumbnails">
+                        <li>
+                            <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                        </li>
+                        <li>
+                            <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                        </li>
+                        <li>
+                            <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                        </li>
+                        <li>
+                            <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                        </li>
+                        <li>
+                            <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                        </li>
+                        <li>
+                            <img src="img/dynamic/product-slider-big.png" alt="Sony DSC-S3000">
+                        </li>
+                    </ul>
+                    <p class="ping-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Lorem ipsum dolor sit amet</p>
+                </div>
+                <ul class="user-actions">
+                    <li>
+                        <div class="user-action">
+                            <i class="icon-share"></i>
+                            <div class="share-actions">
+                                <i class="icon-arrow-share"></i>
+                                <a href="" title="Partager sur Facebook" class="share-action">
+                                    <i class="icon-facebook-share"></i>
+                                </a>
+                                <a href="" title="Partager sur Twitter" class="share-action">
+                                    <i class="icon-twitter-share"></i>
+                                </a>
+                                <a href="" title="Partager sur Google+" class="share-action">
+                                    <i class="icon-google-share"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="user-action">
+                            <i class="icon-like"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            
+            <div id="advice" class="module">
+                <div class="module-punch"></div>
+                <div class="module-content clearfix">
+                    <h3><i class="icon-advice"></i>Conseil d'utilisation</h3>
+                    <blockquote>
+                        <img src="img/dynamic/advice.jpg" alt="Conseil d'utilisation">
+                        Quelle différence y a-t-il entre un viseur optique et un viseur électronique ? Le viseur optique va vérifier la zone de couverture mais cette dernière ne sera pas très précise. Il est possible qu'un élément disgracieux apparaisse sur la photo car le viseur optique ne couvre pas l'entièreté de la scène que vous souhaitez photographier. Ce dernier couvre 90 à 95 % de la zone photographiée. Quant au viseur électronique, malgré son manque de définition qui fait que la mise au point est assez difficile, ...
+                    </blockquote>
+                    <a href="#" title="Lire la suite" class="more-action"><i class="icon-dart"></i>Lire la suite</a>
+                </div>
+            </div>
+            <div id="did-you-know" class="module">
+                <div class="module-punch"></div>
+                <div class="module-content">
+                    <h3><i class="icon-did-you-know"></i>Le saviez-vous ?</h3>
+                    <blockquote>
+                        Le dernier épisode de la saison 6 de la série Dr House aurait été tourné entièrement avec un Appareil Photo Numérique, d'une valeur d'environ 2000€ (3000$). Le but était de prouver que la qualité de ces appareils était si puissante qu'il était possible de tourner des séries professionnelles avec. Surtout un sacré coup de pub pour le fabricant de l'appareil, Canon !
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    
+    <!-- footer -->
+    <footer id="footer" role="contentinfo">
+        <nav class="complementary">
+            <h4>Suivez-nous</h4>
+            <hr>
+            <a href="https://www.facebook.com/Wepingo" title="Facebook" target="_blank" rel="external">
+                <i class="icon-facebook"></i>
+            </a>
+            <a href="https://twitter.com/Wepingo" title="Twitter" target="_blank" rel="external">
+                <i class="icon-twitter"></i>
+            </a>
+            <a href="https://plus.google.com/104395575119681523422" title="Google+" target="_blank" rel="external">
+                <i class="icon-googleplus"></i>
+            </a>
+            <div class="fb-like" data-href="https://www.facebook.com/Wepingo" data-send="false" data-layout="button_count" data-width="170" data-show-faces="false"></div>
+        </nav>
+        <nav class="complementary">
+            <h4>Informations</h4>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#" title="Guide">Guide</a>
+                </li>
+                <li>
+                    <a href="#" title="Conditions générales">Conditions générales</a>
+                </li>
+                <li>
+                    <a href="#" title="Plan du site">Plan du site</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="complementary">
+            <h4>Wepingo</h4>
+            <hr>
+            <ul>
+                <li>
+                    <a href="#" title="Avantages">Avantages</a>
+                </li>
+                <li>
+                    <a href="#" title="Équipe">Équipe</a>
+                </li>
+                <li>
+                    <a href="#" title="Qui sommes-nous ?">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                    <a href="#" title="Wepingo, c'est quoi ?">Wepingo, c'est quoi ?</a>
+                </li>
+            </ul>
+        </nav>
+        <p id="copyright">Wepingo - 2012 - Tous droits réservés - Adresse 6 Cours Saint Éloi 75012 Paris</p>
+    </footer>
+    
+</body>
+</html>
