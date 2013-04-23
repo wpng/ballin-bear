@@ -85,7 +85,6 @@ input[type=email],
 #search-container .dropdown-menu h4
 {
     color: #00ade0;
-    font-size: 2em;
     font-weight: normal;
     line-height: 1.4em;
     margin: 1em 0 0 0;
@@ -95,7 +94,6 @@ input[type=email],
 #search-container .dropdown-menu a
 {
     color: #343434;
-    font-size: 1.9em;
     line-height: 1.2em;
     margin: 0 0 0 10px;
     text-transform: none;
