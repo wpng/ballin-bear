@@ -4,16 +4,7 @@ var Modal =
     {
         $( '.close-modal-background-target, .modal-close' ).on( 'click', Modal.hide );
         
-        $( ".advice-expert" ).accordion( { header: "> div > h3", collapsible: true, icons: null } )
-        .sortable(
-        {
-            axis: "y",
-            handle: "h3",
-            stop: function( event, ui )
-            {
-                ui.item.children( "h3" ).triggerHandler( "focusout" );
-            }
-        });
+        $( ".advice-expert" ).accordion( { header: "> div > h3", collapsible: true, icons: null } );
     },
     show: function( event )
     {

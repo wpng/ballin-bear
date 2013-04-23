@@ -297,6 +297,7 @@
     background: url("../img/sprite.png") no-repeat -2px -992px;
     display: inline-block;
     height: 33px;
+    font-size: 0.85em;
     line-height: 2.8em;
     padding: 0 8px 0 0;
     text-align: right;
@@ -330,8 +331,8 @@
 .dropdown-menu input[type=password],
 .dropdown-menu input[type=email]
 {
-    line-height: 2em;
-    padding: 0 10px;
+    line-height: 1em;
+    padding: 4px 10px;
     width: 272px;
 }
 

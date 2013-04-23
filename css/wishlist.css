@@ -157,3 +157,16 @@
     right: 13px;
     top: auto;
 }
+
+@media (max-width: 630px)
+{
+    .wished-product
+    {
+        width: 100%;
+    }
+    
+    .wished-product .module-content
+    {
+        text-align: center;
+    }
+}

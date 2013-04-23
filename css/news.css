@@ -223,3 +223,11 @@
     right: 13px;
     top: auto;
 }
+
+@media (max-width: 630px)
+{
+    .actuality
+    {
+        width: 98%;
+    }
+}

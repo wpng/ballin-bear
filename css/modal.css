@@ -282,7 +282,7 @@
 #modal-avantages #login-facebook
 {
     font-size: 0.9em;
-    margin: 2em 0 0 0;
+    margin: 25px 0 0 0;
 }
 
 #modal-avantages #sign-up-email
@@ -306,7 +306,7 @@
 #modal-avantages input[type=password]
 {
     margin: 0.4em 0 0 0;
-    padding: 0.2em 2%;
+    padding: 4px 2%;
 }
 
 #modal-avantages #sign-up-email input[name=first_name]
