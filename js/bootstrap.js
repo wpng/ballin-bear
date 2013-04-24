@@ -102,35 +102,30 @@ var Dashboard =
     },
     stateChange: function( event)
     {
-        if ( $( '#dashboard' ).hasClass('open', 300, "swing") )
-        {
-            $( '#dashboard' ).removeClass('open', 300, "swing").addClass('closed', 300, "swing");
-            $( '#dashboard .dropdown' ).removeClass( 'open', 300, "swing" );
-            $('#dashboard .dropdown span,#dashboard .dropdown i:last-child').hide();
-            //$( '#dashboard' ).switchClass( "open", "closed", 300 );
-        }
+        if ( $( '#dashboard' ).hasClass('open') )
+            Dashboard.close();
         else
-        {
-            $( '#dashboard' ).removeClass('closed', 300, "swing").addClass('open', 300, "swing");
-            setTimeout(function(){
-            	$('#dashboard .dropdown span,#dashboard .dropdown i:last-child').show();
-            },300);
-            //$( '#dashboard' ).switchClass( "closed", "open", 300 );
-        }
+            Dashboard.open();
+    },
+    close: function( event )
+    {
+        $( '#dashboard' ).removeClass('open', 300, "swing").addClass('closed', 300, "swing");
+        $( '#dashboard .dropdown' ).removeClass( 'open', 300, "swing" );
+        $('#dashboard .dropdown span, #dashboard .dropdown .icon-arrow-right').hide();
+    },
+    open: function( event )
+    {
+        $( '#dashboard' ).removeClass('closed', 300, "swing").addClass('open', 300, "swing", function(){
+            $('#dashboard .dropdown span, #dashboard .dropdown .icon-arrow-right').show();
+        });
     },
     onResize: function( event )
     {
-        if ( $(window).width() <= 1024 && $( '#dashboard').hasClass('open') ){
-            $( '#dashboard' ).removeClass('open', 300, "swing").addClass('closed', 300, "swing");
-            $('#dashboard .dropdown span,#dashboard .dropdown i:last-child').hide(0);
-        }
+        if ( $(window).width() <= 1024 && $( '#dashboard').hasClass('open') )
+            Dashboard.close();
         
-        if ( $(window).width() >= 1024 && $( '#dashboard' ).hasClass('closed') ){
-            $( '#dashboard' ).removeClass('closed', 300, "swing").addClass('open', 300, "swing");
-            setTimeout(function(){
-            	$('#dashboard .dropdown span,#dashboard .dropdown i:last-child').show();
-            },300);
-        }
+        if ( $(window).width() >= 1024 && $( '#dashboard' ).hasClass('closed') )
+            Dashboard.open();
     }
 };
 
