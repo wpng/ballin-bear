@@ -414,7 +414,7 @@ input[type="checkbox"]:checked + .checkbox .icon-checkbox
 
 #login-google
 {
-    background: url("../img/sprite.png") no-repeat -185px -679px;
+    background: url("../img/sprite.png") no-repeat -185px -676px;
     display: inline-block;
     height: 26px;
     margin-top: 1px;
