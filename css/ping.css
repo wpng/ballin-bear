@@ -42,9 +42,14 @@
     font-weight: bold;
 }
 
-#global-info-product .product-from p span
+#global-info-product .product-from .from
 {
     color: #009fce;
+}
+
+#global-info-product .product-from .price
+{
+    font-family: Arial, sans-serif;
 }
 
 #global-info-product .product-ping

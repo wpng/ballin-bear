@@ -83,8 +83,11 @@
 .module .ping
 {
     color: #f68b2c;
+    display: block;
+    font-family: Arial, sans-serif;
     font-size: 1.7em;
     font-weight: bold;
+    text-align: right;
 }
 
 .module .available
