@@ -115,7 +115,8 @@
 #ping-search-result h1
 {
     text-align: left;
-    height: 1.75em;
+    line-height: 1em;
+    margin: 10px 0 5px 0;
 }
 
 #ping-search-result h2
@@ -365,16 +366,14 @@
         float: none;
         border: none;
         margin: 0 auto;
-        padding: 1em 20% 1em 0;
+        padding: 0 20% 10px 0;
         position: relative;
         width: 100%;
     }
 
     #ping-search-result h1
     {
-        padding-left: .6em;
-        line-height: 1.4em;
-        height: 1.6em;
+        padding-left: 10px;
     }
 
     #affinity-info p.product-ping

@@ -342,7 +342,6 @@ input[type=email],
     background: #ecebec;
     border: 1px solid #ecebec;
     display: inline-block;
-    line-height: 2em;
     position: relative;
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;

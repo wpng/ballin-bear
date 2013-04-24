@@ -22,8 +22,8 @@
 #global-info-product .module-content
 {
     float: left;
-    padding: 0 0 1em 1.6em;
-    width: 63%;
+    padding: 0 0 10px 10px;
+    width: 55%;
 }
 
 #global-info-product #categories-product
@@ -109,15 +109,15 @@
 
 #geoloc textarea
 {
-	resize: vertical;
     background: #f1f1f1;
     border: none;
     float: left;
     padding: 2% 3%;
-    width: 65%;
     height:28px;
     min-height: 25px;
     font-size: 1.1em;
+    resize: vertical;
+    width: 62%;
     vertical-align: middle;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
@@ -128,7 +128,7 @@
 {
     float: right;
     font-size: 1.7em;
-    height: 25px;
+    height: 40px;
     line-height: 1em;
     margin: 0;
     padding: 0;
@@ -159,7 +159,9 @@
 
 @media (max-width: 930px)
 {
-    #page-product .module
+    #page-product .module,
+    #center-col,
+    #center-col .module
     {
         width: 100%;
     }
