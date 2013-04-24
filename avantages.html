@@ -18,8 +18,8 @@
     <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
     <script src="js/searchbar.js"></script>
     <script src="js/dropdown.js"></script>
-    <script src="js/modal.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/modal.js"></script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -37,52 +37,56 @@
             <div class="modal-close"><i class="icon-close"></i></div>
             <div class="modal-content">
                 <h2>Grâce à votre compte Wepingo :</h2>
-                <ul class="avantages">
-                    <li>
-                        <i class="icon-privileges"></i>
-                        <p>Bénéficiez d’une offre privilège sur le produit qu’il vous faut !</p>
-                    </li>
-                    <li>
-                        <i class="icon-trends"></i>
-                        <p>Suivez les tendances des produits qui vous correspondent.</p>
-                    </li>
-                    <li>
-                        <i class="icon-advice"></i>
-                        <p>Construisez votre profil pour un conseil ultra-personnalisé.</p>
-                    </li>
-                    <li>
-                        <i class="icon-share"></i>
-                        <p>Partagez vos résultats  sur les réseaux sociaux.</p>
-                    </li>
-                    <li>
-                        <i class="icon-gifts"></i>
-                        <p>Gagnez chaque jour des lots, cadeaux.</p>
-                    </li>
-                </ul>
-                <div id="modal-sign-up">
-                    <div id="sign-up-facebook">
-                        <h3>Connectez-vous à Wepingo en un clique:</h3>
-                        <a href="#" id="login-facebook" class="user-action" title="Se connecter avec Facebook">Se connecter avec Facebook</a>
-                    </div>
-                    <div id="sign-up-email">
-                        <form method="POST" action="">
-                            <h3>Ou inscrivez-vous par e-mail:</h3>
-                            <input type="text" id="last_name" name="last_name" value="Nom" title="Nom">
-                            <input type="text" id="first_name" name="first_name" value="Prénom" title="Prénom">
-                            <input type="text" name="email" value="E-mail" title="E-mail">
-                            <input type="password" name="password" value="">
-                            <ul>
-                                <li>
-                                    <input type="radio" name="gender" value="Femme" id="gender_female">
-                                    <label class="radio" for="gender_female"><i class="icon-checkbox"></i>Femme</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="gender" value="Homme" id="gender_man">
-                                    <label class="radio" for="gender_man"><i class="icon-checkbox"></i>Homme</label>
-                                </li>
-                            </ul>
-                            <input type="submit" name="submit" value="S'INSCRIRE">
-                        </form>
+                <div class="avantages-slider clearfix">
+                    <div class="slider-inner">
+                        <ul class="avantages">
+                            <li class="active">
+                                <i class="icon-privileges"></i>
+                                <p>Bénéficiez d’une offre privilège sur le produit qu’il vous faut !</p>
+                            </li>
+                            <li>
+                                <i class="icon-trends"></i>
+                                <p>Suivez les tendances des produits qui vous correspondent.</p>
+                            </li>
+                            <li>
+                                <i class="icon-advice"></i>
+                                <p>Construisez votre profil pour un conseil ultra-personnalisé.</p>
+                            </li>
+                            <li>
+                                <i class="icon-share"></i>
+                                <p>Partagez vos résultats  sur les réseaux sociaux.</p>
+                            </li>
+                            <li>
+                                <i class="icon-gifts"></i>
+                                <p>Gagnez chaque jour des lots, cadeaux.</p>
+                            </li>
+                        </ul>
+                        <div id="modal-sign-up">
+                            <div id="sign-up-facebook">
+                                <h3>Connectez-vous à Wepingo en un clique:</h3>
+                                <a href="#" id="login-facebook" class="user-action" title="Se connecter avec Facebook">Se connecter avec Facebook</a>
+                            </div>
+                            <div id="sign-up-email">
+                                <form method="POST" action="">
+                                    <h3>Ou inscrivez-vous par e-mail:</h3>
+                                    <input type="text" id="last_name" name="last_name" value="Nom" title="Nom">
+                                    <input type="text" id="first_name" name="first_name" value="Prénom" title="Prénom">
+                                    <input type="text" name="email" value="E-mail" title="E-mail">
+                                    <input type="password" name="password" value="">
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="gender" value="Femme" id="gender_female">
+                                            <label class="radio" for="gender_female"><i class="icon-checkbox"></i>Femme</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="gender" value="Homme" id="gender_man">
+                                            <label class="radio" for="gender_man"><i class="icon-checkbox"></i>Homme</label>
+                                        </li>
+                                    </ul>
+                                    <input type="submit" name="submit" value="S'INSCRIRE">
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

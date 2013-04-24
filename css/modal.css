@@ -353,6 +353,71 @@
     color: #4b4b4b;
 }
 
+@media ( max-width: 790px )
+{
+    #modal-avantages h2
+    {
+        font-size: 1.2em;
+    }
+    
+    #modal-avantages .modal
+    {
+        width: 90%;
+    }
+    
+    #modal-avantages .avantages-slider
+    {
+        margin: 20px auto 0 auto;
+        overflow: hidden;
+        width: 280px;
+    }
+    
+    #modal-avantages .slider-inner
+    {
+        width: 2050px;
+    }
+    
+    #modal-avantages .avantages
+    {
+        display: inline-block;
+        width: 1440px;
+        text-align: left;
+    }
+    
+    #modal-avantages .avantages li
+    {
+        width: 280px;
+        max-width: 280px;
+        text-align: center;
+    }
+    
+    #modal-avantages .avantages li p
+    {
+        margin: 0 auto;
+        width: 150px;
+    }
+    
+    #modal-sign-up
+    {
+        display: inline-block;
+        border: none;
+        width: 600px;
+    }
+    
+    #modal-avantages #sign-up-email,
+    #modal-avantages #sign-up-facebook
+    {
+        border: none;
+        display: inline-block;
+        width: 280px;
+    }
+    
+    #modal-avantages h3
+    {
+        line-height: 1em;
+    }
+}
+
 @media ( max-width: 560px )
 {
     #modal-strong-weak .modal,
